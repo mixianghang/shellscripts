@@ -64,6 +64,8 @@ for section in sections:
 	  resultFileFd.write(body)
 	if index % 100 == 0:
 	  resultFileFd.flush()
+	if index % 10000 ==0:
+	  print "finish {0} kws".format(index)
 	index += 1
   print "finishing %d kws from %s" %(index, keyList)
 #end = time.clock()
