@@ -14,6 +14,7 @@ import urllib
 import json
 from pprint import pprint
 import sys
+import time
 def error(errMsg):
   sys.stderr.write(errMsg)
 def ripeLoopup(requestUrl, key, format="json"):
@@ -48,14 +49,21 @@ def ripeLoopup(requestUrl, key, format="json"):
 def main():
   url = "http://rest.db.ripe.net/ripe/inetnum"
   key = "79.107.0.0 - 79.107.255.255"
-  response = ripeLoopup(url, key)
-  if response['code'] != 0:
-	print response['body']
-  else:
-	print "receive {0} bytes".format(len(response['body']))
-	decodedDict = json.loads(response['body'])
+  success = 0
+  failed = 0
+  startTime = time.clock()
+  print "start at ", time.strftime("%H-%M-%S")
+  for i in range(1,1000):
+    response = ripeLoopup(url, key)
+    if response['code'] != 0:
+        failed += 1
+    else:
+        success +=1
 	#pprint(decodedDict)
-	pprint(decodedDict['objects']['object'][0]['attributes']['attribute'])
+  print "end at ", time.strftime("%H-%M-%S")
+  endTime = time.clock()
+  print "success: {0}, failed: {1}, timecost: {2}".format(success, failed, endTime - startTime)
+main()
 
 #pprint(response)
 
