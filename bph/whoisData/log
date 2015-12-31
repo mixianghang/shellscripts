@@ -1,0 +1,7 @@
+inetnum
+inetnum http://rest.db.ripe.net/ripe/inetnum inetnumResult
+finishing 4 kws from inetnum
+person
+person http://rest.db.ripe.net/ripe/person personResult
+finishing 2 kws from person
+time elapsed in seconds: 0.014091
