@@ -46,6 +46,8 @@ for section in sections:
 	except Exception as e:
 	  error("rename result file failed: {0}".format(resultFile))
 	  sys.exit(1)
+  if not os.path.exists(os.path.dirname(resultFile)):
+      os.makedirs(os.path.dirname(resultFile))
   #open keylist file and loop to send http request and save response
   keyListFd = open(keyList, "r")
   kwNum = lineCount(keyList)
