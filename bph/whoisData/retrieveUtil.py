@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2015-12-31 20:31:58
+# Last Modified: 2015-12-31 21:05:45
 ################################################
 import urllib2
 import urllib
@@ -84,24 +84,42 @@ def ripeLoopupThroughUrllib2(requestUrl, key, format="json"):
 def ripeLoopup(requestUrl, key, format="json"):
   #return ripeLoopupThroughRequests(requestUrl, key, format="json")
   return ripeLoopupThroughUrllib2(requestUrl, key, format="json")
-def main(num):
-  url = "http://rest.db.ripe.net/ripe/inetnum"
-  key = "79.107.0.0 - 79.107.255.255"
+def main(num, kwFile, isUrlLib):
   success = 0
   failed = 0
   startTime = time.time()
+  url = "http://rest.db.ripe.net/ripe/inetnum"
   print "start at ", time.strftime("%H-%M-%S")
-  for i in range(0,int(num)):
-    response = ripeLoopup(url, key)
-    if response['code'] != 0:
-        failed += 1
-    else:
-        success +=1
+  print num, kwFile, isUrlLib
+  kwFd = open(kwFile)
+  index = 0
+  responseSize = 0
+  for kw in kwFd:
+	kw = kw.strip(" \n\r\t")
+	if isUrlLib == '1':
+	  response = ripeLoopupThroughUrllib2(url, kw)
+	else:
+	  response = ripeLoopupThroughRequests(url, kw)
+	if response['code'] != 0:
+	  failed += 1
+	else:
+	  success +=1
+	  responseSize += len(response['body'])
+	index += 1
+	if index % 10 == 0:
+	  print "finish ", index, "of ", num
+	if index >= int(num):
+	  break
 	#pprint(decodedDict)
   print "end at ", time.strftime("%H-%M-%S")
   endTime = time.time()
-  print "success: {0}, failed: {1}, timecost: {2}".format(success, failed, endTime - startTime)
-main(sys.argv[1])
+  print "success: {0}, failed: {1}, timecost: {2}, responseSize: {3}".format(success, failed, endTime - startTime, responseSize)
+  kwFd.close()
+
+if len(sys.argv) < 4:
+  print "Usage num kwlistFile isUrlLib"
+  sys.exit(1)
+main(sys.argv[1], sys.argv[2], sys.argv[3])
 
 #pprint(response)
 
