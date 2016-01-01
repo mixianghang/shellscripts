@@ -98,16 +98,18 @@ def main(num, kwFile, isUrlLib):
 	kw = kw.strip(" \n\r\t")
 	if isUrlLib == '1':
 	  response = ripeLoopupThroughUrllib2(url, kw)
+	  if index % 20 == 0:
+		print "urllib finish ", index, "of ", num
 	else:
 	  response = ripeLoopupThroughRequests(url, kw)
+	  if index % 20 == 0:
+		print "requests finish ", index, "of ", num
 	if response['code'] != 0:
 	  failed += 1
 	else:
 	  success +=1
 	  responseSize += len(response['body'])
 	index += 1
-	if index % 10 == 0:
-	  print "finish ", index, "of ", num
 	if index >= int(num):
 	  break
 	#pprint(decodedDict)
