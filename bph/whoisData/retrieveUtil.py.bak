@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2015-12-31 22:05:15
+# Last Modified: 2015-12-31 21:50:39
 ################################################
 import urllib2
 import urllib
@@ -19,6 +19,7 @@ import requests
 def error(errMsg):
   sys.stderr.write(errMsg)
 def ripeLoopupThroughRequests(requestUrl, key, format="json"):
+  global session
   response = {}
   if format == "json":
 	url = requestUrl+"/" + urllib.quote(key) + ".json"
@@ -29,12 +30,9 @@ def ripeLoopupThroughRequests(requestUrl, key, format="json"):
 	response["body"] = "'format' argument is wrong"
 	return response
   getValues= {"unfiltered":""}
-  getData = urllib.urlencode(getValues)
-  fullUrl = url + "?" + getData
   try:
 	#httpResponse = requests.get(url, params=getValues)
-	httpResponse = session.get(fullUrl)
-	#print httpResponse.url
+	httpResponse = session.get(url, unfiltered="")
   except urllib2.HTTPError as e:
     #print "http response error:{0}".format(e.code)
 	response["code"] = -1
@@ -46,7 +44,7 @@ def ripeLoopupThroughRequests(requestUrl, key, format="json"):
 	response["body"] = "failed to connect to server {1} with reason:{0}".format(e.reason, fullUrl)
   except Exception as e:
     response["code"] = -1
-    response["body"] = "some unexpected error"
+	#response["body"] = "some unexpected error"
   else:
 	#print httpResponse.status_code
 	if httpResponse.status_code >= 400:
@@ -102,18 +100,16 @@ def main(num, kwFile, isUrlLib):
 	kw = kw.strip(" \n\r\t")
 	if isUrlLib == '1':
 	  response = ripeLoopupThroughUrllib2(url, kw)
-	  if index % 20 == 0:
-		print "urllib finish ", index, "of ", num
 	else:
 	  response = ripeLoopupThroughRequests(url, kw)
-	  if index % 20 == 0:
-		print "requests finish ", index, "of ", num
 	if response['code'] != 0:
 	  failed += 1
 	else:
 	  success +=1
 	  responseSize += len(response['body'])
 	index += 1
+	if index % 10 == 0:
+	  print "finish ", index, "of ", num
 	if index >= int(num):
 	  break
 	#pprint(decodedDict)
