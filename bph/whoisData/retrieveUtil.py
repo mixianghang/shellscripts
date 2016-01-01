@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-01 13:24:08
+# Last Modified: 2016-01-01 14:38:30
 ################################################
 import urllib2
 import urllib
@@ -78,7 +78,7 @@ def joinStr(*arglist):
   return "  ".join(args)
 def convRipeLookupJson2Text(jsonData):
   response = {}
-  lines = []
+  lines = [""]
   decoded = json.loads(jsonData);
   object = decoded["objects"]["object"][0];
   if not isinstance(object, dict):
@@ -97,6 +97,7 @@ def convRipeLookupJson2Text(jsonData):
       comment = attribute['comment'] if "comment" in attribute.keys() else ""
       line = joinStr(name, value, type, comment)
       lines.append(line)
+  lines.append("")
   response['code'] = 0
   response['body'] = "\n".join(lines)
   return response

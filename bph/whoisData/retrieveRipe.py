@@ -6,12 +6,13 @@ from pprint import pprint
 import time
 from retrieveUtil import *
 import threading
+from subprocess import call
 
 #time measurement example
-start = time.clock()
+#start = time.clock()
 #end = time.clock()
 #print "time elapsed in seconds:", (end - start)
-date=time.strftime("%Y%m%d")
+date=time.strftime("%Y-%m-%d-%H-%M-%S")
 
 if len(sys.argv) < 2:
   print >>sys.stderr, "Usage: py configFile" 
@@ -42,7 +43,7 @@ for section in sections:
   if os.path.exists(resultFile):
 	try:
 	  os.rename(resultFile, resultFile + "_bak_" +date)
-	except exception as e:
+	except Exception as e:
 	  error("rename result file failed: {0}".format(resultFile))
 	  sys.exit(1)
   #open keylist file and loop to send http request and save response
@@ -52,8 +53,10 @@ for section in sections:
   kwList = keyListFd.readlines()
   keyListFd.close()
   threads = []
+  partFiles = []
   for i in range(0, threadNum):
       partResultFile = "{0}_part{1}".format(resultFile, i + 1)
+      partFiles.append(partResultFile)
       if (i + 1) != threadNum:
           newThread = RetrieveThread(i + 1, kwList[startPos : startPos + kwPartNum], requestUrl, partResultFile)
       else:
@@ -63,6 +66,10 @@ for section in sections:
       startPos += kwPartNum
   for thread in threads:
       thread.join()
+  command = "cat {0} > {1}".format(" ".join(partFiles), resultFile)
+  call(command, shell=True)
+  for partFile in partFiles:
+      os.remove(partFile)
 #end = time.clock()
 #print "time elapsed in seconds:", (end - start)
 #end = time.clock()
