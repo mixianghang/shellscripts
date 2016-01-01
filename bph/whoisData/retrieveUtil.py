@@ -7,18 +7,59 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2015-12-31 22:05:15
+# Last Modified: 2016-01-01 01:00:44
 ################################################
 import urllib2
 import urllib
 import json
 from pprint import pprint
 import sys
+import os
 import time
 import requests
+import threading
+class RetrieveThread(threading.Thread):
+  def __init__(self, threadId, kwList, url, resultFile):
+    threading.Thread.__init__(self)
+    self.threadId = threadId
+    self.kwList = kwList
+    self.url = url
+    self.resultFile = resultFile
+  def run(self):
+    session = requests.Session()
+    date = time.strftime("%Y-%m-%d-%H-%M-%S")
+    if os.path.exists(self.resultFile):
+        try:
+          os.rename(self.resultFile, self.resultFile + "_bak_" +date)
+        except Exception as e:
+		  error("thread{1}:rename result file failed: {0}".format(self.resultFile, self.threadId))
+		  sys.exit(1)
+	  #open keylist file and loop to send http request and save response
+    resultFileFd  = open(self.resultFile, "a")
+    kwNum = len(self.kwList)
+    startTime = time.time()
+    for index, kw in enumerate(self.kwList):
+      kw = kw.strip(" \n\r\t")
+      lookupResponse = ripeLoopupThroughRequests(self.url, kw, session=session)	
+      code = int(lookupResponse['code'])
+      body = lookupResponse['body']
+      if code != 0:
+        error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.requestUrl, body, self.threadId))
+      else:
+        resultFileFd.write(body)
+      if index % 100 ==0:
+        resultFileFd.flush()
+      if index >= 100 and index % 100 == 0:
+        curTime = time.time()
+        print "thread{1}: finish {0} kws of {2}".format(index,self.threadId, kwNum)
+        print "thread{1}: finish 100 requests within {0}seconds".format(curTime - startTime, self.threadId)
+        startTime = curTime
+    print "thread%d: finishing %d kws of %d" %(self.threadId, index + 1, keyNum)
+    resultFileFd.close()
+    
 def error(errMsg):
-  sys.stderr.write(errMsg)
-def ripeLoopupThroughRequests(requestUrl, key, format="json"):
+  sys.stderr.write("{}\n".format(errMsg))
+def ripeLoopupThroughRequests(requestUrl, key, session, format="json"):
   response = {}
   if format == "json":
 	url = requestUrl+"/" + urllib.quote(key) + ".json"
@@ -54,7 +95,7 @@ def ripeLoopupThroughRequests(requestUrl, key, format="json"):
 	  response["body"] = "return status codes that cannot be handled:{}".format(httpResponse.status_code)
 	else:
 	  response['code'] = 0
-	  response['body'] = httpResponse.text
+	  response['body'] = httpResponse.content
   return response
 def ripeLoopupThroughUrllib2(requestUrl, key, format="json"):
   response = {}
@@ -122,11 +163,21 @@ def main(num, kwFile, isUrlLib):
   print "success: {0}, failed: {1}, timecost: {2}, responseSize: {3}".format(success, failed, endTime - startTime, responseSize)
   kwFd.close()
 
-session = requests.Session()
-if len(sys.argv) < 4:
-  print "Usage num kwlistFile isUrlLib"
-  sys.exit(1)
-main(sys.argv[1], sys.argv[2], sys.argv[3])
+def lineCount(filePath):
+  if not os.path.exists(filePath):
+	  return -1
+  with open(filePath) as fileFd:
+      for i, l in enumerate(fileFd):
+		  pass
+      return i + 1
+
+#print lineCount(sys.argv[1])
+#sys.exit(0)
+#session = requests.Session()
+#if len(sys.argv) < 4:
+#  print "Usage num kwlistFile isUrlLib"
+#  sys.exit(1)
+#main(sys.argv[1], sys.argv[2], sys.argv[3])
 
 #pprint(response)
 
