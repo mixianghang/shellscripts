@@ -1,0 +1,130 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ConfigParser	./whoisData/retrieveRipe.py	/^import ConfigParser$/;"	i
+RetrieveThread	./whoisData/retrieveUtil.py	/^class RetrieveThread(threading.Thread):$/;"	c
+__init__	./whoisData/retrieveUtil.py	/^  def __init__(self, threadId, kwList, url, resultFile):$/;"	m	class:RetrieveThread
+cacheDict	./darkparse/localParse.py	/^  cacheDict = {}$/;"	v
+cacheDir	./darkparse/localParse.py	/^  cacheDir = os.path.join(dataDir,subdir, "cache")$/;"	v
+cacheFile	./darkparse/localParse.py	/^	cacheFile = open(cacheFilePath, "r")$/;"	v
+cacheFilePath	./darkparse/localParse.py	/^	cacheFilePath = os.path.join(cacheDir, cacheItemParts[2]);$/;"	v
+cacheItemParts	./darkparse/localParse.py	/^	cacheItemParts = cacheItem.split("\\t")$/;"	v
+cacheList	./darkparse/localParse.py	/^  cacheList = open(os.path.join(dataDir,subdir, "cachelist.txt"))$/;"	v
+cached	./darkparse/localParse.py	/^  cached = len(os.listdir(cacheDir))$/;"	v
+config	./whoisData/configRipe.py	/^config ={$/;"	v
+configFile	./whoisData/retrieveRipe.py	/^configFile=sys.argv[1]$/;"	v
+configItem	./whoisData/configRipe.py	/^configItem = lambda keyFilePath, requestUrl, resultFilePath:{"keys": keyFilePath, "url": requestUrl, "result" :resultFilePath}$/;"	v
+configParser	./whoisData/retrieveRipe.py	/^configParser = ConfigParser.SafeConfigParser({"startPos": 0, "threadNum": 10})$/;"	v
+convRes	./whoisData/retrieveUtil.py	/^convRes = convRipeLookupJson2Text(response['body'])$/;"	v
+convRipeLookupJson2Text	./whoisData/retrieveUtil.py	/^def convRipeLookupJson2Text(jsonData):$/;"	f
+convertIP2Int	./util.py	/^def convertIP2Int(ipStr):$/;"	f
+convertIP2Str	./util.py	/^def convertIP2Str(ipInt):$/;"	f
+dataDir	./darkparse/localParse.py	/^dataDir        = sys.argv[1] # dir for parse data$/;"	v
+date	./whoisData/retrieveRipe.py	/^date=time.strftime("%Y%m%d")$/;"	v
+delegatedFile	./convertIP2Int.py	/^delegatedFile = open(delegatedFilePath, "r")$/;"	v
+delegatedFilePath	./convertIP2Int.py	/^delegatedFilePath = sys.argv[1]$/;"	v
+delegatedResult	./convertIP2Int.py	/^delegatedResult = open(delegatedResultPath, "a+")$/;"	v
+delegatedResultPath	./convertIP2Int.py	/^delegatedResultPath = os.path.join(os.path.dirname(delegatedFilePath), "delegated_converted")$/;"	v
+endIpInt	./convertIP2Int.py	/^  endIpInt = startIpInt + int(lineParts[1])$/;"	v
+error	./whoisData/retrieveUtil.py	/^def error(errMsg):$/;"	f
+error	./whoisData/retrieveUtil.py.bak	/^def error(errMsg):$/;"	f
+fileStr	./darkparse/localParse.py	/^	fileStr   = cacheFile.read()$/;"	v
+getSubdirs	./darkparse/util.py	/^def getSubdirs (parentDir, subDirs) :$/;"	f
+inet6numFilePath	./convertIP2Int.py	/^inet6numFilePath  = sys.argv[3]$/;"	v
+inetnumFile	./convertIP2Int.py	/^inetnumFile = open(inetnumFilePath, "r")$/;"	v
+inetnumFilePath	./convertIP2Int.py	/^inetnumFilePath   = sys.argv[2]$/;"	v
+inetnumResult	./convertIP2Int.py	/^inetnumResult = open(inetnumResultPath, "a+")$/;"	v
+inetnumResultPath	./convertIP2Int.py	/^inetnumResultPath = os.path.join(os.path.dirname(inetnumFilePath), "inetnum_converted")$/;"	v
+ipv4Num	./convertIP2Int.py	/^ipv4Num = 0$/;"	v
+joinStr	./whoisData/retrieveUtil.py	/^def joinStr(*args):$/;"	f
+json	./whoisData/retrieveUtil.py	/^import json$/;"	i
+json	./whoisData/retrieveUtil.py.bak	/^import json$/;"	i
+key	./whoisData/retrieveUtil.py	/^key = "79.107.0.0 - 79.107.255.255"$/;"	v
+keyList	./whoisData/retrieveRipe.py	/^  keyList = configParser.get(section, "keylistPath")$/;"	v
+keyListFd	./whoisData/retrieveRipe.py	/^  keyListFd = open(keyList, "r")$/;"	v
+kwFileName	./darkparse/localParse.py	/^kwFileName     = sys.argv[2] # file for keywords, one each line$/;"	v
+kwList	./darkparse/localParse.py	/^kwList = []$/;"	v
+kwList	./whoisData/retrieveRipe.py	/^  kwList = keyListFd.readlines()$/;"	v
+kwNum	./whoisData/retrieveRipe.py	/^  kwNum = lineCount(keyList)$/;"	v
+kwPartNum	./whoisData/retrieveRipe.py	/^  kwPartNum = (kwNum - startPos) \/ threadNum if threadNum != 0 else (kwNum - startPos)$/;"	v
+lineCount	./whoisData/retrieveUtil.py	/^def lineCount(filePath):$/;"	f
+lineParts	./convertIP2Int.py	/^  lineParts = line.split(" ")$/;"	v
+main	./whoisData/retrieveUtil.py	/^def main(num, kwFile, isUrlLib):$/;"	f
+main	./whoisData/retrieveUtil.py.bak	/^def main(num, kwFile, isUrlLib):$/;"	f
+matched	./darkparse/localParse.py	/^  matched = 0$/;"	v
+matchedCacheFile	./darkparse/localParse.py	/^matchedCacheFile = 0$/;"	v
+matchedKwStr	./darkparse/localParse.py	/^	  matchedKwStr = " ".join(matchedKws)$/;"	v
+matchedKws	./darkparse/localParse.py	/^	matchedKws = patternMatch(fileStr, kwList)$/;"	v
+matchedList	./darkparse/localParse.py	/^  matchedList = []$/;"	v
+matchedStr	./darkparse/localParse.py	/^	  matchedStr = "%s	%s	%s	%s\\n" %(cacheItemParts[0], cacheItemParts[1], cacheFilePath,matchedKwStr)$/;"	v
+maxSize	./darkparse/localParse.py	/^	maxSize = 1024 * 1024 * 10# maxFileSize is 10 MB$/;"	v
+newThread	./whoisData/retrieveRipe.py	/^          newThread = RetrieveThread(i + 1, kwList[startPos : startPos + kwPartNum], requestUrl, partResultFile)$/;"	v
+newThread	./whoisData/retrieveRipe.py	/^          newThread = RetrieveThread(i + 1, kwList[startPos:], requestUrl, partResultFile)$/;"	v
+os	./convertIP2Int.py	/^import os$/;"	i
+os	./darkparse/localParse.py	/^import os$/;"	i
+os	./darkparse/util.py	/^import os$/;"	i
+os	./whoisData/retrieveRipe.py	/^import os$/;"	i
+os	./whoisData/retrieveUtil.py	/^import os$/;"	i
+partResultFile	./whoisData/retrieveRipe.py	/^      partResultFile = "{0}_part{1}".format(resultFile, i + 1)$/;"	v
+patternMatch	./darkparse/util.py	/^def patternMatch(sourceStr, kwList):$/;"	f
+pprint	./whoisData/retrieveRipe.py	/^from pprint import pprint$/;"	i
+pprint	./whoisData/retrieveUtil.py	/^from pprint import pprint$/;"	i
+pprint	./whoisData/retrieveUtil.py.bak	/^from pprint import pprint$/;"	i
+previousEndIpInt	./convertIP2Int.py	/^	previousEndIpInt = endIpInt$/;"	v
+previousEndIpInt	./convertIP2Int.py	/^previousEndIpInt = -1$/;"	v
+previousEndIpStr	./convertIP2Int.py	/^	  previousEndIpStr   = util.convertIP2Str(previousEndIpInt)$/;"	v
+previousEndIpStr	./convertIP2Int.py	/^  previousEndIpStr   = util.convertIP2Str(previousEndIpInt)$/;"	v
+previousEndIpStr	./convertIP2Int.py	/^previousEndIpStr = ""$/;"	v
+previousStartIpInt	./convertIP2Int.py	/^	previousStartIpInt = startIpInt$/;"	v
+previousStartIpInt	./convertIP2Int.py	/^previousStartIpInt = -1$/;"	v
+previousStartIpStr	./convertIP2Int.py	/^	  previousStartIpStr = util.convertIP2Str(previousStartIpInt)$/;"	v
+previousStartIpStr	./convertIP2Int.py	/^  previousStartIpStr = util.convertIP2Str(previousStartIpInt)$/;"	v
+previousStartIpStr	./convertIP2Int.py	/^previousStartIpStr = ""$/;"	v
+re	./darkparse/util.py	/^import re$/;"	i
+readKwFromFile	./darkparse/util.py	/^def readKwFromFile (kwFileName, kwList):$/;"	f
+requestUrl	./whoisData/retrieveRipe.py	/^  requestUrl = configParser.get(section, "requestUrl")$/;"	v
+requests	./whoisData/retrieveUtil.py	/^import requests$/;"	i
+requests	./whoisData/retrieveUtil.py.bak	/^import requests$/;"	i
+response	./whoisData/retrieveUtil.py	/^response = ripeLookupThroughRequests(url, key)$/;"	v
+resultFile	./darkparse/localParse.py	/^	resultFile = open(resultFileName, "a")$/;"	v
+resultFile	./whoisData/retrieveRipe.py	/^  resultFile = configParser.get(section,"resultFile")$/;"	v
+resultFileName	./darkparse/localParse.py	/^resultFileName = sys.argv[3] # file name for storing result$/;"	v
+ripeLookup	./whoisData/retrieveUtil.py	/^def ripeLookup(requestUrl, key, format="json"):$/;"	f
+ripeLookupThroughRequests	./whoisData/retrieveUtil.py	/^def ripeLookupThroughRequests(requestUrl, key, session, format="json"):$/;"	f
+ripeLookupThroughUrllib2	./whoisData/retrieveUtil.py	/^def ripeLookupThroughUrllib2(requestUrl, key, format="json"):$/;"	f
+ripeLoopup	./whoisData/retrieveUtil.py.bak	/^def ripeLoopup(requestUrl, key, format="json"):$/;"	f
+ripeLoopupThroughRequests	./whoisData/retrieveUtil.py.bak	/^def ripeLoopupThroughRequests(requestUrl, key, format="json"):$/;"	f
+ripeLoopupThroughUrllib2	./whoisData/retrieveUtil.py.bak	/^def ripeLoopupThroughUrllib2(requestUrl, key, format="json"):$/;"	f
+run	./whoisData/retrieveUtil.py	/^  def run(self):$/;"	m	class:RetrieveThread
+scanned	./darkparse/localParse.py	/^  scanned = 0$/;"	v
+scannedCacheFile	./darkparse/localParse.py	/^scannedCacheFile = 0$/;"	v
+sections	./whoisData/retrieveRipe.py	/^sections = configParser.sections()$/;"	v
+session	./whoisData/retrieveUtil.py.bak	/^session = requests.Session()$/;"	v
+start	./whoisData/retrieveRipe.py	/^start = time.clock()$/;"	v
+startIpInt	./convertIP2Int.py	/^  startIpInt = util.convertIP2Int(lineParts[0])$/;"	v
+startPos	./whoisData/retrieveRipe.py	/^  startPos = configParser.getint(section, "startPos")$/;"	v
+subDirs	./darkparse/localParse.py	/^subDirs = []$/;"	v
+sys	./convertIP2Int.py	/^import sys$/;"	i
+sys	./darkparse/localParse.py	/^import sys$/;"	i
+sys	./whoisData/retrieveRipe.py	/^import sys$/;"	i
+sys	./whoisData/retrieveUtil.py	/^import sys$/;"	i
+sys	./whoisData/retrieveUtil.py.bak	/^import sys$/;"	i
+threadNum	./whoisData/retrieveRipe.py	/^  threadNum  = configParser.getint(section,"threadNum")$/;"	v
+threading	./whoisData/retrieveRipe.py	/^import threading$/;"	i
+threading	./whoisData/retrieveUtil.py	/^import threading$/;"	i
+threads	./whoisData/retrieveRipe.py	/^  threads = []$/;"	v
+time	./whoisData/retrieveRipe.py	/^import time$/;"	i
+time	./whoisData/retrieveUtil.py	/^import time$/;"	i
+time	./whoisData/retrieveUtil.py.bak	/^import time$/;"	i
+types	./whoisData/retrieveUtil.py	/^import types$/;"	i
+unexist	./darkparse/localParse.py	/^  unexist = 0$/;"	v
+unexistCacheFile	./darkparse/localParse.py	/^unexistCacheFile = 0$/;"	v
+url	./whoisData/retrieveUtil.py	/^url = "http:\/\/rest.db.ripe.net\/ripe\/inetnum"$/;"	v
+urllib	./whoisData/retrieveUtil.py	/^import urllib$/;"	i
+urllib	./whoisData/retrieveUtil.py.bak	/^import urllib$/;"	i
+urllib2	./whoisData/retrieveUtil.py	/^import urllib2$/;"	i
+urllib2	./whoisData/retrieveUtil.py.bak	/^import urllib2$/;"	i
+util	./convertIP2Int.py	/^import util$/;"	i

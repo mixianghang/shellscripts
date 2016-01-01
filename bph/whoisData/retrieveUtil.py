@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-01 01:00:44
+# Last Modified: 2016-01-01 13:24:08
 ################################################
 import urllib2
 import urllib
@@ -18,6 +18,7 @@ import os
 import time
 import requests
 import threading
+import types
 class RetrieveThread(threading.Thread):
   def __init__(self, threadId, kwList, url, resultFile):
     threading.Thread.__init__(self)
@@ -40,26 +41,67 @@ class RetrieveThread(threading.Thread):
     startTime = time.time()
     for index, kw in enumerate(self.kwList):
       kw = kw.strip(" \n\r\t")
-      lookupResponse = ripeLoopupThroughRequests(self.url, kw, session=session)	
+      lookupResponse = ripeLookupThroughRequests(self.url, kw, session=session)	
       code = int(lookupResponse['code'])
       body = lookupResponse['body']
       if code != 0:
         error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.requestUrl, body, self.threadId))
       else:
-        resultFileFd.write(body)
+        convRes = convRipeLookupJson2Text(body)
+        if convRes['code'] == 0:
+            resultFileFd.write(convRes['body'])
+        else:
+            error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.requestUrl,convRes['body'], self.threadId))
+
       if index % 100 ==0:
         resultFileFd.flush()
-      if index >= 100 and index % 100 == 0:
+      if index >= 1000 and index % 1000 == 0:
         curTime = time.time()
         print "thread{1}: finish {0} kws of {2}".format(index,self.threadId, kwNum)
         print "thread{1}: finish 100 requests within {0}seconds".format(curTime - startTime, self.threadId)
         startTime = curTime
-    print "thread%d: finishing %d kws of %d" %(self.threadId, index + 1, keyNum)
+    print "thread%d: finishing %d kws of %d" %(self.threadId, index + 1, kwNum)
     resultFileFd.close()
     
 def error(errMsg):
   sys.stderr.write("{}\n".format(errMsg))
-def ripeLoopupThroughRequests(requestUrl, key, session, format="json"):
+def joinStr(*arglist):
+  args = []
+  for item in arglist:
+      args.append(item)
+  if len(args) >= 1:
+      name = args[0]
+      name = name + ":"
+      if len(name) < 15:
+          name = name + (15 - len(name)) * " "
+      args[0] = name
+  return "  ".join(args)
+def convRipeLookupJson2Text(jsonData):
+  response = {}
+  lines = []
+  decoded = json.loads(jsonData);
+  object = decoded["objects"]["object"][0];
+  if not isinstance(object, dict):
+      response['code'] = -1
+      response['body'] = "parse error"
+      return response
+  source = object['source'];
+  primaryKey = joinStr("primary-key", object['primary-key']['attribute'][0]['name'], object['primary-key']['attribute'][0]['value'])
+  lines.append(primaryKey)
+  #lines.append(joinStr("link", object['link']['href']))
+  attributes = object["attributes"]["attribute"]
+  for attribute in attributes:
+      name = attribute['name']
+      value = attribute['value']
+      type = attribute["referenced-type"] if "referenced-type" in attribute.keys() else ""
+      comment = attribute['comment'] if "comment" in attribute.keys() else ""
+      line = joinStr(name, value, type, comment)
+      lines.append(line)
+  response['code'] = 0
+  response['body'] = "\n".join(lines)
+  return response
+
+def ripeLookupThroughRequests(requestUrl, key, session, format="json"):
   response = {}
   if format == "json":
 	url = requestUrl+"/" + urllib.quote(key) + ".json"
@@ -97,7 +139,7 @@ def ripeLoopupThroughRequests(requestUrl, key, session, format="json"):
 	  response['code'] = 0
 	  response['body'] = httpResponse.content
   return response
-def ripeLoopupThroughUrllib2(requestUrl, key, format="json"):
+def ripeLookupThroughUrllib2(requestUrl, key, format="json"):
   response = {}
   if format == "json":
 	url = requestUrl+"/" + urllib.quote(key) + ".json"
@@ -126,9 +168,9 @@ def ripeLoopupThroughUrllib2(requestUrl, key, format="json"):
 	response['code'] = 0
 	response['body'] = httpResponse.read()
   return response
-def ripeLoopup(requestUrl, key, format="json"):
-  #return ripeLoopupThroughRequests(requestUrl, key, format="json")
-  return ripeLoopupThroughUrllib2(requestUrl, key, format="json")
+def ripeLookup(requestUrl, key, format="json"):
+  #return ripeLookupThroughRequests(requestUrl, key, format="json")
+  return ripeLookupThroughUrllib2(requestUrl, key, format="json")
 def main(num, kwFile, isUrlLib):
   success = 0
   failed = 0
@@ -142,11 +184,11 @@ def main(num, kwFile, isUrlLib):
   for kw in kwFd:
 	kw = kw.strip(" \n\r\t")
 	if isUrlLib == '1':
-	  response = ripeLoopupThroughUrllib2(url, kw)
+	  response = ripeLookupThroughUrllib2(url, kw)
 	  if index % 20 == 0:
 		print "urllib finish ", index, "of ", num
 	else:
-	  response = ripeLoopupThroughRequests(url, kw)
+	  response = ripeLookupThroughRequests(url, kw)
 	  if index % 20 == 0:
 		print "requests finish ", index, "of ", num
 	if response['code'] != 0:
@@ -180,4 +222,37 @@ def lineCount(filePath):
 #main(sys.argv[1], sys.argv[2], sys.argv[3])
 
 #pprint(response)
+#decide data types
+#list1 = [1,2,3,4]
+#dict1 = {"nihao":2, "wohao":1} 
+#str1 = "wohao"
+#if isinstance(dict1, dict):
+#    print "I am  a dict"
+#if isinstance(list1, list):
+#    print "i am a list"
+#if isinstance(str1, str):
+#    print "I am a str"
+#if isinstance(list1, str):
+#    print "I am a str"
 
+#test str.join
+#print "a".join(['12', "","", '13'])
+
+#assign by reference
+#str1 = 4*"23"
+#list = [str1]
+#str2 = list[0]
+#str2 = str2 + "54"
+#print str1
+#if str1 is str2:
+#    print "we are the same"
+
+#test json2text
+#url = "http://rest.db.ripe.net/ripe/person"
+#key = "GK617-RIPE"
+#session = requests.Session()
+#response = ripeLookupThroughRequests(url, key, session)
+#if response['code'] != 0:
+#    print "reques error:", response['body']
+#convRes = convRipeLookupJson2Text(response['body'])
+#print convRes['body']
