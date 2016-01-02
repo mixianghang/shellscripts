@@ -28,10 +28,12 @@ for object in "${objects[@]}"
 do
     if [ -f $sourceDir/$date/$object ]
     then
+      echo "generate keys from $sourceDir/$date/$object"
       grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$date/$object |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
     fi
     if [ -f $sourceDir/$date/$object.appended ]
     then
+      echo "generate keys from $sourceDir/$date/$object.appended"
       grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$date/$object.appended |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
     fi
     ((index++))
@@ -44,8 +46,10 @@ then
 fi
 if [ -e $resultDir/latest/person_kwlist ]
 then
+  echo "append old keylsit"
   cat $resultDir/latest/person_kwlist >> $tempDir/resultList
 fi
+echo "sort and remove duplicates"
 sort $tempDir/resultList | uniq >$tempDir/uniqList
 if [ ! -e $resultDir/$date ]
 then
@@ -56,6 +60,7 @@ then
   mkdir -p $resultDir/latest
 fi
 
+echo "save result to $resultDir/$date/person_kwlist and  $resultDir/latest/person_kwlist"
 mv $tempDir/uniqList $resultDir/$date/person_kwlist
 mv $tempDir/uniqList $resultDir/latest/person_kwlist
 rm -rf $tempDir
