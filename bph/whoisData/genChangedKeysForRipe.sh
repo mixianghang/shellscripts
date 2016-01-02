@@ -1,6 +1,9 @@
+#!/bin/bash
 if [ $# -lt 4 ]
 then
   echo "Usage source date1 date2 resultDir"
+  exit 1
+fi
 sourceDir=$1
 date1=$2
 date2=$3
