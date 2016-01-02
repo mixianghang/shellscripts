@@ -16,6 +16,11 @@ keys=('inetnum' 'inet6num' 'nic-hdl' 'organisation' 'irt' 'mntner' 'aut-num' 'as
 tempDir=$currDir/temp/genChangedForRipe
 rm -rf $tempDir
 mkdir -p $tempDir
+if [ ! \( -e $sourceDir/$date1 -a -e $sourceDir/$date2 \) ]
+then
+  echo "$sourceDir/$date1 or $sourceDir/$date2 doesn't exist"
+  exit 1
+fi
 cp -r $sourceDir/$date1 $sourceDir/$date2 $tempDir
 gzip -d $tempDir/$date1/*.gz $tempDir/$date2/*.gz
 mkdir -p $resultDir
@@ -39,6 +44,7 @@ do
     ((index++))
 done
 if [ -d "$resultDir/$date2" ]
+then
     mv $resultDir/$date2 $resultDir/${date2}_bak
 fi
 mkdir $resultDir/$date2
