@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-01 18:05:55
+# Last Modified: 2016-01-01 21:46:41
 ################################################
 import urllib2
 import urllib
@@ -45,7 +45,7 @@ class RetrieveThread(threading.Thread):
       code = int(lookupResponse['code'])
       body = lookupResponse['body']
       if code != 0:
-        error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.requestUrl, body, self.threadId))
+        error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.url, body, self.threadId))
       else:
         resultFileFd.write(body)
         #convRes = convRipeLookupJson2Text(body)
