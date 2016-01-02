@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-01 14:38:30
+# Last Modified: 2016-01-01 18:05:55
 ################################################
 import urllib2
 import urllib
@@ -41,17 +41,18 @@ class RetrieveThread(threading.Thread):
     startTime = time.time()
     for index, kw in enumerate(self.kwList):
       kw = kw.strip(" \n\r\t")
-      lookupResponse = ripeLookupThroughRequests(self.url, kw, session=session)	
+      lookupResponse = ripeLookupThroughRequests(self.url, kw, session=session, format="xml")	
       code = int(lookupResponse['code'])
       body = lookupResponse['body']
       if code != 0:
         error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.requestUrl, body, self.threadId))
       else:
-        convRes = convRipeLookupJson2Text(body)
-        if convRes['code'] == 0:
-            resultFileFd.write(convRes['body'])
-        else:
-            error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.requestUrl,convRes['body'], self.threadId))
+        resultFileFd.write(body)
+        #convRes = convRipeLookupJson2Text(body)
+        #if convRes['code'] == 0:
+        #    resultFileFd.write(convRes['body'])
+        #else:
+        #    error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.requestUrl,convRes['body'], self.threadId))
 
       if index % 100 ==0:
         resultFileFd.flush()
