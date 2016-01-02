@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-01 21:46:41
+# Last Modified: 2016-01-01 21:51:01
 ################################################
 import urllib2
 import urllib
@@ -65,7 +65,7 @@ class RetrieveThread(threading.Thread):
     resultFileFd.close()
     
 def error(errMsg):
-  sys.stderr.write("{}\n".format(errMsg))
+  sys.stderr.write("{0}\n".format(errMsg))
 def joinStr(*arglist):
   args = []
   for item in arglist:
@@ -136,7 +136,7 @@ def ripeLookupThroughRequests(requestUrl, key, session, format="json"):
 	#print httpResponse.status_code
 	if httpResponse.status_code >= 400:
 	  response["code"] = -1
-	  response["body"] = "return status codes that cannot be handled:{}".format(httpResponse.status_code)
+	  response["body"] = "return status codes that cannot be handled:{0}".format(httpResponse.status_code)
 	else:
 	  response['code'] = 0
 	  response['body'] = httpResponse.content
