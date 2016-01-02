@@ -42,8 +42,11 @@ if [ -d "$resultDir/$date2" ]
     mv $resultDir/$date2 $resultDir/${date2}_bak
 fi
 mkdir $resultDir/$date2
-rm -rf $resultDir/latest
-mkdir $resultDir/latest
+#rm -rf $resultDir/latest
+if [ ! -e $resultDir/latest ]
+then
+  mkdir $resultDir/latest
+fi
 cp -r $tempDir/result/* $resultDir/$date2/
 cp -r $tempDir/result/* $resultDir/latest/
 rm -rf $tempDir
