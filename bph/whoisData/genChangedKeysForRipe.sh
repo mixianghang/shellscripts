@@ -15,7 +15,7 @@ keys=('inetnum' 'inet6num' 'nic-hdl' 'organisation' 'irt' 'mntner' 'aut-num' 'as
 #copy source file and unzip .gz
 tempDir=$currDir/temp/genChangedForRipe
 rm -rf $tempDir
-mkdir -p $tempDir
+mkdir -p $tempDir/result
 if [ ! \( -e $sourceDir/$date1 -a -e $sourceDir/$date2 \) ]
 then
   echo "$sourceDir/$date1 or $sourceDir/$date2 doesn't exist"
