@@ -50,7 +50,7 @@ then
   cat $resultDir/latest/person_kwlist >> $tempDir/resultList
 fi
 echo "sort and remove duplicates"
-sort $tempDir/resultList | uniq >$tempDir/uniqList
+sort $tempDir/resultList | uniq > $tempDir/uniqList
 if [ ! -e $resultDir/$date ]
 then
   mkdir -p $resultDir/$date
@@ -61,6 +61,6 @@ then
 fi
 
 echo "save result to $resultDir/$date/person_kwlist and  $resultDir/latest/person_kwlist"
-mv $tempDir/uniqList $resultDir/$date/person_kwlist
-mv $tempDir/uniqList $resultDir/latest/person_kwlist
+cp $tempDir/uniqList $resultDir/$date/person_kwlist
+cp $tempDir/uniqList $resultDir/latest/person_kwlist
 rm -rf $tempDir
