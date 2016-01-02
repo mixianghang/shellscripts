@@ -27,11 +27,11 @@ for object in "${objects[@]}"
 do
     if [ -f $sourceDir/$object ]
     then
-      grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$object |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
+      grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$date/$object |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
     fi
-    if [ -f $sourceDir/$object.append ]
+    if [ -f $sourceDir/$object.appended ]
     then
-      grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$object.append |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
+      grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$date/$object.appended |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
     fi
     ((index++))
 done
