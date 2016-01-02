@@ -19,33 +19,39 @@ then
     rm -rf $tempDir
 fi
 mkdir -p $tempDir
+touch $tempDir/resultList
 
 #loop through objects
 object="inetnum"
 index=0
 for object in "${objects[@]}"
 do
-    if [ -f $sourceDir/$object ]
+    if [ -f $sourceDir/$date/$object ]
     then
       grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$date/$object |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
     fi
-    if [ -f $sourceDir/$object.appended ]
+    if [ -f $sourceDir/$date/$object.appended ]
     then
       grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$date/$object.appended |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
     fi
     ((index++))
 done
 
-if [ -f $resultDir/latest/person_kwlist ]
+if [ ! -e $tempDir/resultList ]
+then
+  echo "no result generated"
+  exit 1
+fi
+if [ -e $resultDir/latest/person_kwlist ]
 then
   cat $resultDir/latest/person_kwlist >> $tempDir/resultList
 fi
 sort $tempDir/resultList | uniq >$tempDir/uniqList
-if [ ! -d $resultDir/$date ]
+if [ ! -e $resultDir/$date ]
 then
   mkdir -p $resultDir/$date
 fi
-if [ ! -d $resultDir/latest ]
+if [ ! -e $resultDir/latest ]
 then
   mkdir -p $resultDir/latest
 fi
