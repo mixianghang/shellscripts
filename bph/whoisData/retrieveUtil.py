@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-01 21:51:01
+# Last Modified: 2016-01-01 22:57:40
 ################################################
 import urllib2
 import urllib
@@ -59,7 +59,7 @@ class RetrieveThread(threading.Thread):
       if index >= 1000 and index % 1000 == 0:
         curTime = time.time()
         print "thread{1}: finish {0} kws of {2}".format(index,self.threadId, kwNum)
-        print "thread{1}: finish 100 requests within {0}seconds".format(curTime - startTime, self.threadId)
+        print "thread{1}: finish 1000 requests within {0}seconds".format(curTime - startTime, self.threadId)
         startTime = curTime
     print "thread%d: finishing %d kws of %d" %(self.threadId, index + 1, kwNum)
     resultFileFd.close()

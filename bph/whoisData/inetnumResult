@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.131.64 - 193.113.131.95"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.131.64 - 193.113.131.95"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.131.64 - 193.113.131.95"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="GossRhq"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:01Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.131.0 - 193.113.131.31"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.131.0 - 193.113.131.31"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.131.0 - 193.113.131.31"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="BTI_BPSGATEWAY"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:02Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.130.128 - 193.113.130.255"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.130.128 - 193.113.130.255"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.130.128 - 193.113.130.255"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="btl"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:03Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.130.0 - 193.113.130.127"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.130.0 - 193.113.130.127"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.130.0 - 193.113.130.127"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="BTL-FW-Dial-Access"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:04Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.129.192 - 193.113.129.255"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.129.192 - 193.113.129.255"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.129.192 - 193.113.129.255"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="bt-global-office"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:05Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.129.176 - 193.113.129.191"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.129.176 - 193.113.129.191"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.129.176 - 193.113.129.191"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="BT-CORP-EDSP_999GPS-Leicester"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:05Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.129.160 - 193.113.129.175"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.129.160 - 193.113.129.175"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.129.160 - 193.113.129.175"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="BT-CORP-EDSP_999GPS-Inverness"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:06Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.129.144 - 193.113.129.159"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.129.144 - 193.113.129.159"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.129.144 - 193.113.129.159"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="BT -CORP-EDSP_999GPS-NEWCASTLE"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:07Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.129.128 - 193.113.129.143"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.129.128 - 193.113.129.143"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.129.128 - 193.113.129.143"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="TS-Edinburgh"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:08Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+<objects>
+<object type="inetnum">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/inetnum/193.113.129.96 - 193.113.129.127"/>
+    <source id="ripe"/>
+    <primary-key>
+        <attribute name="inetnum" value="193.113.129.96 - 193.113.129.127"/>
+    </primary-key>
+    <attributes>
+        <attribute name="inetnum" value="193.113.129.96 - 193.113.129.127"/>
+        <attribute name="netname" value="BT-CORPORATE"/>
+        <attribute name="descr" value="telecomred"/>
+        <attribute name="country" value="GB"/>
+        <attribute name="admin-c" value="BCER1-RIPE" referenced-type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person/BCER1-RIPE"/>
+        </attribute>
+        <attribute name="admin-c" value="BTCR1-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR1-RIPE"/>
+        </attribute>
+        <attribute name="tech-c" value="BTCR3-RIPE" referenced-type="role">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/role/BTCR3-RIPE"/>
+        </attribute>
+        <attribute name="status" value="ASSIGNED PA"/>
+        <attribute name="remarks" value="Please send abuse notification to btcertcc@bt.com"/>
+        <attribute name="mnt-by" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="mnt-lower" value="BTENT-MNT" referenced-type="mntner">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/mntner/BTENT-MNT"/>
+        </attribute>
+        <attribute name="changed" value="steve.a.marshall@bt.com 20031230"/>
+        <attribute name="created" value="1970-01-01T00:00:00Z"/>
+        <attribute name="last-modified" value="2003-12-30T13:02:08Z"/>
+        <attribute name="source" value="RIPE"/>
+    </attributes>
+    <tags>
+        <tag id="RIPE-USER-RESOURCE"/>
+    </tags>
+</object>
+</objects>
+<terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>
