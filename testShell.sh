@@ -29,3 +29,14 @@
 #echo $(date -v-1d +%Y%m%d%H%M%S)
 #echo $(date -v-1m +%Y%m%d%H%M%S)
 
+#test dir
+dir="bph"
+if [ -d $dir/whoisData ]
+then
+  echo $dir
+fi
+
+#test 
+#date=$1
+#date1=$(date -d "$date -1 day +%Y%m%d%H%M%S")
+#echo $date1

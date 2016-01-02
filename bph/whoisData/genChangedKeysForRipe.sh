@@ -13,7 +13,8 @@ objects=('inetnum' 'inet6num' 'role' 'organisation' 'irt' 'mntner' 'aut-num' 'as
 keys=('inetnum' 'inet6num' 'nic-hdl' 'organisation' 'irt' 'mntner' 'aut-num' 'as-set' 'as-block' 'domain' 'route-set')
 
 #copy source file and unzip .gz
-tempDir=$currDir/temp/genChanged
+tempDir=$currDir/temp/genChangedForRipe
+rm -rf $tempDir
 mkdir -p $tempDir
 cp -r $sourceDir/$date1 $sourceDir/$date2 $tempDir
 gzip -d $tempDir/$date1/*.gz $tempDir/$date2/*.gz
@@ -25,18 +26,26 @@ index=0
 for object in "${objects[@]}"
 do
     echo $object ${keys[$index]}
-    grep -E -i "^${keys[$index]}:|last-modified:" ./$tempDir/$date1/ripe.db.$object | sed -r 's/[^ ]+[ ]+(.*)/\1/g' | awk 'BEGIN{FS=" "; line=""}{line1=$0; if (getline <= 0){ print line1} else {print line1 "\t" $0}}' | sort | uniq >$tempDir/${object}_${date1}
-    grep -E -i "^${keys[$index]}:|last-modified:" ./$tempDir/$date2/ripe.db.$object | sed -r 's/[^ ]+[ ]+(.*)/\1/g' | awk 'BEGIN{FS=" "; line=""}{line1=$0; if (getline <= 0){ print line1} else {print line1 "\t" $0}}' | sort | uniq >$tempDir/${object}_${date2}
-    diff -iEBb $tempDir/${object}_${date1} $tempDir/${object}_${date1} >  $tempDir/diff_${object}_${date1}_${date2}
+    grep -E -i "^${keys[$index]}:|last-modified:" $tempDir/$date1/ripe.db.$object | sed -r 's/[^ ]+[ ]+(.*)/\1/g' | awk 'BEGIN{FS=" "; line=""}{line1=$0; if (getline <= 0){ print line1} else {print line1 "\t" $0}}' | sort | uniq >$tempDir/${object}_${date1}
+    grep -E -i "^${keys[$index]}:|last-modified:" $tempDir/$date2/ripe.db.$object | sed -r 's/[^ ]+[ ]+(.*)/\1/g' | awk 'BEGIN{FS=" "; line=""}{line1=$0; if (getline <= 0){ print line1} else {print line1 "\t" $0}}' | sort | uniq >$tempDir/${object}_${date2}
+    diff -iEBb $tempDir/${object}_${date1} $tempDir/${object}_${date2} >  $tempDir/diff_${object}_${date1}_${date2}
 #include changed and appended
-    grep -E -i "^>" $tempDir/diff_${object}_${date1}_${date2} | sed -r 's/> (.*)/\1/g' | awk 'BEGIN{FS="\t"}{print $1}' >$resultDir/${object}_kwlist_appended
+    grep -E -i "^>" $tempDir/diff_${object}_${date1}_${date2} | sed -r 's/> (.*)/\1/g' | awk 'BEGIN{FS="\t"}{print $1}' >$tempDir/result/${object}_kwlist_appended
 #include changed and deleted
-    grep -E -i "^<" $tempDir/diff_${object}_${date1}_${date2} | sed -r 's/< (.*)/\1/g' | awk 'BEGIN{FS="\t"}{print $1}' >$resultDir/${object}_kwlist_deleted
+    grep -E -i "^<" $tempDir/diff_${object}_${date1}_${date2} | sed -r 's/< (.*)/\1/g' | awk 'BEGIN{FS="\t"}{print $1}' >$tempDir/result/${object}_kwlist_deleted
     #rm -rf $tempDir/${object}_${date1}
     #rm -rf $tempDir/${object}_${date2}
     #rm -rf $tempDir/diff_${object}_${date1}_${date2}
     ((index++))
 done
-#rm -rf $tempDir
+if [ -d "$resultDir/$date2" ]
+    mv $resultDir/$date2 $resultDir/${date2}_bak
+fi
+mkdir $resultDir/$date2
+rm -rf $resultDir/latest
+mkdir $resultDir/latest
+cp -r $tempDir/result/* $resultDir/$date2/
+cp -r $tempDir/result/* $resultDir/latest/
+rm -rf $tempDir
 
 
