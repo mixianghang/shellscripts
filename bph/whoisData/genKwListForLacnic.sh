@@ -29,7 +29,7 @@ do
 done
 
 #generate person kwlist 
-grep -E -i "^(owner-c|tech-c|abuse-c):" $sourceDir/$date/$object | awk '{if (NF >= 2) {print $2}}' | sort | uniq > $resultDir/$date/person_kwlist
+grep -E -i "^(owner-c|tech-c|abuse-c):" $tempDir/lacnic.dp | awk '{if (NF >= 2) {print $2}}' | sort | uniq > $resultDir/$date/person_kwlist
 
 cp -r $resultDir/$date/* $resultDir/latest
 rm -rf $tempDir
