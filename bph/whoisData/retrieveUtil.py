@@ -39,6 +39,7 @@ class RetrieveThread(threading.Thread):
     resultFileFd  = open(self.resultFile, "a")
     kwNum = len(self.kwList)
     startTime = time.time()
+    index = -1
     for index, kw in enumerate(self.kwList):
       kw = kw.strip(" \n\r\t")
       lookupResponse = ripeLookupThroughRequests(self.url, kw, session=session, format="xml")	
