@@ -19,8 +19,8 @@ scriptDir=$(pwd)
 
 #generage key list
 echo "start to generate a key list of objects"
-echo "$scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir"
-$scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir
+echo "$scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir $date"
+$scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir $date
 
 #run retrieve process
 rm -rf  $resutlDataDir/latest/*

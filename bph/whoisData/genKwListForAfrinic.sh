@@ -1,12 +1,12 @@
 #!/bin/bash
-if [ $# -lt 2 ]
+if [ $# -lt 3 ]
 then
-    echo "Usage sourceDir resultDir"
+    echo "Usage sourceDir resultDir date"
     exit 1
 fi
 sourceDir=$1
 resultDir=$2
-date=$(date +%Y%m%d)
+date=$3
 #cmd="grep -E -i  '^$kw:' $sourceDir/$date/ripe.db.$type | sed -r 's/$kw:[ ]+(.*)/\1/g' > $resultDir/$date/${type}_kwlist"
 mkdir -p $resultDir/$date
 mkdir -p $resultDir/latest
