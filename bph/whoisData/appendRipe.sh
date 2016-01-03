@@ -23,6 +23,7 @@ echo "$scirptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir
 $scirptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir
 
 #run retrieve process
+rm -rf  $resutlDataDir/latest/*
 echo "start to retrieve objects for the key list"
 if [ ! -e $scriptDir/log ]
 then
