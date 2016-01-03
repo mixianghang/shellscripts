@@ -14,7 +14,7 @@ fi
 
 bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/RIPE"
 keysDir="/data/salrwais/BPH/API/RIPE/Keys"
-resutlDataDir="/data/salrwais/BPH/API/RIPE/Data"
+resultDataDir="/data/salrwais/BPH/API/RIPE/Data"
 scriptDir=$(pwd)
 
 #generage changed key list
@@ -29,7 +29,7 @@ if [ ! -e $scriptDir/log ]
 then
   mkdir $scriptDir/log
 fi
-logError=$scriptDir/log/logErrorForAppendRipe
+logError=$scriptDir/log/logErrorForAppendRipe_$date
 echo "$scriptDir/retrieveRipe.py $scriptDir/appendConfig.cfg 2>$logError"
 $scriptDir/retrieveRipe.py $scriptDir/appendConfig.cfg 2>$logError
 

@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-01 22:57:40
+# Last Modified: 2016-01-02 21:42:24
 ################################################
 import urllib2
 import urllib
@@ -211,6 +211,7 @@ def lineCount(filePath):
   if not os.path.exists(filePath):
 	  return -1
   with open(filePath) as fileFd:
+      i = -1
       for i, l in enumerate(fileFd):
 		  pass
       return i + 1

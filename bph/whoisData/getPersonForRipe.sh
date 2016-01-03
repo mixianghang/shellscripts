@@ -9,7 +9,7 @@ if [ ! -e $scriptDir/log ]
 then
   mkdir $scriptDir/log
 fi
-logError=$scriptDir/log/logErrorForPersonRipe
+logError=$scriptDir/log/logErrorForPersonRipe_$date
 echo "$scriptDir/retrieveRipe.py $scriptDir/personConfig.cfg 2>$logError"
 $scriptDir/retrieveRipe.py $scriptDir/personConfig.cfg 2>$logError
 
