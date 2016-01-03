@@ -19,8 +19,8 @@ scriptDir=$(pwd)
 
 #generage changed key list
 echo "start to generate a key list of changed objects"
-echo "$scirptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir"
-$scirptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir
+echo "$scriptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir"
+$scriptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir
 
 #run retrieve process
 rm -rf  $resutlDataDir/latest/*
