@@ -9,7 +9,7 @@ resultDir=$2
 date=$(date +%Y%m%d)
 #cmd="grep -E -i  '^$kw:' $sourceDir/$date/ripe.db.$type | sed -r 's/$kw:[ ]+(.*)/\1/g' > $resultDir/$date/${type}_kwlist"
 mkdir -p $resultDir/$date
-mkdir -p $resultDir/lastest
+mkdir -p $resultDir/latest
 gzip -d $sourceDir/$date/*.gz
 
 type="inet6num"
@@ -70,4 +70,4 @@ kw="inetnum"
 echo $type $kw
 grep -E -i  "^$kw:" $sourceDir/$date/ripe.db.$type | sed -r "s/$kw:[ ]+(.*)/\1/g" > $resultDir/$date/${type}_kwlist
 
-cp -r $resultDir/$date/* $resultDir/lastest
+cp -r $resultDir/$date/* $resultDir/latest
