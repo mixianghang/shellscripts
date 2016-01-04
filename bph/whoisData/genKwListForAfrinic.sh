@@ -18,9 +18,9 @@ fi
 mkdir -p $tempDir
 cp $sourceDir/$date/afrinic.db.gz $tempDir/
 gzip -d $tempDir/afrinic.db.gz
-objects=("person" "role" "organisation" "irt")
-keys=("nic-hdl" "nic-hdl" "organisation" "irt")
-object="person"
+objects=("organisation" "irt")
+keys=("organisation" "irt")
+object="organisation"
 index=0
 for object in ${objects[@]}
 do
@@ -29,5 +29,7 @@ do
     grep -E -i  "^$kw:" $tempDir/afrinic.db | sed -r "s/$kw:[ ]+(.*)/\1/g" > $resultDir/$date/${object}_kwlist
 done
 
+#person and role
+grep -E -i  "^nic-hdl:" $tempDir/afrinic.db | sed -r "s/nic-hdl:[ ]+(.*)/\1/g" > $resultDir/$date/person_role_kwlist
 cp -r $resultDir/$date/* $resultDir/latest
 rm -rf $tempDir
