@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-04 21:47:08
+# Last Modified: 2016-01-05 16:33:37
 ################################################
 import urllib2
 import urllib
@@ -292,3 +292,23 @@ def lacnicLookupThroughRequests(requestUrl, key, session):
 	  response['code'] = 0
 	  response['body'] = httpResponse.content
   return response
+def initSession(session):
+  if not isinstance(session, requests.Session):
+      print "cannot init a object that is not a Session"
+      return -1
+  headers={
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+      "Upgrade-Insecure-Requests": 1,
+      "UserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36",
+      "Accept-Encoding": "gzip, deflate, sdch",
+      "Accept-Language": "en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4"
+  }
+  cookies={
+      "cookies-accepted": "accepted"
+  }
+  session.headers.update(headers)
+  session.cookies.update(cookies)
+  return 0
+#session = requests.Session()
+#initSession(session)
+#pprint(session.get("http://rdap.db.ripe.net/entity/GK617-RIPE?unfiltered"))

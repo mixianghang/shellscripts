@@ -1,0 +1,4085 @@
+{
+  "handle" : "RDR220-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RGJ de Rijk" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "NL"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31302321052" ], [ "email", { }, "text", "admin@vogelparadijsrijk.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "AS286-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR220-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR220-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-01-22T14:30:16Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR220-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR221-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RJ de RuijsserMartens" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "NL"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31117348264" ], [ "email", { }, "text", "info@hoteldevriendschap.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "AS286-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR221-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR221-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-02-12T02:11:43Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR221-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR228-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DE ROSA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SOCIETA' DE ROSA DI ANTONINO E RAFFAELE DE ROSA SNC\nVIA CAPO 1\n80067 SORRENTO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39818783032" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39818071818" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "INTERB-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR228-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR228-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-03-19T19:47:41Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR228-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR229-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DE ROSA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SOCIETA' DE ROSA DI ANTONINO E RAFFAELE DE ROSA SNC\nVIA CAPO 1\n80067 SORRENTO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39818071818" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39817221111" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "INTERB-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR229-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR229-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-03-20T15:30:02Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR229-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR22-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Roberto De Rossi" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Dedalomedia Interactive Srl\nVia Borgo Padova, 170\nI- 35013 Cittadella (PD)\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 49 9414411" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 49 9414430" ], [ "email", { }, "text", "derossi@dedalomedia.it" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR22-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR22-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2001-09-22T04:54:39Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR22-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR230-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DE ROSA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SOCIETA' DE ROSA DI ANTONINO E RAFFAELE DE ROSA SNC\nVIA CAPO 1\n80067 SORRENTO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39818783032" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39817221111" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "INTERB-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR230-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR230-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-03-20T15:30:03Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR230-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR231-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RG de Ruyter" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "NL"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31204411400" ], [ "email", { }, "text", "info@jumpers.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "AS286-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR231-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR231-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-03-21T00:34:57Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR231-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR232-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Ruiter" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Bevelandseweg 3\n1703 AZ HEERHUGOWAARD"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31725312321" ], [ "email", { }, "text", "r.deruiter@ggznhn.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "ZIGGO-AUTOREG1",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR232-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR232-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-03-25T16:24:57Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR232-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR233-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Regt" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "NL"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31228516522" ], [ "email", { }, "text", "trendcorner@xs4all.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "AS286-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR233-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR233-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-04-02T00:12:15Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR233-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR234-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RBD de Roo" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "NL"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31306870063" ], [ "email", { }, "text", "koosderoo@kpnmail.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "AS286-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR234-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR234-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-04-03T12:27:39Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR234-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR235-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Roos" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "NL"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31152122723" ], [ "email", { }, "text", "bloemenkoos@gmail.com" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "AS286-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR235-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR235-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-04-14T02:08:51Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR235-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR236-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Ruijter" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "NL"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31104167200" ], [ "email", { }, "text", "roderuijter@hotmail.com" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "AS286-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR236-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR236-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-06-01T00:55:39Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR236-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR237-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Roel de Ridder" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Warandelaan 2\n4904 PC OOSTERHOUT"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31162489345" ], [ "email", { }, "text", "R.de.Ridder@equalit.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "ZIGGO-AUTOREG1",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR237-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR237-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-06-02T10:09:05Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR237-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR239-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DE ROSA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "VIA PERRERO 5,\nTORINO TO\nIT"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 3297382258" ], [ "email", { }, "text", "raffaela.derosa@gmail.com" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "FASTWEB-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR239-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR239-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-06-22T14:40:09Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR239-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR240-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE ROSSI" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "VIA POLA 19\nTORINO TO\nIT"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 011337155" ], [ "email", { }, "text", "derossi@gdrcopyng.it" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "FASTWEB-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR240-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR240-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-07-23T10:30:15Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR240-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR242-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICCARDO DAVIDE ROTA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SEI ROTA & C. SRL\nVIA MILANO 19\n20060 LISCATE\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39295420161" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39295420162" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "INTERB-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR242-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR242-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-10-16T17:21:04Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR242-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR244-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RENE D RASMUSSEN" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Blomstervaenget Sb 758\nBlomstervaenget 1\n4550 Asnaes\nDK"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+45 59650002" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "TDK-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR244-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR244-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-12-10T01:35:47Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR244-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR25-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Raffaele Di Razza" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNE DI POZZUOLI\nV. VIGNA 1\n80078 POZZUOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 3477601565" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 3477601565" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR25-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR25-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2003-06-11T22:37:48Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR25-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR26-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Romanov Dmitry R" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "115054 Russia Moscow\nKosmodamianskaya nab. 52/3, Avaya"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+7 495 3636725" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+7 495 3636712" ], [ "email", { }, "text", "dromanov@avaya.com" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR26-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR26-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-01-25T13:24:19Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR26-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR27-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Rossella Da Rold" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "UNIFARCO SRL\nVIA CAL LONGA 62\n32030 S. GREGORIO NELLE ALPI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 0437806192" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 0437806192" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR27-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR27-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2003-06-18T16:07:09Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR27-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR29-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Ries" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "DQA Pharma BV\nWEELWG 4\n4323LR ELLEMEET\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)111-672755" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+31 (0)111-671204" ], [ "email", { }, "text", "r.deries@dqapharma.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR29-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR29-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-12-11T09:32:04Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR29-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR2-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Rob de Ruiter" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Camozzi Benelux Bv\nDe Vijf Boeken 1g\nNL-2911 BL Nieuwekerk aan den IJssel\nThe Netherlands"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 180 316677" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR2-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR2-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2001-09-22T01:20:19Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR2-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR31-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Raffaele Di Razza" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNE DI POZZUOLI\nVIA ANTONINO PIO 1\n80078 POZZUOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 0818551911" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 0818551911" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR31-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR31-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2003-07-05T03:59:35Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR31-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR32-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICCARDO DA RIENZO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ALLTEL SPA\nVL. EUROPA 175\n00100 ROMA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 3471451390" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 3471451390" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR32-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR32-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2003-08-14T09:59:30Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR32-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR33-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROSANNA DI ROCCO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MPI-DST-D.G. PERSONALE DELLA SCUOLA E DELLA AMMINISTRAZIONE\nVIA MILANO 58\n65122 PESCARA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 0854210598" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR33-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR33-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2003-08-29T18:58:04Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR33-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR34-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICCARDO DA RIENZO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ALLTEL SPA\nVIA MOLINO ROSSO 8\n40026 IMOLA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 3471451390" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 3471451390" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR34-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR34-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2003-09-12T12:46:14Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR34-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR35-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTA DALLA RAGIONE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MPI-DST-D.G. PERSONALE DELLA SCUOLA E DELLA AMMINISTRAZIONE\nVIA SCARFOGLIO 35\n65100 PESCARA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 08567422" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR35-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR35-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2003-10-16T16:11:02Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR35-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR36-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DELLA RAGIONE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "UZZAUTO\nSTRADA SANNITICA KM 9.200 N? 87\n80021 AFRAGOLA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39818523036" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR36-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR36-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2003-12-09T22:00:24Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR36-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR37-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DELLA RAGIONE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "UZZAUTO\nSTRADA SANNITICA KM 9.200 N? 87\n80021 AFRAGOLA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39818523036" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR37-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR37-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2003-12-09T22:00:25Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR37-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR38-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DAVINI R" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MULTIMEDIA INFORMATICA DI DAVINI ROBERTO & C. SAS\nVIA DELLA CHIESA TRAVERSA 1\n55100\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39583462467" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39583495188" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR38-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR38-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-02-08T19:53:50Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR38-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR39-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DAVINI R" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MULTIMEDIA INFORMATICA DI DAVINI ROBERTO & C. SAS\nVIA DELLA CHIESA TRAVERSA 1\n55100 LUCCA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39487648817" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39583495188" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR39-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR39-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-02-08T19:53:51Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR39-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR40-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DI RAZZA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNEDIPOZZUOLI\nVIA VIRGILIO 1\n80078 POZZUOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39498805418" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR40-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR40-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-02-09T18:18:33Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR40-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR41-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DI RAZZA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNEDIPOZZUOLI\nVIA VIRGILIO 1\n80078 POZZUOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39498805418" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR41-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR41-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-02-09T18:18:34Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR41-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR44-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DI RAZZA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNEDIPOZZUOLI\nVIA VIRGILIO 1\n80078 POZZUOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39498805418" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39818665437" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR44-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR44-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-03-13T03:13:29Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR44-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR45-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RODOLFO DE ROSA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MA.DE.R. S R L\nNAPOLI\n80001\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39817314758" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39817314758" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR45-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR45-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-05-15T10:34:07Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR45-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR46-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RODOLFO DE ROSA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MA.DE.R. S R L\nNAPOLI\n80001\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39817314758" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39817314758" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR46-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR46-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-05-15T10:34:08Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR46-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR47-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Romana Diego Rana" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "PRODEO srl\nvia della Comunita' Europea 21\nI-70052 Bisceglie (Ba)"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 080 3929129" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 080 3992385" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR47-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR47-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2001-09-22T04:20:14Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR47-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR48-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Robert de Ridder" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Boels Verleih GmbH\nWeststr. 42\n40721 Hilden\nDE"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31464592129" ], [ "email", { }, "text", "robert.deridder@boels.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "DTAG-NIC",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR48-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR48-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-04-10T10:17:48Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR48-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR49-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DELLA ROSA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNE DI SAN GIORGIO A LIRI\nVIA ROMA SNC\n03047 S GIORGIO A LIRI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39776910078" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39776910121" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR49-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR49-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-06-23T04:36:08Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR49-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR50-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DELLA ROSA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNE DI SAN GIORGIO A LIRI\nVIA ROMA SNC\n03047 S GIORGIO A LIRI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39776910078" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39776910121" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR50-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR50-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-06-23T04:37:06Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR50-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR51-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RENZO DI RUSSO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "IAL CISL ABRUZZO\nVIA ATERNO 260\n65100 PESCARA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 0858543542" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 085432161" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR51-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR51-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-06-23T07:56:59Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR51-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR53-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Reus" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Cito Automobielbedrijf BV\nSonoystraat 3\n3039ZR rotterdam\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)10-4662536" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+31 (0)10-2439070" ], [ "email", { }, "text", "cito@chello.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR53-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR53-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-08-17T09:39:35Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR53-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR54-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE RE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MONTEVERDI DE RE' DI DE RE' ROBERTO\nVIA FOLLO SNC\n43041 BEDONIA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39525826484" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39525826484" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR54-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR54-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-10-06T09:26:05Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR54-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR55-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE RE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MONTEVERDI DE RE' DI DE RE' ROBERTO\nVIA FOLLO SNC\n43041 BEDONIA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39525826484" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39525826484" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR55-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR55-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-10-06T09:26:05Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR55-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR56-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Rijvers" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Kampers Natuursteen BV\nEdisonstraat 1LDS\n3261LD Oud Beijerland\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)186-649519" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+31 (0)186-615013" ], [ "email", { }, "text", "info@kampersnatuursteen.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR56-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR56-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-10-29T14:45:24Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR56-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR58-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE RE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ANOXIDALL S.R.L.\nVIA FORGARIA 2\n33078 S. VITO AL TAGLIAMENTO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39438388098" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+3943485384" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR58-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR58-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-11-08T19:18:45Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR58-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR59-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE RE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ANOXIDALL S.R.L.\nVIA FORGARIA 2\n33078 S. VITO AL TAGLIAMENTO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39438388098" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+3943485384" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR59-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR59-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-11-08T19:18:47Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR59-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR61-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DI RAZZA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNE DI POZZUOLI\nVIA VIRGILIO 1\n80078 POZZUOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39498805418" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39818665437" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR61-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR61-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-12-13T16:54:11Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR61-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR62-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DI RAZZA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNE DI POZZUOLI\nVIA VIRGILIO 1\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39498805418" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39818665437" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR62-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR62-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2004-12-13T16:54:12Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR62-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR64-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAPHAEL DUBOS RICHARD" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "KESYS\n6 rue Barbes\n92300\nLEVALLOIS PERRET"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+33140898980" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+33140898999" ], [ "email", { }, "text", "Richard.raphael-dubos@kesys.fr" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "RAIN-TRANSPAC",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR64-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR64-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-06-02T13:59:40Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR64-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR65-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAPHAEL DUBOS Richard" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "NEXONIA\n9 rue Robert Schumann\n77330\nOzoir la Ferriere"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+33 164407907" ], [ "email", { }, "text", "Richard.Raphael-Dubos@nexonia.net" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "RAIN-TRANSPAC",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR65-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR65-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-07-23T09:18:35Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR65-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR66-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Robert Dejardin Robert" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "FRANCE TELECOM UIC MP\n93 Rue Felix Pyat\nMarseille\n13003\nFR"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+33 4 91 95 33 00" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+33 4 91 95 33 01" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "OLEANE-NOC",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR66-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR66-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2005-01-14T15:30:04Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR66-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR67-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DI RAZZA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNE DI POZZUOLI\nVIA VIRGILIO 1\n80078 POZZUOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 3498805418" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 0818665437" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR67-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR67-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2005-01-20T05:48:28Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR67-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR72-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Reus" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Mailvision BV I O\nDe Huchtstraat 23\n1327EB almere\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)36-5374444" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+31 (0)36-5382299" ], [ "email", { }, "text", "info@mailvision-int.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR72-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR72-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2005-03-15T08:15:17Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR72-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR76-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Ruiter" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : ""
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 35 6946907" ], [ "email", { }, "text", "inkoop@computerPlan.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR76-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR76-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2005-09-20T09:05:27Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR76-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR77-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Rene Davis Ramirez" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "FREYSSINET ITALIA SRL\nvia bona 101\nI- 00100 Roma RM\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 0680687275" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 0680687275" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR77-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR77-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2001-09-22T09:28:57Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR77-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR78-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DEL RIO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "C/ FERRAZ, 7\nMADRID - SPAIN"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+34 902998534" ], [ "email", { }, "text", "rdelrio@shl.es" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "MNT-PROV-ONO",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR78-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR78-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2014-05-09T09:44:21Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR78-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR7-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RAFFAELE DI RAZZA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "COMUNE DI POZZUOLI\nVIA CELLE 1\nI- 80078 POZZUOLI (na)\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 0813031373" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 0813031373" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR7-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR7-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2002-01-11T16:09:21Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR7-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR80-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DI ROCCO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ZINANNI SERVICE SAS DI GIACOMO DI ROCCO & C.\nVIA MARCONI 112\n51028\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39573622598" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39573631230" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR80-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR80-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-11-03T09:05:50Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR80-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR81-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DI ROCCO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ZINANNI SERVICE SAS DI GIACOMO DI ROCCO & C.\nVIA MARCONI 112\n51028 S. MARCELLO PISTOIESE\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39357012051" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39573631230" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR81-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR81-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-11-03T09:05:51Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR81-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR82-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROSE DE ROSE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "AGENZIA TERRITORIALE PER LA CASA DELLA PROVINCIA DI NOVARA\nVIA BOSCHI 2\n28100\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39321445147" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+393214451" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR82-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR82-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-12-04T07:07:15Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR82-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR83-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROSE DE ROSE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "AGENZIA TERRITORIALE PER LA CASA DELLA PROVINCIA DI NOVARA\nVIA BOSCHI 2\n28100 NOVARA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39321445147" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+393214451" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR83-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR83-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-12-04T07:07:15Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR83-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR84-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE RE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ANOXIDALL S.R.L.\nVIA FORGARIA 2\n33078 S. VITO AL TAGLIAMENTO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39355736902" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+3943485384" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR84-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR84-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-02-04T03:27:48Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR84-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR85-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE RE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ANOXIDALL S.R.L.\nVIA FORGARIA 2\n33078 S. VITO AL TAGLIAMENTO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39355736902" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+3943485384" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR85-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR85-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-02-04T03:27:49Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR85-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR86-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Reformdrogist de Regenboog" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Reformdrogist De Regenboog\nWALDHOORNPLN 9\n2287EH RYSWYK ZH\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)70-3938181" ], [ "email", { }, "text", "info@reformdrogistderegenboog.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR86-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR86-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-03-16T08:45:15Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR86-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR87-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Ruiter" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "de Ruiter\nGRONAUSESTR 1225\n7534AH ENSCHEDE\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)53-4611738" ], [ "email", { }, "text", "info@coenpots.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR87-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR87-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-05-05T13:26:14Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR87-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR89-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RT DE Rijter" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "De Beurs\nGRT KERKPLN 2\n8011PK ZWOLLE\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)38-4222048" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+31 (0)38-4541167" ], [ "email", { }, "text", "robderijter@hotmail.com" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR89-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR89-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-05-15T08:55:12Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR89-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR91-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Ruiter" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Desimo BV\nCELSIUSWG 35\n8912AM LEEUWARDEN\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)58-2127325" ], [ "email", { }, "text", "janrichard@desimo.nl" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR91-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR91-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-07-12T08:52:21Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR91-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdR92-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "R de Rond" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Edelveen NFE\nOUDENDK 3KTR\n6744PT EDERVEEN\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)318-576737" ], [ "email", { }, "text", "info@edelveen.com" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdR92-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdR92-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-09-06T10:29:10Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdR92-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR94-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROMEO DI RUSSO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "DI RUSSO S.R.L.\nVIA UNITA' D'ITALIA SNC\n04023 FORMIA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39771771720" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39771771720" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR94-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR94-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2009-01-19T19:05:56Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR94-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR97-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE RE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MONTEVERDI DE RE' DI DE RE' ROBERTO\nVIA FOLLO SNC\n43041 BEDONIA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+390525826484" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+390525826484" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR97-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR97-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-03-15T19:26:49Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR97-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR98-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DI ROCCO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ZINANNI SERVICE SAS DI GIACOMO DI ROCCO C.\nVIA MARCONI 112\n51028 S. MARCELLO PISTOIESE\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+390573622598" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+390573631230" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR98-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR98-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-03-16T10:31:55Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR98-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR99-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROMEO DI RUSSO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "DI RUSSO S.R.L.\nVIA UNITA' D'ITALIA SNC\n04023 FORMIA\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+3936765007" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39771771720" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR99-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR99-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2009-01-19T19:05:56Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR99-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDR9-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Rita Da Re" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SERVIZI TREVISO SRL\nRITA DA RE\nI- 31029 VITTORIO VENETO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 0423554171" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39 0423554171" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDR9-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDR9-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2002-02-22T16:55:31Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDR9-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDRC-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RD Medias Ripe Contact" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "6 rue de Toulouse\n13005 Marseille"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+33491470621" ], [ "email", { }, "text", "ripe@rdmedias.com" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "RD35334-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDRC-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDRC-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2011-05-31T10:28:07Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDRC-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDRD1-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Ray Dematteis Ray Dematteis" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "News Corp\n1 Virginia Street\nE98 1TH London\nGB"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+1 614 723-7205" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "EU-IBM-NIC-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDRD1-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDRD1-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-12-18T17:05:22Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDRD1-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDRD5-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RIZZI DANIELA RIZZI DANIELA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "VIA BRESCIA, 33 - TORRI DI QUARTESOLO VIA BRESCIA, 33 - TORRI DI QUARTESOLO VIA BRESCIA, 33 - TORRI DI QUARTESOLO\nTEOLO PD\nIT"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 3428291200" ], [ "email", { }, "text", ": 3428291200 FAX: E-MAIL: ALESSANDRA.MACRINI@OMEGATEAMSRL.IT" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "FASTWEB-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDRD5-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDRD5-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2015-11-06T11:30:11Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDRD5-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "rdrf1-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "roberto da rin fioretto" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "via d ronzon 16 d\n32040 vigo di cadore (BL)\nIT"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39 3203073806" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/rdrf1-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/rdrf1-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-10-13T22:01:57Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/rdrf1-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RD-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Robert Depenbrock" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "Ingeborg-Bachmann Strasse 25\n89134 Blaustein\nGermany"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+49 179 2118171" ], [ "email", { }, "text", "robert@bay13.de" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "BAY13-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RD-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RD-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2005-05-31T11:34:52Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RD-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDRS2-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DEL ROSARIO SANCHEZ" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "C/ SANT CRIST, 1\nCABRILS (BARCELONA)\nSpain"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+34902440810" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+34937538330" ], [ "email", { }, "text", "r.delrosario@krosconsulting.es" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "ABRARED-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDRS2-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDRS2-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2009-05-20T17:22:17Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDRS2-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS100",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Rumen D. Svobodnikov" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "7A Druzhba Str., Office 1\n9010 Varna\nBulgaria"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+359 52 303218" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+359 52 307990" ], [ "email", { }, "text", "rumen@telecoms.bg" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "entities" : [ {
+    "handle" : "TELECOMS-NOC-MNT",
+    "roles" : [ "registrant" ]
+  } ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS100?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS100?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2006-11-04T06:39:19Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS100?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS100-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROCCO DI SUMA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "DE.RO. DI SUMA ROCCO\nVIA DELL AURIGA 30\n80100 NAPOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39815247341" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39815247341" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS100-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS100-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-02-08T20:22:20Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS100-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS101-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROCCO DI SUMA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "DE.RO. DI SUMA ROCCO\nVIA DELL AURIGA 30\n80100 NAPOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39815247341" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39815247341" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS101-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS101-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-02-08T20:22:21Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS101-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS102-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROCCO DI SUMA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "DE.RO. DI SUMA ROCCO\nVIA DELL AURIGA 30\nPOZZUOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39815247341" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39815247341" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS102-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS102-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-02-12T11:58:42Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS102-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS103-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROCCO DI SUMA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "DE.RO. DI SUMA ROCCO\nVIA DELL AURIGA 30\nPOZZUOLI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39815247341" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39815247341" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS103-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS103-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-02-12T11:58:42Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS103-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS104-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICARDO DE STEFANO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "D.S.R. SRL\nVIA MANIAGO 4\n33097 SPILIMBERGO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+3942751338" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39427751338" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS104-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS104-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-03-14T09:23:57Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS104-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS105-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICARDO DE STEFANO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "D.S.R. SRL\nVIA MANIAGO 4\n33097 SPILIMBERGO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39356929890" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39427751338" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS105-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS105-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-03-14T09:23:58Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS105-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS106-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE SIMONE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "BREMA ICE MAKERS SPA\nVIA DELL'INDUSTRIA 10\n20020 VILLA CORTESE\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+390331434811" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+390331433833" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS106-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS106-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-03-15T20:12:48Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS106-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS109-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICARDO DE STEFANO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SIVACOM S R L\nVIA MARINELLI 1 3\n33033 CODROIPO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+393569529890" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39432913260" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS109-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS109-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-04-11T10:13:19Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS109-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS110-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICARDO DE STEFANO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SIVACOM S R L\nVIA MARINELLI 1 3\n33033 CODROIPO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+393569529890" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39432913260" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS110-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS110-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-04-11T10:13:20Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS110-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS111-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RADIO DOLOMITI SRL" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "I-0461 Trento"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39-0461-231511" ], [ "email", { }, "text", "hostmaster@tuttopmi.it" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS111-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS111-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2001-09-22T08:48:04Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS111-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS112-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE SIMONE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "BREMA ICE MAKERS SPA\nVIA DELL'INDUSTRIA 10\n20020\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39331434811" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39331433833" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS112-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS112-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-04-24T09:37:45Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS112-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS113-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DE SIMONE" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "BREMA ICE MAKERS SPA\nVIA DELL'INDUSTRIA 10\n20020 VILLA CORTESE\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39331434811" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39331433833" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS113-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS113-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-04-24T09:37:47Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS113-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS115-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DI SCIPIO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ASSUT EUROPE SPA\nVIA ZONA INDUSTRIALE 1\n67062 MAGLIANO DE MARSI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39863515000" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39863515000" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS115-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS115-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-11-28T08:05:50Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS115-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RdS116-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Rvan de Sande" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "JCL Netherlands\nMEERHEIDE 39\n5521DZ EERSEL\nNETHERLANDS"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+31 (0)40-2082116" ], [ "email", { }, "text", "roel.vandesande@jcl-netherlands.com" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RdS116-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RdS116-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2007-06-14T13:15:40Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RdS116-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS11-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RENATO DELLA SCIUCCA" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "MACCHINE INDUSTRIALI MAIA SPA\nDELL INDUSTRIA SNC\n64025 PINETO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39123456" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39123456" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS11-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS11-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-01-15T16:28:22Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS11-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS120-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "ROBERTO DI SCIPIO" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "ASSUT EUROPE SPA\nVIA ZONA INDUSTRIALE 1\n67062 MAGLIANO DE MARSI\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39863515000" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39863515000" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS120-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS120-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-11-28T08:05:51Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS120-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS121-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICCARDO DE STEFANI" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SERVIZI SOLIDARIETA E LAVORO SRL UNIPERSONALE\nVIA TRE MARTIRI 87 A\n45100 ROVIGO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39425204213" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39425204227" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS121-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS121-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-12-15T21:07:54Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS121-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS122-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICCARDO DE STEFANI" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SERVIZI SOLIDARIETA E LAVORO SRL UNIPERSONALE\nVIA TRE MARTIRI 87 A\n45100 ROVIGO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39425204213" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39425204227" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS122-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS122-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-12-15T21:07:55Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS122-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS123-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICCARDO DE STEFANI" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SERVIZI SOLIDARIETA E LAVORO SRL UNIPERSONALE\nVIA TRE MARTIRI 87 A\n45100 ROVIGO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39425204213" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39425204227" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS123-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS123-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-12-15T21:08:02Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS123-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}{
+  "handle" : "RDS124-RIPE",
+  "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RICCARDO DE STEFANI" ], [ "kind", { }, "text", "individual" ], [ "adr", {
+    "label" : "SERVIZI SOLIDARIETA E LAVORO SRL UNIPERSONALE\nVIA TRE MARTIRI 87 A\n45100 ROVIGO\nItaly"
+  }, "text", null ], [ "tel", {
+    "type" : "voice"
+  }, "text", "+39425204213" ], [ "tel", {
+    "type" : "fax"
+  }, "text", "+39425204227" ] ] ],
+  "rdapConformance" : [ "rdap_level_0" ],
+  "links" : [ {
+    "value" : "https://rdap.db.ripe.net/entity/RDS124-RIPE?unfiltered=",
+    "rel" : "self",
+    "href" : "https://rdap.db.ripe.net/entity/RDS124-RIPE?unfiltered="
+  }, {
+    "value" : "http://www.ripe.net/data-tools/support/documentation/terms",
+    "rel" : "copyright",
+    "href" : "http://www.ripe.net/data-tools/support/documentation/terms"
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2008-12-15T21:08:02Z"
+  } ],
+  "notices" : [ {
+    "title" : "Filtered",
+    "description" : [ "This output has been filtered." ]
+  }, {
+    "title" : "Source",
+    "description" : [ "Objects returned came from source", "RIPE" ]
+  }, {
+    "title" : "Terms and Conditions",
+    "description" : [ "This is the RIPE Database query service. The objects are in RDAP format." ],
+    "links" : [ {
+      "value" : "https://rdap.db.ripe.net/entity/RDS124-RIPE?unfiltered=",
+      "rel" : "terms-of-service",
+      "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf",
+      "type" : "application/pdf"
+    } ]
+  } ],
+  "port43" : "whois.ripe.net"
+}
