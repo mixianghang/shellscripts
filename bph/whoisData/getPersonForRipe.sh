@@ -3,6 +3,10 @@ date=$(date +"%Y%m%d")
 resutlDataDir="/data/salrwais/BPH/API/RIPE/Data"
 scriptDir=$(pwd)
 
+if [[ $# -ge 1 ]]; then
+    date=$1
+fi
+
 #run retrieve process
 echo "start to retrieve person objects for $date"
 if [ ! -e $scriptDir/log ]

@@ -12,6 +12,11 @@ else
     exit
 fi
 
+if [[ $# -ge 1 ]]; then
+    date=$1
+    yesterday=$((date - 1))
+fi
+
 bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/RIPE"
 keysDir="/data/salrwais/BPH/API/RIPE/Keys"
 resultDataDir="/data/salrwais/BPH/API/RIPE/Data"

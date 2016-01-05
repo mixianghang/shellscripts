@@ -11,6 +11,10 @@ else
     echo "This script cannot be run on this os type"
     exit
 fi
+if [[ $# -ge 1 ]]; then
+    date=$1
+    yesterday=$((date - 1))
+fi
 
 bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/LACNIC"
 keysDir="/data/salrwais/BPH/API/LACNIC/Keys"
@@ -30,7 +34,7 @@ then
   mkdir $scriptDir/log
 fi
 logError=$scriptDir/log/logErrorForRetrieveLacnic_$date
-echo "$scriptDir/retrieveRipe.py $scriptDir/afrinicConfig.cfg 2>$logError"
+echo "$scriptDir/retrieveLacnic.py $scriptDir/afrinicConfig.cfg 2>$logError"
 $scriptDir/retrieveRipe.py $scriptDir/lacnicConfig.cfg 2>$logError
 
 #copy result to current date file
