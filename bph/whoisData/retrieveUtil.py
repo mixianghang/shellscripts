@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-02 21:42:24
+# Last Modified: 2016-01-04 21:47:08
 ################################################
 import urllib2
 import urllib
@@ -260,3 +260,35 @@ def lineCount(filePath):
 #    print "reques error:", response['body']
 #convRes = convRipeLookupJson2Text(response['body'])
 #print convRes['body']
+def lacnicLookupThroughRequests(requestUrl, key, session):
+  response = {}
+  url = requestUrl+"/" + urllib.quote(key)
+  #getValues= {"unfiltered":""}
+  #getData = urllib.urlencode(getValues)
+  #fullUrl = url + "?" + getData
+  fullUrl = url
+  try:
+	#httpResponse = requests.get(url, params=getValues)
+	httpResponse = session.get(fullUrl)
+	#print httpResponse.url
+  except urllib2.HTTPError as e:
+    #print "http response error:{0}".format(e.code)
+	response["code"] = -1
+	response["body"] = "http response error:{0} for url {1}".format(e.code, fullUrl)
+	#print "http error page: %s", (e.read())
+  except urllib2.URLError as e:
+    #print "failed to connect to server with reason:{0}".format(e.reason)
+	response["code"] = -1
+	response["body"] = "failed to connect to server {1} with reason:{0}".format(e.reason, fullUrl)
+  except Exception as e:
+    response["code"] = -1
+    response["body"] = "some unexpected error {0}".format(repr(e))
+  else:
+	#print httpResponse.status_code
+	if httpResponse.status_code >= 400:
+	  response["code"] = -1
+	  response["body"] = "return status codes that cannot be handled:{0}".format(httpResponse.status_code)
+	else:
+	  response['code'] = 0
+	  response['body'] = httpResponse.content
+  return response
