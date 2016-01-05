@@ -35,7 +35,7 @@ then
 fi
 logError=$scriptDir/log/logErrorForRetrieveLacnic_$date
 echo "$scriptDir/retrieveLacnic.py $scriptDir/afrinicConfig.cfg 2>$logError"
-$scriptDir/retrieveRipe.py $scriptDir/lacnicConfig.cfg 2>$logError
+$scriptDir/retrieveLacnic.py $scriptDir/lacnicConfig.cfg 2>$logError
 
 #copy result to current date file
 echo "copy to $resultDataDir/$date"
