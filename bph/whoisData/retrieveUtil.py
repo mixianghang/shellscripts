@@ -7,7 +7,7 @@
 #@email: mixianghang@outlook.com
 #@description: ---
 #Create: 2015-12-31 11:27:40
-# Last Modified: 2016-01-05 16:33:37
+# Last Modified: 2016-01-06 17:02:57
 ################################################
 import urllib2
 import urllib
@@ -20,33 +20,57 @@ import requests
 import threading
 import types
 class RetrieveThread(threading.Thread):
-  def __init__(self, threadId, kwList, url, resultFile):
+  requestCount = 0
+  partCount = 0
+  errorIndicate = 0
+  errorCount = 0
+  partErrorCount = 0
+  def __init__(self, threadId, kwList, url, resultFile, session=None):
     threading.Thread.__init__(self)
     self.threadId = threadId
     self.kwList = kwList
     self.url = url
     self.resultFile = resultFile
+    if not session is None:
+        self.session = session
+    else:
+        self.session =  requests.Session()
   def run(self):
-    session = requests.Session()
+    session = self.session
     date = time.strftime("%Y-%m-%d-%H-%M-%S")
-    if os.path.exists(self.resultFile):
-        try:
-          os.rename(self.resultFile, self.resultFile + "_bak_" +date)
-        except Exception as e:
-		  error("thread{1}:rename result file failed: {0}".format(self.resultFile, self.threadId))
-		  sys.exit(1)
-	  #open keylist file and loop to send http request and save response
+    #if os.path.exists(self.resultFile):
+    #    try:
+    #      os.rename(self.resultFile, self.resultFile + "_bak_" +date)
+    #    except Exception as e:
+	#	  error("thread{1}:rename result file failed: {0}".format(self.resultFile, self.threadId))
+	#	  sys.exit(1)
+	#  #open keylist file and loop to send http request and save response
     resultFileFd  = open(self.resultFile, "a")
     kwNum = len(self.kwList)
     startTime = time.time()
-    index = -1
-    for index, kw in enumerate(self.kwList):
+    index = 0
+    while index < kwNum:
+      kw = self.kwList[index]
       kw = kw.strip(" \n\r\t")
       lookupResponse = ripeLookupThroughRequests(self.url, kw, session=session, format="xml")	
       code = int(lookupResponse['code'])
       body = lookupResponse['body']
+	  RetrieveThread.requestCount += 1
+	  RetrieveThread.partCount += 1
       if code != 0:
+        RetrieveThread.errorCount += 1
+        RetrieveThread.partErrorCount += 1
         error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.url, body, self.threadId))
+        # ripe 429 request limit
+        if code == -2:
+            RetrieveThread.errorIndicate = 1
+            while True:
+                if RetrieveThread.errorIndicate != 0:
+                    time.sleep(30)
+                    continue
+                else:
+                    break
+            continue# continue to request for this key
       else:
         resultFileFd.write(body)
         #convRes = convRipeLookupJson2Text(body)
@@ -57,11 +81,12 @@ class RetrieveThread(threading.Thread):
 
       if index % 100 ==0:
         resultFileFd.flush()
-      if index >= 1000 and index % 1000 == 0:
+      if index >= 100 and index % 100 == 0:
         curTime = time.time()
         print "thread{1}: finish {0} kws of {2}".format(index,self.threadId, kwNum)
-        print "thread{1}: finish 1000 requests within {0}seconds".format(curTime - startTime, self.threadId)
+        print "thread{1}: finish 100 requests within {0}seconds".format(curTime - startTime, self.threadId)
         startTime = curTime
+	  index += 1
     print "thread%d: finishing %d kws of %d" %(self.threadId, index + 1, kwNum)
     resultFileFd.close()
     
@@ -135,7 +160,10 @@ def ripeLookupThroughRequests(requestUrl, key, session, format="json"):
     response["body"] = "some unexpected error"
   else:
 	#print httpResponse.status_code
-	if httpResponse.status_code >= 400:
+	if httpResponse.status_code == 429:
+	  response["code"] = -2
+	  response["body"] = "return status codes that cannot be handled:{0}".format(httpResponse.status_code)
+	elif httpResponse.status_code >= 400:
 	  response["code"] = -1
 	  response["body"] = "return status codes that cannot be handled:{0}".format(httpResponse.status_code)
 	else:
@@ -217,49 +245,6 @@ def lineCount(filePath):
 		  pass
       return i + 1
 
-#print lineCount(sys.argv[1])
-#sys.exit(0)
-#session = requests.Session()
-#if len(sys.argv) < 4:
-#  print "Usage num kwlistFile isUrlLib"
-#  sys.exit(1)
-#main(sys.argv[1], sys.argv[2], sys.argv[3])
-
-#pprint(response)
-#decide data types
-#list1 = [1,2,3,4]
-#dict1 = {"nihao":2, "wohao":1} 
-#str1 = "wohao"
-#if isinstance(dict1, dict):
-#    print "I am  a dict"
-#if isinstance(list1, list):
-#    print "i am a list"
-#if isinstance(str1, str):
-#    print "I am a str"
-#if isinstance(list1, str):
-#    print "I am a str"
-
-#test str.join
-#print "a".join(['12', "","", '13'])
-
-#assign by reference
-#str1 = 4*"23"
-#list = [str1]
-#str2 = list[0]
-#str2 = str2 + "54"
-#print str1
-#if str1 is str2:
-#    print "we are the same"
-
-#test json2text
-#url = "http://rest.db.ripe.net/ripe/person"
-#key = "GK617-RIPE"
-#session = requests.Session()
-#response = ripeLookupThroughRequests(url, key, session)
-#if response['code'] != 0:
-#    print "reques error:", response['body']
-#convRes = convRipeLookupJson2Text(response['body'])
-#print convRes['body']
 def lacnicLookupThroughRequests(requestUrl, key, session):
   response = {}
   url = requestUrl+"/" + urllib.quote(key)
@@ -309,6 +294,52 @@ def initSession(session):
   session.headers.update(headers)
   session.cookies.update(cookies)
   return 0
+
 #session = requests.Session()
 #initSession(session)
 #pprint(session.get("http://rdap.db.ripe.net/entity/GK617-RIPE?unfiltered"))
+
+#print lineCount(sys.argv[1])
+#sys.exit(0)
+#session = requests.Session()
+#if len(sys.argv) < 4:
+#  print "Usage num kwlistFile isUrlLib"
+#  sys.exit(1)
+#main(sys.argv[1], sys.argv[2], sys.argv[3])
+
+#pprint(response)
+#decide data types
+#list1 = [1,2,3,4]
+#dict1 = {"nihao":2, "wohao":1} 
+#str1 = "wohao"
+#if isinstance(dict1, dict):
+#    print "I am  a dict"
+#if isinstance(list1, list):
+#    print "i am a list"
+#if isinstance(str1, str):
+#    print "I am a str"
+#if isinstance(list1, str):
+#    print "I am a str"
+
+#test str.join
+#print "a".join(['12', "","", '13'])
+
+#assign by reference
+#str1 = 4*"23"
+#list = [str1]
+#str2 = list[0]
+#str2 = str2 + "54"
+#print str1
+#if str1 is str2:
+#    print "we are the same"
+
+#test json2text
+#url = "http://rest.db.ripe.net/ripe/person"
+#key = "GK617-RIPE"
+#session = requests.Session()
+#response = ripeLookupThroughRequests(url, key, session)
+#if response['code'] != 0:
+#    print "reques error:", response['body']
+#convRes = convRipeLookupJson2Text(response['body'])
+#print convRes['body']
+
