@@ -38,7 +38,7 @@ do
   $scriptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir $scriptDir
 
   #run retrieve process
-  rm -rf  $resutlDataDir/latest/*
+  rm -rf  $resultDataDir/latest/*
   echo "start to retrieve objects for the key list"
   if [ ! -e $scriptDir/log ]
   then
