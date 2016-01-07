@@ -50,6 +50,9 @@ class RetrieveThread(threading.Thread):
     startTime = time.time()
     index = 0
     while index < kwNum:
+      if RetrieveThread.errorIndicate != 0:
+        time.sleep(10)
+        continue
       kw = self.kwList[index]
       kw = kw.strip(" \n\r\t")
       lookupResponse = ripeLookupThroughRequests(self.url, kw, session=session, format="xml")    
@@ -63,6 +66,8 @@ class RetrieveThread(threading.Thread):
         error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.url, body, self.threadId))
         # ripe 429 request limit
         if code == -2:
+            RetrieveThread.requestCount -= 1
+            RetrieveThread.partCount -= 1
             RetrieveThread.errorIndicate = 1
             while True:
                 if RetrieveThread.errorIndicate != 0:
@@ -88,10 +93,12 @@ class RetrieveThread(threading.Thread):
         startTime = curTime
       index += 1
     print "thread%d: finishing %d kws of %d" %(self.threadId, index + 1, kwNum)
+    resultFileFd.flush()
     resultFileFd.close()
     
 def error(errMsg):
-  sys.stderr.write("{0}\n".format(errMsg))
+  date = time.strftime("%Y-%m-%d-%H-%M-%S")
+  sys.stderr.write("{0} at date {1}\n".format(errMsg, date))
 def joinStr(*arglist):
   args = []
   for item in arglist:

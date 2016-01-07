@@ -3,8 +3,10 @@ from stem.control import Controller
 from stem import Signal
 import stem
 import stem.connection
+from subprocess import call
 def renewConn():
   try:
+    print "start to connect to controller"
     controller = Controller.from_port()
   except stem.SocketError as exc:
     print("Unable to connect to tor on port 9051: %s" % exc)

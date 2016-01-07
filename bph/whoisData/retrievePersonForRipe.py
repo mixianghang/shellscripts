@@ -11,7 +11,24 @@ import requesocks
 from torController import *
 
 def renewConnFunc(mainsession, ips, blackFileFd=None):
-    retry = 0
+    print "restart tor service"
+    call("sudo service tor restart", shell = True)
+    try:
+      currIp = mainsession.get("http://httpbin.org/ip").text
+      decoded = json.loads(currIp)['origin']
+    except Exception as e:
+      sys.stderr.write(repr(e))
+      print repr(e) 
+    else:
+      if decoded in ips:
+        print "restart doesn't get a new ip"
+      else:
+        print "restart gets a new Ip is {0}".format(decoded)
+        print ips
+        if blackFileFd is not None:
+          blackFileFd.write(decoded +"\n")
+        ips.add(decoded)
+        return 0
     while True:
       time.sleep(60 + 10 * retry)
       print "start to renew connection"
@@ -44,6 +61,7 @@ def renewConnFunc(mainsession, ips, blackFileFd=None):
           blackFileFd.write(decoded +"\n")
         ips.add(decoded)
         break
+    return 0
 
 #time measurement example
 #start = time.clock()
@@ -129,6 +147,7 @@ for section in sections:
     threads = []
     RetrieveThread.partCount = 0
     RetrieveThread.partErrorCount = 0
+    print "start a new round with requests {0} from {1} to {2}".format(partNumLimit, startPos, nextPos)
     for i in range(0, threadNum):
       session = requesocks.session()
       # Tor uses the 9050 port as the default socks port
@@ -143,12 +162,15 @@ for section in sections:
       threads.append(newThread)
       partPos += threadPart
     startPos = nextPos
+    print "start to sniff whether to renew connection"
     while True:
-      if RetrieveThread.partCount >= partNumLimit - 50:
+      if RetrieveThread.partCount >= partNumLimit:
         break
       if RetrieveThread.errorIndicate == 1:
+        print "we need to renew connections"
         renewConnFunc(mainsession, ips, blackIpFd)
         RetrieveThread.errorIndicate = 0
+      time.sleep(5)
     for thread in threads:
         thread.join()
     sumReqs = RetrieveThread.requestCount
@@ -158,6 +180,10 @@ for section in sections:
     print "request sum: {0}, this time: {1}, errorSum: {2}, thisError:{3}".format(sumReqs, partReqs, errorReqs, partError);
     print "sleep before next round"
     time.sleep(70)
+    print "renew before next round"
+    renewConnFunc(mainsession, ips, blackIpFd)
+    if blackIpFd is not None:
+      blackIpFd.flush()
   if blackIpFd is not None:
     blackIpFd.close()
   command = "cat {0} > {1}".format(" ".join(partFiles), resultFile)
