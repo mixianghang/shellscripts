@@ -1,16 +1,17 @@
 #!/usr/bin/python
-from stem import Controller
+from stem.control import Controller
 from stem import Signal
 import stem
+import stem.connection
 def renewConn():
- try:
+  try:
     controller = Controller.from_port()
   except stem.SocketError as exc:
     print("Unable to connect to tor on port 9051: %s" % exc)
     return -1
 
   try:
-    controller.authenticate()
+    controller.authenticate(password="password")
   except stem.connection.MissingPassword:
     try:
       controller.authenticate(password = "password")
@@ -19,6 +20,8 @@ def renewConn():
       return -1
   except stem.connection.AuthenticationFailure as exc:
     print("Unable to authenticate: %s" % exc)
+    return -1
+  except Exception  as e:
     return -1
 
   print("Tor is running version %s" % controller.get_version())

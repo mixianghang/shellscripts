@@ -12,33 +12,38 @@ from torController import *
 
 def renewConnFunc(mainsession, ips, blackFileFd=None):
     retry = 0
-	while True:
-	  time.sleep(60 + 10 * retry)
-	  print "start to renew connection"
-	  response = renewConn()
-	  print "finish renew connection"
-	  if response == -1:
-		print "renew failed,sleep and wait"
-		retry += 1
-		continue
-	  try:
-		currIp = mainsession.get("http://httpbin.org/ip").text
-		decoded = json.loads(currIp)['origin']
-	  except Exception as e:
-		sys.stderr.write(repr(e))
-		print repr(e) 
-		continue
-	  if decoded in ips:
-		retry += 1
-		print "renew failed , retry {0}, sleep to wait {1} seconds".format(retry, 60 + 10* retry)
-		continue
-	  else:
-		print "new Ip is {0}".format(decoded)
-		print ips
-		if blackFileFd is not None:
-		  blackFileFd.write(decoded +"\n")
-		ips.add(decoded)
-		break
+    while True:
+      time.sleep(60 + 10 * retry)
+      print "start to renew connection"
+      try:
+        response = renewConn()
+      except Exception as e:
+        print "renew failed, sleep and wait"
+        retry += 1
+        continue
+      print "finish renew connection"
+      if response == -1:
+        print "renew failed,sleep and wait"
+        retry += 1
+        continue
+      try:
+        currIp = mainsession.get("http://httpbin.org/ip").text
+        decoded = json.loads(currIp)['origin']
+      except Exception as e:
+        sys.stderr.write(repr(e))
+        print repr(e) 
+        continue
+      if decoded in ips:
+        retry += 1
+        print "renew failed , retry {0}, sleep to wait {1} seconds".format(retry, 60 + 10* retry)
+        continue
+      else:
+        print "new Ip is {0}".format(decoded)
+        print ips
+        if blackFileFd is not None:
+          blackFileFd.write(decoded +"\n")
+        ips.add(decoded)
+        break
 
 #time measurement example
 #start = time.clock()
@@ -91,14 +96,14 @@ for section in sections:
   threadNum  = configParser.getint(section,"threadNum")
   print "%s %s %s" %(keyList, requestUrl, resultFile)
   if not os.path.exists(keyList):
-	error("keylist file doesn't exist:{0}".format(keyList))
-	sys.exit(1)
+    error("keylist file doesn't exist:{0}".format(keyList))
+    sys.exit(1)
   if os.path.exists(resultFile):
-	try:
-	  os.rename(resultFile, resultFile + "_bak_" +date)
-	except Exception as e:
-	  error("rename result file failed: {0}".format(resultFile))
-	  sys.exit(1)
+    try:
+      os.rename(resultFile, resultFile + "_bak_" +date)
+    except Exception as e:
+      error("rename result file failed: {0}".format(resultFile))
+      sys.exit(1)
   if not os.path.exists(os.path.dirname(resultFile)):
       os.makedirs(os.path.dirname(resultFile))
   #open keylist file and loop to send http request and save response
@@ -108,28 +113,28 @@ for section in sections:
   keyListFd.close()
   partFiles = []
   if threadNum <= 0:
-	print "thread num cannot be zero"
-	sys.exit(1)
+    print "thread num cannot be zero"
+    sys.exit(1)
   for i in range(0, threadNum):
-	partResultFile = "{0}_part{1}".format(resultFile, i + 1)
-	partFiles.append(partResultFile)
+    partResultFile = "{0}_part{1}".format(resultFile, i + 1)
+    partFiles.append(partResultFile)
   while startPos < kwNum:
-	if numLimit > (kwNum - startPos):
-	  partNumLimit = kwNum - startPos
-	else:
-	  partNumLimit = numLimit
-	threadPart = partNumLimit / threadNum
-	nextPos = startPos + partNumLimit
-	partPos = startPos
-	threads = []
-	RetrieveThread.partCount = 0
-	RetrieveThread.partErrorCount = 0
-	for i in range(0, threadNum):
-	  session = requesocks.session()
+    if numLimit > (kwNum - startPos):
+      partNumLimit = kwNum - startPos
+    else:
+      partNumLimit = numLimit
+    threadPart = partNumLimit / threadNum
+    nextPos = startPos + partNumLimit
+    partPos = startPos
+    threads = []
+    RetrieveThread.partCount = 0
+    RetrieveThread.partErrorCount = 0
+    for i in range(0, threadNum):
+      session = requesocks.session()
       # Tor uses the 9050 port as the default socks port
-	  session.proxies = {'http':  'socks5://127.0.0.1:9050',
-						 'https': 'socks5://127.0.0.1:9050'}
-	  partResultFile = partFiles[i]
+      session.proxies = {'http':  'socks5://127.0.0.1:9050',
+                         'https': 'socks5://127.0.0.1:9050'}
+      partResultFile = partFiles[i]
       if (i + 1) != threadNum:
           newThread = RetrieveThread(i + 1, kwList[partPos : partPos + threadPart], requestUrl, partResultFile,session)
       else:
@@ -137,22 +142,24 @@ for section in sections:
       newThread.start()
       threads.append(newThread)
       partPos += threadPart
-	startPos = nextPos
-	while True:
-	  if RetrieveThread.partCount >= partNumLimit - 50:
-		break
-	  if RetrieveThread.errorIndicate == 1:
-		renewConnFunc(mainsession, ips, blackIpFd)
-		RetrieveThread.errorIndicate = 0
-	for thread in threads:
-		thread.join()
-	sumReqs = RetrieveThread.requestCount
-	partReqs = RetrieveThread.partCount
-	errorReqs = RetrieveThread.errorCount
-	partError = RetrieveThread.partErrorCount
-	print "request sum: {0}, this time: {1}, errorSum: {2}, thisError:{3}".format(sumReqs, partReqs, errorReqs, partError);
+    startPos = nextPos
+    while True:
+      if RetrieveThread.partCount >= partNumLimit - 50:
+        break
+      if RetrieveThread.errorIndicate == 1:
+        renewConnFunc(mainsession, ips, blackIpFd)
+        RetrieveThread.errorIndicate = 0
+    for thread in threads:
+        thread.join()
+    sumReqs = RetrieveThread.requestCount
+    partReqs = RetrieveThread.partCount
+    errorReqs = RetrieveThread.errorCount
+    partError = RetrieveThread.partErrorCount
+    print "request sum: {0}, this time: {1}, errorSum: {2}, thisError:{3}".format(sumReqs, partReqs, errorReqs, partError);
+    print "sleep before next round"
+    time.sleep(70)
   if blackIpFd is not None:
-	blackIpFd.close()
+    blackIpFd.close()
   command = "cat {0} > {1}".format(" ".join(partFiles), resultFile)
   call(command, shell=True)
   for partFile in partFiles:
