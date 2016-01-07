@@ -22,11 +22,13 @@ if [[ $# -ge 2 ]]; then
     yesterday=$((startDate - 1))
 fi
 
+echo $startDate $endDate
 bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/RIPE"
 keysDir="/data/salrwais/BPH/Whois/API/RIPE/Keys"
 resultDataDir="/data/salrwais/BPH/Whois/API/RIPE/Data"
 scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 
+date=$startDate
 while [ $date -le $endDate ]
 do
   echo $yesterday $date

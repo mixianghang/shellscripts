@@ -27,6 +27,7 @@ keysDir="/data/salrwais/BPH/Whois/API/LACNIC/Keys"
 resultDataDir="/data/salrwais/BPH/Whois/API/LACNIC/Data"
 scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 
+date=$startDate
 while [ $date -le $endDate ]
 do
   echo $yesterday $date
