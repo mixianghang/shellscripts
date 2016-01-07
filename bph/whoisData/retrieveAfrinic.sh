@@ -12,34 +12,45 @@ else
     exit
 fi
 
-if [[ $# -ge 1 ]]; then
-    date=$1
-    yesterday=$((date - 1))
+startDate=$date
+endDate=$date
+yesterday=$((date -1))
+
+if [[ $# -ge 2 ]]; then
+    startDate=$1
+	endDate=$2
+    yesterday=$((startDate - 1))
 fi
 
 bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/AFRINIC"
-keysDir="/data/salrwais/BPH/API/AFRINIC/Keys"
-resultDataDir="/data/salrwais/BPH/API/AFRINIC/Data"
+keysDir="/data/salrwais/BPH/Whois/API/AFRINIC/Keys"
+resultDataDir="/data/salrwais/BPH/Whois/API/AFRINIC/Data"
 scriptDir=$(pwd)
+date=$startDate
+while [ $date -le $endDate ]
+do
+  echo $yesterday $date
+  #generage key list
+  echo "start to generate a key list of objects"
+  echo "$scriptDir/genKwListForAfrinic.sh $bulkDataDir  $keysDir $date"
+  $scriptDir/genKwListForAfrinic.sh $bulkDataDir  $keysDir $date
 
-#generage key list
-echo "start to generate a key list of objects"
-echo "$scriptDir/genKwListForAfrinic.sh $bulkDataDir  $keysDir $date"
-$scriptDir/genKwListForAfrinic.sh $bulkDataDir  $keysDir $date
+  #run retrieve process
+  rm -rf  $resutlDataDir/latest/*
+  echo "start to retrieve objects for the key list"
+  if [ ! -e $scriptDir/log ]
+  then
+	mkdir $scriptDir/log
+  fi
+  logError=$scriptDir/log/logErrorForRetrieveAfrinic_$date
+  echo "$scriptDir/retrieveRipe.py $scriptDir/afrinicConfig.cfg 2>$logError"
+  $scriptDir/retrieveRipe.py $scriptDir/afrinicConfig.cfg 2>$logError
 
-#run retrieve process
-rm -rf  $resutlDataDir/latest/*
-echo "start to retrieve objects for the key list"
-if [ ! -e $scriptDir/log ]
-then
-  mkdir $scriptDir/log
-fi
-logError=$scriptDir/log/logErrorForRetrieveAfrinic_$date
-echo "$scriptDir/retrieveRipe.py $scriptDir/afrinicConfig.cfg 2>$logError"
-$scriptDir/retrieveRipe.py $scriptDir/afrinicConfig.cfg 2>$logError
-
-#copy result to current date file
-echo "copy to $resultDataDir/$date"
-mkdir -p $resultDataDir/$date
-cp -r $resultDataDir/latest/* $resultDataDir/$date 
+  #copy result to current date file
+  echo "copy to $resultDataDir/$date"
+  mkdir -p $resultDataDir/$date
+  cp -r $resultDataDir/latest/* $resultDataDir/$date 
+  ((date++))
+  ((yesterday++))
+done
 
