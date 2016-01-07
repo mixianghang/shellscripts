@@ -13,6 +13,8 @@ from torController import *
 def renewConnFunc(mainsession, ips, blackFileFd=None):
     print "restart tor service"
     call("sudo service tor restart", shell = True)
+	print "sleep five seconds after restart tor"
+	time.sleep(5)
     try:
       currIp = mainsession.get("http://httpbin.org/ip").text
       decoded = json.loads(currIp)['origin']
