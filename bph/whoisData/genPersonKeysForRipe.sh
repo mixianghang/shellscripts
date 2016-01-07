@@ -7,7 +7,14 @@ fi
 sourceDir=$1
 date=$2
 resultDir=$3
-currDir=$(pwd)
+
+if [ $# -gt 3 ]
+then 
+  currDir=$4
+else
+  currDir=$(pwd)
+fi
+
 objects=('inetnum' 'inet6num' 'role' 'organisation' 'irt' 'mntner' 'aut-num' 'as-set' 'as-block' 'domain' 'route-set')
 keys=('inetnum' 'inet6num' 'nic-hdl' 'organisation' 'irt' 'mntner' 'aut-num' 'as-set' 'as-block' 'domain' 'route-set')
 #copy source file and unzip .gz

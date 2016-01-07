@@ -1,7 +1,7 @@
 #!/bin/bash
 date=$(date +"%Y%m%d")
 resutlDataDir="/data/salrwais/BPH/Whois/API/RIPE/Data"
-scriptDir=$(pwd)
+scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 
 if [[ $# -ge 1 ]]; then
     date=$1

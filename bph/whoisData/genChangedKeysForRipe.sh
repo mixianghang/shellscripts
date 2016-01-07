@@ -8,7 +8,13 @@ sourceDir=$1
 date1=$2
 date2=$3
 resultDir=$4
-currDir=$(pwd)
+if [ $# -gt 4 ]
+then 
+  currDir=$5
+else
+  currDir=$(pwd)
+fi
+
 objects=('inetnum' 'inet6num' 'role' 'organisation' 'irt' 'mntner' 'aut-num' 'as-set' 'as-block' 'domain' 'route-set')
 keys=('inetnum' 'inet6num' 'nic-hdl' 'organisation' 'irt' 'mntner' 'aut-num' 'as-set' 'as-block' 'domain' 'route-set')
 

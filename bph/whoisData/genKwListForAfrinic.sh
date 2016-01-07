@@ -10,7 +10,15 @@ date=$3
 #cmd="grep -E -i  '^$kw:' $sourceDir/$date/ripe.db.$type | sed -r 's/$kw:[ ]+(.*)/\1/g' > $resultDir/$date/${type}_kwlist"
 mkdir -p $resultDir/$date
 mkdir -p $resultDir/latest
-tempDir=$(pwd)/temp/genKwListForAfrinic
+
+if [ $# -gt 3 ]
+then 
+  currDir=$4
+else
+  currDir=$(pwd)
+fi
+
+tempDir=$currDir/temp/genKwListForAfrinic
 if [ -e $tempDir ]
 then
   rm -rf $tempDir

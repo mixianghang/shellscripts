@@ -25,7 +25,7 @@ fi
 bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/RIPE"
 keysDir="/data/salrwais/BPH/Whois/API/RIPE/Keys"
 resultDataDir="/data/salrwais/BPH/Whois/API/RIPE/Data"
-scriptDir=$(pwd)
+scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 
 while [ $date -le $endDate ]
 do
@@ -33,7 +33,7 @@ do
   #generage changed key list
   echo "start to generate a key list of changed objects"
   echo "$scriptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir"
-  $scriptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir
+  $scriptDir/genChangedKeysForRipe.sh $bulkDataDir $yesterday $date $keysDir $scriptDir
 
   #run retrieve process
   rm -rf  $resutlDataDir/latest/*
@@ -54,7 +54,7 @@ do
   #generate key list for person object
   echo "start to generate keylist for persons"
   echo "$scriptDir/genPersonKeysForRipe.sh $resultDataDir/$date $date $keysDir"
-  $scriptDir/genPersonKeysForRipe.sh $resultDataDir/$date $date $keysDir
+  $scriptDir/genPersonKeysForRipe.sh $resultDataDir/$date $date $keysDir $scriptDir
 
   ((date++))
   ((yesterday++))

@@ -25,7 +25,7 @@ fi
 bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/LACNIC"
 keysDir="/data/salrwais/BPH/Whois/API/LACNIC/Keys"
 resultDataDir="/data/salrwais/BPH/Whois/API/LACNIC/Data"
-scriptDir=$(pwd)
+scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 
 while [ $date -le $endDate ]
 do
@@ -33,7 +33,7 @@ do
   #generage key list
   echo "start to generate a key list of objects"
   echo "$scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir $date"
-  $scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir $date
+  $scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir $date $scriptDir
 
   #run retrieve process
   rm -rf  $resutlDataDir/latest/*
