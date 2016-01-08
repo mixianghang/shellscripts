@@ -1,4 +1,5 @@
 #!/bin/bash
+#only appended and delete keys for types not including person
 if [ $# -lt 4 ]
 then
   echo "Usage source date1 date2 resultDir"

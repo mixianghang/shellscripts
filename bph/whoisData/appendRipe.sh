@@ -46,17 +46,23 @@ do
   fi
   logError=$scriptDir/log/logErrorForAppendRipe_$date
   echo "$scriptDir/retrieveRipe.py $scriptDir/appendConfig.cfg 2>$logError"
-  $scriptDir/retrieveRipe.py $scriptDir/appendConfig.cfg 2>$logError
+  $scriptDir/retrieveRipe.py $scriptDir/appendRipeConfig.cfg 2>$logError
 
-  #copy result to current date file
-  echo "copy to $resultDataDir/$date"
-  mkdir -p $resultDataDir/$date
-  cp -r $resultDataDir/latest/* $resultDataDir/$date 
 
   #generate key list for person object
   echo "start to generate keylist for persons"
   echo "$scriptDir/genPersonKeysForRipe.sh $resultDataDir/$date $date $keysDir"
   $scriptDir/genPersonKeysForRipe.sh $resultDataDir/$date $date $keysDir $scriptDir
+
+  #retrieve appended person objects
+  logError=$scriptDir/log/logErrorForAppendRipePerson_$date
+  echo "$scriptDir/retrieveRipe.py $scriptDir/appendRipePersonConfig.cfg 2>$logError"
+  $scriptDir/retrieveRipe.py $scriptDir/appendRipePersonConfig.cfg 2>$logError
+
+  #copy result to current date file
+  echo "copy to $resultDataDir/$date"
+  mkdir -p $resultDataDir/$date
+  cp -r $resultDataDir/latest/* $resultDataDir/$date 
 
   ((date++))
   ((yesterday++))

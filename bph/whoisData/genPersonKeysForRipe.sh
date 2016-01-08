@@ -58,6 +58,15 @@ then
 fi
 echo "sort and remove duplicates"
 sort $tempDir/resultList | uniq > $tempDir/uniqList
+if [ -e $resultDir/latest/person_kwlist ]
+then
+  diff -iEBb $resultDir/latest/person_kwlist $tempDir/uniqList > $tempDir/diffList
+  grep -E ">" $tempDir/diffList | sed -r 's/>[ ]+(.*)/\1/g' > $tempDir/appendedList
+  grep -E "<" $tempDir/diffList | sed -r 's/<[ ]+(.*)/\1/g' > $tempDir/deletedList
+else
+  touch $tempDir/appendedList
+  touch $tempDir/deletedList
+fi
 if [ ! -e $resultDir/$date ]
 then
   mkdir -p $resultDir/$date
@@ -68,6 +77,13 @@ then
 fi
 
 echo "save result to $resultDir/$date/person_kwlist and  $resultDir/latest/person_kwlist"
+
 cp $tempDir/uniqList $resultDir/$date/person_kwlist
+cp $tempDir/appendedList $resultDir/$date/person_kwlist_appended
+cp $tempDir/deletedList $resultDir/$date/person_kwlist_deleted
+
 cp $tempDir/uniqList $resultDir/latest/person_kwlist
+cp $tempDir/appendedList $resultDir/latest/person_kwlist_appended
+cp $tempDir/deletedList $resultDir/latest/person_kwlist_deleted
+
 rm -rf $tempDir
