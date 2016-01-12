@@ -16,7 +16,7 @@ class BaseConverter(object):
     self.valueRe=re.compile("[ \t]*([^:]+)", re.I)
     self.commentRe=re.compile("^#", re.I)
     self.stripRe = re.compile("[\|#\t\n \r]+", re.I)
-    self.inetnumRe = re.compile("^inetnum:[ \t]+([^ \t\n-]+)[ \t-]+([^ \t\n-]+)")
+    self.inetnumRe = re.compile("^[ \t]*([^ \t\n-]+)[ \t-]+([^ \t\n-]+)")
     self.resultDict = {}
     self.objectNum = 0
     self.options = []
@@ -32,10 +32,10 @@ class BaseConverter(object):
     self.readConfig(configParser, self.name)
     self.resultFileFd.write(self.columnSep.join(self.mappedOptions) + "\n")
     self.lastKey = ""
-	self.cidrAsnMap = {}
+    self.cidrAsnMap = {}
   def init(self):
     return 0
-  def refreshCidrAsnMap(newMap):
+  def refreshCidrAsnMap(self, newMap):
     self.cidrAsnMap = newMap
   def refreshType(self,type):
     self.type = type
@@ -61,20 +61,28 @@ class BaseConverter(object):
       value = kv[1]
     value = value.strip(" \n\r\t")
     value = self.stripRe.sub(" ", value)
-	if key == "inetnum":
-	  matchObj = self.inetnumRe.match(line)
-	  if matchObj is not None:
-		startIp = matchObj.group(1)
-		endIp   = matchObj.group(2)
-        response = findMappedCidrForRange(startIp, endIp, self.cidrAsnMap)
-		if response['code'] == 0:
-		  cidrKey = response['key']
-		  self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
-	if key == "inet6num":
-	  response = findMappedCidrForCidr(value, self.cidrAsnMap)
-	  if response['code'] == 0:
-		cidrKey = response['key']
-		self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
+    if key == "inetnum":
+      matchObj = self.inetnumRe.match(value)
+      if matchObj is not None:
+        startIp = matchObj.group(1)
+        endIp   = matchObj.group(2)
+        try:
+          response = findMappedCidrForRange(startIp, endIp, self.cidrAsnMap)
+          if response['code'] == 0:
+            cidrKey = response['key']
+            self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
+        except Exception as e:
+          print repr(e)
+          print startIp, endIp
+          print key
+          print value
+          sys.exit(1)
+        
+    if key == "inet6num":
+      response = findMappedCidrForCidr(value, self.cidrAsnMap)
+      if response['code'] == 0:
+        cidrKey = response['key']
+        self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
     if self.resultDict.has_key(key):
       self.resultDict[key] = self.valueSep.join([self.resultDict[key], value])
     else:

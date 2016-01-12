@@ -23,8 +23,8 @@ def main():
 
   #create cidrAsnMap
   cidrAsnMap = {}
-  routeFile = os.path.join(sourceDir, "ripe.db.route")
-  route6File = os.path.join(sourceDir, "ripe.db.route6")
+  routeFile = os.path.join(bulkDir, "ripe.db.route")
+  route6File = os.path.join(bulkDir, "ripe.db.route6")
   createCidrAsnMap(routeFile, cidrAsnMap)
   createCidrAsnMap(route6File, cidrAsnMap)
   print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
@@ -50,13 +50,14 @@ def main():
       resultFilePath = os.path.join(resultDir, "{0}_ripe".format(name))
       print "create obj for name {0} and type {1}".format(name, type)
       convObj = BaseConverter(resultFilePath, configParser, name)
+      convObj.refreshType(type)
       convDict[name] = convObj
-	  if name == "inetnum":
-		convObj.refreshCidrAsnMap(cidrAsnMap)
+      if name == "inetnum":
+        convObj.refreshCidrAsnMap(cidrAsnMap)
     else:
       convObj = convDict[name]
       convObj.refreshType(type)
-    sourceFilePath = os.path.join(sourceDir, "{0}_appended".format(type))
+    sourceFilePath = os.path.join(sourceDir, "{0}".format(type))
     sourceFileFd = open(sourceFilePath, "r")
     kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
     startRe = re.compile("[ \t\n\r]+<attributes>", re.I)

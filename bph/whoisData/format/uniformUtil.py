@@ -6,7 +6,7 @@ from pprint import pprint
 import re
 def findMappedCidrForCidr(cidrStr, cidrAsnMap):
   response = {}
-  cidr = IPNetwork(cidrStr)
+  cidr = netaddr.IPNetwork(cidrStr)
   if cidr is None:
     print "error when convert cidr str to cidr for cidrStr {0}".format(cidrStr)
     #print cidrs

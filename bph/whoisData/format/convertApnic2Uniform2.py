@@ -48,9 +48,10 @@ def main():
     if not convDict.has_key(name):
       resultFilePath = os.path.join(resultDir, "{0}_apnic".format(name))
       convObj = BaseConverter(resultFilePath, configParser, name)
+      convObj.refreshType(type)
       convDict[name] = convObj
-	  if name == "inetnum":
-		convObj.refreshCidrAsnMap(cidrAsnMap)
+      if name == "inetnum":
+        convObj.refreshCidrAsnMap(cidrAsnMap)
     else:
       convObj = convDict[name]
       convObj.refreshType(type)
