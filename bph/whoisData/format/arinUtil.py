@@ -25,11 +25,14 @@ class BaseConverter(object):
     #create regular expression
     self.ip4RangeRe= re.compile("([\d\.]+)[\t \|-]+([\d\.]+)", re.I)
     self.name = name
+    self.type = name
     self.readConfig(configParser, self.name)
     self.resultFileFd.write(self.columnSep.join(self.mappedOptions) + "\n")
     self.lastKey = ""
   def init(self):
     return 0
+  def refreshType(self,type):
+    self.type = type
   def processNewLine(self, line):
     if self.commentRe.match(line):
       return 0
@@ -59,19 +62,22 @@ class BaseConverter(object):
     if len(self.resultDict) <= 0:
       return 0
     resultList=[]
+    index = 0
+    resultList.append(self.type)
+    index += 1
     keys = self.resultDict.keys()
     #choose result
-    iterOptions = iter(self.options)
-    for option in iterOptions:
+    while index < len(self.options):
+      option = self.options[index]
       subOptions = option.split(self.optionSep)
+      subList = []
       for subOption in subOptions:
         if subOption in keys:
-          option = subOption
-          break
+          subList.append(self.resultDict[subOption].strip(" \n\r\t"))
         else:
           continue
-      if option in keys:
-        resultList.append(self.resultDict[option].strip(" \n\r\t"))
+      if len(subList) > 0:
+        resultList.append(self.valueSep.join(subList).strip(" \n\r\t"))
         #if option == "NetHandle":#convert to cidr and ip range
         #  value = inetDict[option]
         #  ips = ip4RangeRe.match(value)
@@ -89,15 +95,17 @@ class BaseConverter(object):
         #  option1 = next(iterOptions)
         #  option2 = next(iterOptions)
       else:
-        resultList.append("NULL")
+        resultList.append("")
+      index += 1
     self.resultFileFd.write((self.columnSep.join(resultList)) + "\n")
     self.resultDict.clear()
     self.objectNum += 1
     if self.objectNum % 10000 == 0 and self.objectNum > 0:
-      print "finish {0} objects of type {1}".format(self.objectNum, self.name)
+      print "finish {0} objects of type {1} and name {2}".format(self.objectNum, self.type, self.name)
     return 0
   def finishAndClear(self):
     self.resultFileFd.close()
+    print "finish {0} with {1} objects".format(self.name, self.objectNum)
   def readConfig(self, configParser, sectionName):
     items=configParser.items(sectionName)
     for item in items:

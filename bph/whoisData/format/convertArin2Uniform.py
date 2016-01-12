@@ -64,6 +64,8 @@ def main():
       matchObject = kwRe.match(line)
       if matchObject is not None and matchObject.group(1) in classKeys:
         currObj = matchObject.group(1)
+		if currObj == "V6NetHandle":
+		  classes[currObj].refreshType("inet6num")
         if classes[currObj].processNewLine(line) != 0:
           print "error when process new line {0} for {1}".format(line, currObj)
         continue

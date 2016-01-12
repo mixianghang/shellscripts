@@ -4,6 +4,7 @@ import sys
 from Exceptions import *
 import re
 from pprint import pprint
+from  uniformUtil import *
 
 class BaseConverter(object):
   def __init__(self, resultFilePath, configParser, name):
@@ -15,6 +16,7 @@ class BaseConverter(object):
     self.valueRe=re.compile("[ \t]*([^:]+)", re.I)
     self.commentRe=re.compile("^#", re.I)
     self.stripRe = re.compile("[\|#\t\n \r]+", re.I)
+    self.inetnumRe = re.compile("^inetnum:[ \t]+([^ \t\n-]+)[ \t-]+([^ \t\n-]+)")
     self.resultDict = {}
     self.objectNum = 0
     self.options = []
@@ -30,8 +32,11 @@ class BaseConverter(object):
     self.readConfig(configParser, self.name)
     self.resultFileFd.write(self.columnSep.join(self.mappedOptions) + "\n")
     self.lastKey = ""
+	self.cidrAsnMap = {}
   def init(self):
     return 0
+  def refreshCidrAsnMap(newMap):
+    self.cidrAsnMap = newMap
   def refreshType(self,type):
     self.type = type
   #retrieve key and value
@@ -56,6 +61,20 @@ class BaseConverter(object):
       value = kv[1]
     value = value.strip(" \n\r\t")
     value = self.stripRe.sub(" ", value)
+	if key == "inetnum":
+	  matchObj = self.inetnumRe.match(line)
+	  if matchObj is not None:
+		startIp = matchObj.group(1)
+		endIp   = matchObj.group(2)
+        response = findMappedCidrForRange(startIp, endIp, self.cidrAsnMap)
+		if response['code'] == 0:
+		  cidrKey = response['key']
+		  self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
+	if key == "inet6num":
+	  response = findMappedCidrForCidr(value, self.cidrAsnMap)
+	  if response['code'] == 0:
+		cidrKey = response['key']
+		self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
     if self.resultDict.has_key(key):
       self.resultDict[key] = self.valueSep.join([self.resultDict[key], value])
     else:

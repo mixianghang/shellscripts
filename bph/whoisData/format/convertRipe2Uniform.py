@@ -7,17 +7,27 @@ from netaddr import *
 import time
 from ripeUtil import *
 from pprint import pprint
+from uniformUtil import *
 
 def main():
   #check and assign cl args to variables
-  if len(sys.argv) < 4:
-    print "Usage: sourceDir resultDir configFile"
+  if len(sys.argv) < 5:
+    print "Usage: sourceDir resultDir configFile bulkDir"
     print len(sys.argv)
     sys.exit(0)
 
   sourceDir=sys.argv[1]
   resultDir=sys.argv[2]
   configFile=sys.argv[3]
+  bulkDir = sys.argv[4]
+
+  #create cidrAsnMap
+  cidrAsnMap = {}
+  routeFile = os.path.join(sourceDir, "ripe.db.route")
+  route6File = os.path.join(sourceDir, "ripe.db.route6")
+  createCidrAsnMap(routeFile, cidrAsnMap)
+  createCidrAsnMap(route6File, cidrAsnMap)
+  print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
 
 #source file
   objList = [("inetnum", "inetnum"), ("inetnum", "inet6num"), ("person", "person"), ("person", "role"),
@@ -41,6 +51,8 @@ def main():
       print "create obj for name {0} and type {1}".format(name, type)
       convObj = BaseConverter(resultFilePath, configParser, name)
       convDict[name] = convObj
+	  if name == "inetnum":
+		convObj.refreshCidrAsnMap(cidrAsnMap)
     else:
       convObj = convDict[name]
       convObj.refreshType(type)
