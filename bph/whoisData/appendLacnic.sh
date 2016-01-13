@@ -50,7 +50,7 @@ do
   echo $yesterday $date
   #generage key list
   echo "start to generate a key list of objects"
-  echo "$scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir $date"
+  echo "$scriptDir/genChangedKeysForLacnic.sh $bulkDataDir  $keysDir $date"
   $scriptDir/genChangedKeysForLacnic.sh $bulkDataDir  $yesterday $date $keysDir $scriptDir
 
   #run retrieve process
