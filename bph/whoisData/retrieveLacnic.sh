@@ -32,9 +32,9 @@ while [ $date -le $endDate ]
 do
   echo $yesterday $date
   #generage key list
-  echo "start to generate a key list of objects"
-  echo "$scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir $date"
-  $scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir $date $scriptDir
+  echo "start to generate appended key list of objects"
+  echo "$scriptDir/genChangedKeysForLacnic.sh $bulkDataDir $yesterday $date $keysDir $scriptDir"
+  $scriptDir/genChangedKeysForLacnic.sh $bulkDataDir   $yesterday $date $keysDir $scriptDir
 
   #run retrieve process
   rm -rf  $resultDataDir/latest/*
