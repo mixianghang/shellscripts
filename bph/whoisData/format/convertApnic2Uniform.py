@@ -6,6 +6,9 @@ from ConfigParser import SafeConfigParser
 from netaddr import *
 import time
 
+reload(sys)  
+sys.setdefaultencoding('utf8')
+
 if len(sys.argv) < 4:
   print "Usage: sourceDir resultDir configFile"
   print len(sys.argv)

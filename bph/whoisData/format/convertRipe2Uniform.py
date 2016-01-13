@@ -9,6 +9,9 @@ from ripeUtil import *
 from pprint import pprint
 from uniformUtil import *
 
+reload(sys)  
+sys.setdefaultencoding('utf8')
+
 def main():
   #check and assign cl args to variables
   if len(sys.argv) < 5:

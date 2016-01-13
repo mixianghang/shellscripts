@@ -7,7 +7,7 @@ from ConfigParser import SafeConfigParser
 from netaddr import *
 import time
 from pprint import pprint
-from afrinicUtil import *
+from lacnicUtil import *
 from uniformUtil import *
 
 reload(sys)  
@@ -15,28 +15,26 @@ sys.setdefaultencoding('utf8')
 
 def readFromBulk(sourceDir, resultDir,configFile):
   #read inetnum inetnum6 mnter aut-num from the same file
-  sourceFile1 = os.path.join(sourceDir, "afrinic.db")
+  sourceFile1 = os.path.join(sourceDir, "lacnic.dp")
 
   sourceFileFd = open(sourceFile1, "r")
-  netResultFile = os.path.join(resultDir, "inetnum_afrinic")
-  asnResultFile = os.path.join(resultDir, "asn_afrinic")
-  orgResultFile = os.path.join(resultDir, "org_afrinic")
-  personResultFile = os.path.join(resultDir, "person_afrinic")
+  netResultFile = os.path.join(resultDir, "inetnum_lacnic")
+  asnResultFile = os.path.join(resultDir, "asn_lacnic")
+  orgResultFile = os.path.join(resultDir, "org_lacnic")
+  personResultFile = os.path.join(resultDir, "person_lacnic")
 
   #create cidrAsnMap
   cidrAsnMap = {}
-  createCidrAsnMap(sourceFile1, cidrAsnMap)
-  print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
+#  createCidrAsnMap(sourceFile1, cidrAsnMap)
+  #print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
 
   configParser = SafeConfigParser()
   configParser.read(configFile)
 #create converter
   inetnumConv = BaseConverter(netResultFile, configParser, "inetnum")
   asnConv = BaseConverter(asnResultFile, configParser, "asn")
-  mntnerConv = BaseConverter(personResultFile, configParser, "person")
 
-  inetnumConv.refreshCidrAsnMap(cidrAsnMap)
-  convDict = {"inetnum":inetnumConv, "inet6num":inetnumConv, "mntner":mntnerConv, "aut-num":asnConv}
+  convDict = {"inetnum":inetnumConv, "inet6num":inetnumConv, "aut-num":asnConv}
 
   lineNum = 0
   startTime=time.time()
@@ -73,11 +71,9 @@ def readFromBulk(sourceDir, resultDir,configFile):
 def readFromApiData(sourceDir, resultDir, configFile):
   configParser = SafeConfigParser()
   configParser.read(configFile)
-  orgResultFile = os.path.join(resultDir, "org_afrinic")
-  personResultFile = os.path.join(resultDir, "person_afrinic")
-  orgConv = OrgConverter(orgResultFile, configParser, "org")
+  personResultFile = os.path.join(resultDir, "person_lacnic")
   personConv = PersonConverter(personResultFile, configParser, "person")
-  objList = [("org", "org", "organisation",orgConv),("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
+  objList = [("person", "person", "person", personConv)]
   #objList = [("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
   for obj in objList:
     name = obj[0]
@@ -113,7 +109,6 @@ def readFromApiData(sourceDir, resultDir, configFile):
         else:
           currObj = 1
           convObj.newStart()
-  orgConv.finishAndClean()
   personConv.finishAndClean()
 def main():
   #check and assign cl args to variables

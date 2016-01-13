@@ -4,7 +4,8 @@ import sys
 from Exceptions import *
 import re
 from pprint import pprint
-from  uniformUtil import *
+import json
+from uniformUtil import *
 
 class BaseConverter(object):
   def __init__(self, resultFilePath, configParser, name):
@@ -15,7 +16,6 @@ class BaseConverter(object):
     self.valueRe=re.compile("[ \t]*([^:]+)", re.I)
     self.commentRe=re.compile("^#", re.I)
     self.stripRe = re.compile("[\|#\t\n \r]+", re.I)
-    self.inetnumRe = re.compile("^inetnum:[ \t]+([^ \t\n-]+)[ \t-]+([^ \t\n-]+)")
     self.resultDict = {}
     self.objectNum = 0
     self.options = []
@@ -31,13 +31,14 @@ class BaseConverter(object):
     self.readConfig(configParser, self.name)
     self.resultFileFd.write(self.columnSep.join(self.mappedOptions) + "\n")
     self.lastKey = ""
+    self.inetnumRe = re.compile("^inetnum:[ \t]+([^ \t\n-]+)[ \t-]+([^ \t\n-]+)")
     self.cidrAsnMap = {}
   def init(self):
     return 0
-  def refreshCidrAsnMap(self,newMap):
-    self.cidrAsnMap = newMap
   def refreshType(self,type):
     self.type = type
+  def refreshCidrAsnMap(self,newMap):
+    self.cidrAsnMap = newMap
   #retrieve key and value
   def processNewLine(self, line):
     if self.commentRe.match(line):
@@ -63,16 +64,16 @@ class BaseConverter(object):
       if matchObj is not None:
         startIp = matchObj.group(1)
         endIp   = matchObj.group(2)
-		try:
-		  response = findMappedCidrForRange(startIp, endIp, self.cidrAsnMap)
-		  if response['code'] == 0:
-			cidrKey = response['key']
-			self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
-		except Exception as e:
-		  print repr(e)
-		  print startIp, endIp
-		  print line
-		  sys.exit(1)
+        try:
+          response = findMappedCidrForRange(startIp, endIp, self.cidrAsnMap)
+          if response['code'] == 0:
+            cidrKey = response['key']
+            self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
+        except Exception as e:
+          print repr(e)
+          print startIp, endIp
+          print line
+          sys.exit(1)
     if key == "inet6num":
       response = findMappedCidrForCidr(value, self.cidrAsnMap)
       if response['code'] == 0:
@@ -95,6 +96,7 @@ class BaseConverter(object):
 
     keys = self.resultDict.keys()
     #choose result
+    iterOptions = iter(self.options)
     while index < len(self.options):
       option = self.options[index]
       subOptions = option.split(self.optionSep)
@@ -125,7 +127,8 @@ class BaseConverter(object):
       else:
         resultList.append("")
       index += 1
-    self.resultFileFd.write((self.columnSep.join(resultList)) + "\n")
+    resultStr = (self.columnSep.join(resultList)) + "\n"
+    self.resultFileFd.write(resultStr)
     self.resultDict.clear()
     self.objectNum += 1
     if self.objectNum % 10000 == 0 and self.objectNum > 0:
@@ -141,7 +144,114 @@ class BaseConverter(object):
       self.options.append(item[1])
     del items
     return 0
+  def parseEntityArray(self,entities):
+    handles = []
+    for entity in entities:
+      if entity.has_key("vcardArray"):
+        self.parseVcardArray(entity["vcardArray"])
+      if entity.has_key("handle"):
+        handles.append(entity["handle"])
+    handleValue = self.valueSep.join(handles)
+    if self.resultDict.has_key("handle"):
+      self.resultDict["handle"] = self.valueSep.join([self.resultDict["handle"], handleValue])
+    else:
+      self.resultDict["handle"] = handleValue
+    return 0
+  def parseVcardArray(self,vcardsArray):
+    if vcardsArray is None or not isinstance(vcardsArray, list):
+      return -1
+    vcards = vcardsArray[1]
+    phoneRe = re.compile("tel:(.*)")
+    phoneList = []
+    emailList = []
+    addressList = []
+    nameList = []
+    for vcard in vcards:
+      type = vcard[0]
+      value = vcard[3]
+      if type == "tel":#lacnic tel value is text rather than url in afrinic
+        #matchObj = phoneRe.match(value)
+        #if matchObj is None:
+        #  print "error when parse phone from {0}".format(value)
+        #  return -1
+        phoneList.append(value)
+      elif type == "email":
+        emailList.append(value)
+      elif type == "adr":
+        for i in range(0, len(value)):
+          if value[i] is None:
+            value[i] = ""
+        if isinstance(value, list):
+          addressList.append(" ".join(value)) 
+      elif type == "fn":
+        nameList.append(value)
+    keysDict = {"address":addressList, "email":emailList, "phone":phoneList, "name":nameList}
+    stripRe = re.compile("[\r\n\t]+")
+    for key in keysDict:
+      value = self.valueSep.join(keysDict[key])
+      if self.resultDict.has_key(key):
+        self.resultDict[key] = self.valueSep.join([self.resultDict[key], value])
+      else:
+        self.resultDict[key] = value
+      self.resultDict[key] = stripRe.sub(" ", self.resultDict[key])
+    return 0
 
+class PersonConverter(BaseConverter):
+  def __init__(self, resultFilePath, configParser, name):
+    super(PersonConverter, self).__init__(resultFilePath, configParser, name)
+    self.rawJson = []
+  def newStart(self):
+    self.rawJson.append("{")
+    return 0
+  def storeNewLine(self, line):
+    self.rawJson.append(line)
+    return 0
+  def end(self):
+    self.rawJson.append("}")
+    jsonStr = "".join(self.rawJson)
+    try:
+      decoded = json.loads("".join(self.rawJson))
+    except Exception as e:
+      print "decode error {0}".format(repr(e))
+      print jsonStr
+    #pprint(decoded)
+    if decoded.has_key("vcardArray"):
+      vcards = decoded["vcardArray"]
+      self.parseVcardArray(vcards)
+    if decoded.has_key("entities"):
+      entities = decoded["entities"]
+      self.parseEntityArray(entities)
+    self.resultDict["nic-hdl"] = decoded["handle"]
+    self.writeAndClear()
+    self.rawJson = []
+class OrgConverter(BaseConverter):
+  def __init__(self, resultFilePath, configParser, name):
+    super(OrgConverter, self).__init__(resultFilePath, configParser, name)
+    self.rawJson = []
+  def newStart(self):
+    self.rawJson.append("{")
+    return 0
+  def storeNewLine(self, line):
+    self.rawJson.append(line)
+    return 0
+  def end(self):
+    self.rawJson.append("}")
+    jsonStr = "".join(self.rawJson)
+    try:
+      decoded = json.loads("".join(self.rawJson))
+    except Exception as e:
+      print "decode error {0}".format(repr(e))
+      print jsonStr
+    #pprint(decoded)
+    if decoded.has_key("vcardArray"):
+      vcards = decoded["vcardArray"]
+      self.parseVcardArray(vcards)
+    if decoded.has_key("entities"):
+      entities = decoded["entities"]
+      self.parseEntityArray(entities)
+    self.resultDict["org"] = decoded["handle"]
+    self.writeAndClear()
+    self.rawJson = []
 class NetnumConverter(BaseConverter):
   inited = 0
   def __init__(self, resultFilePath, configParser, name):

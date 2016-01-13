@@ -5,6 +5,7 @@ from Exceptions import *
 import re
 from pprint import pprint
 import json
+from uniformUtil import *
 
 class BaseConverter(object):
   def __init__(self, resultFilePath, configParser, name):
@@ -30,10 +31,14 @@ class BaseConverter(object):
     self.readConfig(configParser, self.name)
     self.resultFileFd.write(self.columnSep.join(self.mappedOptions) + "\n")
     self.lastKey = ""
+    self.inetnumRe = re.compile("^inetnum:[ \t]+([^ \t\n-]+)[ \t-]+([^ \t\n-]+)")
+    self.cidrAsnMap = {}
   def init(self):
     return 0
   def refreshType(self,type):
     self.type = type
+  def refreshCidrAsnMap(self,newMap):
+    self.cidrAsnMap = newMap
   #retrieve key and value
   def processNewLine(self, line):
     if self.commentRe.match(line):
@@ -54,6 +59,26 @@ class BaseConverter(object):
       value = kv[1]
     value = value.strip(" \n\r\t")
     value = self.stripRe.sub(" ", value)
+    if key == "inetnum":
+      matchObj = self.inetnumRe.match(line)
+      if matchObj is not None:
+        startIp = matchObj.group(1)
+        endIp   = matchObj.group(2)
+        try:
+          response = findMappedCidrForRange(startIp, endIp, self.cidrAsnMap)
+          if response['code'] == 0:
+            cidrKey = response['key']
+            self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
+        except Exception as e:
+          print repr(e)
+          print startIp, endIp
+          print line
+          sys.exit(1)
+    if key == "inet6num":
+      response = findMappedCidrForCidr(value, self.cidrAsnMap)
+      if response['code'] == 0:
+        cidrKey = response['key']
+        self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
     if self.resultDict.has_key(key):
       self.resultDict[key] = self.valueSep.join([self.resultDict[key], value])
     else:
@@ -103,7 +128,6 @@ class BaseConverter(object):
         resultList.append("")
       index += 1
     resultStr = (self.columnSep.join(resultList)) + "\n"
-    resultStr = resultStr.encode('utf-8').strip()
     self.resultFileFd.write(resultStr)
     self.resultDict.clear()
     self.objectNum += 1
@@ -195,6 +219,7 @@ class PersonConverter(BaseConverter):
       self.parseEntityArray(entities)
     self.resultDict["nic-hdl"] = decoded["handle"]
     self.writeAndClear()
+    self.rawJson = []
   def parseEntityArray(self,entities):
     handles = []
     for entity in entities:

@@ -8,6 +8,9 @@ import time
 from arinUtil import *
 from pprint import pprint
 
+reload(sys)  
+sys.setdefaultencoding('utf8')
+
 def main():
   #check and assign cl args to variables
   if len(sys.argv) < 4:
