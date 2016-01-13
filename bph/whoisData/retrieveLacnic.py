@@ -55,8 +55,8 @@ for section in sections:
       os.makedirs(os.path.dirname(resultFile))
   resultFileFd  = open(resultFile, "a")
   if not os.path.exists(keyList):
-	error("keylist file doesn't exist:{0}".format(keyList))
-	sys.exit(1)
+    error("keylist file doesn't exist:{0}".format(keyList))
+    sys.exit(1)
   #open keylist file and loop to send http request and save response
   keyListFd = open(keyList, "r")
   kwNum = lineCount(keyList)
@@ -67,6 +67,8 @@ for section in sections:
   startTime = time.time()
   retryTimes = 0
   print "kw num is {0}, numPerMin is {1}, lenAlarm is {2}".format(kwNum, numPerMinLimit, minLenAlarm)
+  requestNum = 0
+  failed = 0
   while index < kwNum:
       if numPerMin >= numPerMinLimit:#limit of lacnic rdap is
           print "sleep {0} before sending requests again".format(timeDelay)
@@ -74,28 +76,35 @@ for section in sections:
           numPerMin = 0
       kw = kwList[index]
       kw = kw.strip(" \n\r\t")
-      lookupResponse = lacnicLookupThroughRequests(requestUrl, kw, session=session)	
+      lookupResponse = lacnicLookupThroughRequests(requestUrl, kw, session=session)    
       code = int(lookupResponse['code'])
       body = lookupResponse['body']
       if code != 0:
-          error("request error for key {0}, requestUrl {1} with error msg {2}\n".format(kw, requestUrl, body))
           retryTimes += 1
+          print("request error for key {0}, requestUrl {1} with error msg {2}\n".format(kw, requestUrl, body))
           if retryTimes >= 3:
+              error("request error for key {0}, requestUrl {1} with error msg {2}\n".format(kw, requestUrl, body))
+              failed += 1
+              requestNum += 1
               index += 1
               retryTimes = 0
           numPerMin += 1
           continue
       elif len(body) <= minLenAlarm:
-          error("response is too short for key {0}, requestUrl {1} with error msg {2}\n".format(kw, requestUrl, body))
           retryTimes += 1
+          print("request error for key {0}, requestUrl {1} with error msg {2}\n".format(kw, requestUrl, body))
           if retryTimes >= 3:
+              error("response is too short for key {0}, requestUrl {1} with error msg {2}\n".format(kw, requestUrl, body))
+              failed += 1
+              requestNum += 1
               index += 1
               retryTimes = 0
-          numPerMin += 1
           time.sleep(timeDelay)
+          numPerMin = 0
           continue
       else:
-          print "recv len {0}".format(len(body))
+          print "recv len {0} with requestNum: {1} and failed: {2}".format(len(body), requestNum, failed)
+          requestNum += 1
           resultFileFd.write(body)
       if index % 100 ==0:
         resultFileFd.flush()
