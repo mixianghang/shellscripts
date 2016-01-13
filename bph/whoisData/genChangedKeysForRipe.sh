@@ -45,6 +45,7 @@ do
     grep -E -i "^>" $tempDir/diff_${object}_${date1}_${date2} | sed -r 's/> (.*)/\1/g' | awk 'BEGIN{FS="\t"}{print $1}' >$tempDir/result/${object}_kwlist_appended
 #include changed and deleted
     grep -E -i "^<" $tempDir/diff_${object}_${date1}_${date2} | sed -r 's/< (.*)/\1/g' | awk 'BEGIN{FS="\t"}{print $1}' >$tempDir/result/${object}_kwlist_deleted
+	cp $tempDir/${object}_${date2} $tempDir/result/${object}_kwlist
     #rm -rf $tempDir/${object}_${date1}
     #rm -rf $tempDir/${object}_${date2}
     #rm -rf $tempDir/diff_${object}_${date1}_${date2}
