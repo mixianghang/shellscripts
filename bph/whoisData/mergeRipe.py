@@ -18,7 +18,7 @@ def main():
   for type in typeList:
     appendKeyFile = os.path.join(keyDir, newDate, "{0}_kwlist_appended".format(type))
     deleteKeyFile = os.path.join(keyDir, newDate, "{0}_kwlist_deleted".format(type))
-    appendDataFile = os.path.join(dataDir, newData, "{0}_appended".format(type))
+    appendDataFile = os.path.join(dataDir, newDate, "{0}_appended".format(type))
     oldDataFile   = os.path.join(dataDir, oldDate, type)
     newDataFile   = os.path.join(dataDir, newDate, type)
 
@@ -26,7 +26,7 @@ def main():
       os.rename(newDataFile, newDataFile + "_bak_" + date)
     newDataFd = open(newDataFile, "a")
     if not os.path.exists(oldDataFile):
-      sys.stderr.write("Error: file not exist for type {0}: {1}".format(obj, oldDataFile))
+      sys.stderr.write("Error: file not exist for type {0}: {1}".format(type, oldDataFile))
       continue
     oldDataFd = open(oldDataFile, "r")
 
@@ -39,15 +39,16 @@ def main():
     #generate key list 
     if os.path.isfile(appendKeyFile):
       with open(appendKeyFile, "r") as f:
-        appendKeyList = f.read.splitlines()
+        appendKeyList = f.read().splitlines()
     else:
       appendKeyList = []
     if os.path.isfile(deleteKeyFile):
       with open(deleteKeyFile, "r") as f:
-        deleteKeyList = f.read.splitlines()
+        deleteKeyList = f.read().splitlines()
     else:
       deleteKeyList = []
     excludeKeyList = appendKeyList + deleteKeyList
+    print "Start type {0} with excludeList {1}".format(type, len(excludeKeyList))
     maxLimit = 10000
     currPK = None
     currObj = []
@@ -61,7 +62,7 @@ def main():
         sys.stderr.write("error to parse old data when reading more than {0} lines at {1} of type {2}".format(maxLimit, lineNum, type))
         break
       if pkStartRe.match(line):
-        nextLine = next(appendKeyFile)
+        nextLine = next(oldDataFd)
         lineNum += 1
         currObj.append(nextLine)
         matchObj = pkRe.match(nextLine)
