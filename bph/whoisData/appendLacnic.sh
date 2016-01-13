@@ -30,19 +30,19 @@ scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 #try to overwrite default configuration
 if [[ $# -ge 3 ]]; then
   bulkDataDir=$3
-if
+fi
 
 if [[ $# -ge 4 ]]; then
   keysDir=$4
-if
+fi
 
 if [[ $# -ge 5 ]]; then
   resultDataDir=$5
-if
+fi
 
 if [[ $# -ge 6 ]]; then
   scriptDir=$6
-if
+fi
 
 date=$startDate
 while [ $date -le $endDate ]
