@@ -82,6 +82,9 @@ def readFromApiData(sourceDir, resultDir, configFile):
     convObj = obj[3]
     convObj.refreshType(type)
     sourceFilePath = os.path.join(sourceDir, "{0}".format(fileName))
+    if not os.path.exists(sourceFilePath):
+      sys.stderr.write("file doesn't exist:{0}".format(sourceFilePath))
+      continue
     sourceFileFd = open(sourceFilePath, "r")
     kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
     startRe = re.compile("^}?{\n$", re.I)

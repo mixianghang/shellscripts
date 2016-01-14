@@ -23,7 +23,7 @@ $currDir/convertArin2Uniform.py $tempDir/arin $resultDir $configFile
 
 #for apnic
 cp -r /data/salrwais/BPH/Whois/bulkWhois/APNIC/$date $tempDir/apnic
-gzip -d $tempDir/apnic/split/*
+gzip -d $tempDir/apnic/split/*.gz
 #run unformat script
 $currDir/convertApnic2Uniform2.py $tempDir/apnic/split $resultDir $configFile
 
@@ -31,7 +31,7 @@ $currDir/convertApnic2Uniform2.py $tempDir/apnic/split $resultDir $configFile
 sourceRipe=/data/salrwais/BPH/Whois/API/RIPE/Data/20160101
 bulkRipe=/data/salrwais/BPH/Whois/bulkWhois/RIPE/$date
 cp -r /data/salrwais/BPH/Whois/bulkWhois/RIPE/$date $tempDir/ripe
-gzip -d $tempDir/ripe/*
+gzip -d $tempDir/ripe/*.gz
 #run unformat script
 $currDir/convertRipe2Uniform.py $sourceRipe $resultDir $configFile  $tempDir/ripe
 
