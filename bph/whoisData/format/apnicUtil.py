@@ -63,16 +63,16 @@ class BaseConverter(object):
       if matchObj is not None:
         startIp = matchObj.group(1)
         endIp   = matchObj.group(2)
-		try:
-		  response = findMappedCidrForRange(startIp, endIp, self.cidrAsnMap)
-		  if response['code'] == 0:
-			cidrKey = response['key']
-			self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
-		except Exception as e:
-		  print repr(e)
-		  print startIp, endIp
-		  print line
-		  sys.exit(1)
+        try:
+          response = findMappedCidrForRange(startIp, endIp, self.cidrAsnMap)
+          if response['code'] == 0:
+            cidrKey = response['key']
+            self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
+        except Exception as e:
+          print repr(e)
+          print startIp, endIp
+          print line
+          sys.exit(1)
     if key == "inet6num":
       response = findMappedCidrForCidr(value, self.cidrAsnMap)
       if response['code'] == 0:
