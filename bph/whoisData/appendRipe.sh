@@ -49,6 +49,10 @@ do
   $scriptDir/retrieveRipe.py $scriptDir/appendRipeConfig.cfg 2>$logError
 
 
+  #merge data
+  echo "$scriptDir/mergeRipe.py $keysDir $resultDataDir $yesterday $date"
+  $scriptDir/mergeRipe.py $keysDir $resultDataDir $yesterday $date
+
   #generate key list for person object
   echo "start to generate keylist for persons"
   echo "$scriptDir/genPersonKeysForRipe.sh $resultDataDir/$date $date $keysDir"
