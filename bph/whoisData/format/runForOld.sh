@@ -45,15 +45,14 @@ do
   fi
 
 #for ripe
-  sourceRipe=/data/salrwais/BPH/Whois/API/RIPE/Data/$date
   bulkRipe=/data/salrwais/BPH/Whois/bulkWhois/RIPE/$date
-  if [ ! -e "$sourceRipe" -o ! -e "$bulkRipe" ];then
-	echo "$sourceRipe  or $bulkRipe doesn't exist"
+  if [ ! -e "$bulkRipe" ];then
+	echo "$bulkRipe doesn't exist"
   else
 	cp -r /data/salrwais/BPH/Whois/bulkWhois/RIPE/$date $tempDir/ripe
 	gzip -d $tempDir/ripe/*.gz
 #run unformat script
-	$currDir/convertRipe2Uniform.py $sourceRipe $resultDir $configFile  $tempDir/ripe
+	$currDir/convertRipeOld2Uniform.py $tempDir/ripe $resultDir $configFile
   fi
 
 #for afrinic

@@ -16,6 +16,9 @@ sys.setdefaultencoding('utf8')
 def readFromBulk(sourceDir, resultDir,configFile):
   #read inetnum inetnum6 mnter aut-num from the same file
   sourceFile1 = os.path.join(sourceDir, "afrinic.db")
+  if not os.path.exists(sourceFile1):
+    print "afrinic source file doesn't exist {0}".format(sourceFile1)
+    return -1
 
   sourceFileFd = open(sourceFile1, "r")
   netResultFile = os.path.join(resultDir, "inetnum_afrinic")
@@ -86,6 +89,9 @@ def readFromApiData(sourceDir, resultDir, configFile):
     convObj = obj[3]
     convObj.refreshType(type)
     sourceFilePath = os.path.join(sourceDir, "{0}".format(fileName))
+    if not os.path.exists(sourceFilePath):
+      print "path {0} doesn't exist".format(sourceFilePath)
+      continue
     sourceFileFd = open(sourceFilePath, "r")
     kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
     startRe = re.compile("^}?{\n$", re.I)

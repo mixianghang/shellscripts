@@ -42,6 +42,9 @@ def main():
   classes['POCHandle'] = BaseConverter(personResultFile, configParser, "person")
 
 #open source file and result file
+  if not os.path.exists(sourceFile):
+    print "arin source file doesn't exist {0}".format(sourceFile)
+    return -1
   sourceFileFd = open(sourceFile, "r")
 
   lineNum = 0

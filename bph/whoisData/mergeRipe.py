@@ -5,14 +5,23 @@ import re
 import time
 
 def main():
-  if len(sys.argv) < 5:
-    sys.stderr.write("Usage: keyDir dataDir date1 date2")
+  if len(sys.argv) < 6:
+    sys.stderr.write("Usage: keyDir dataDir date1 date2 isPerson")
     sys.exit(1)
   keyDir  = sys.argv[1]
   dataDir = sys.argv[2]
   oldDate   = sys.argv[3]
   newDate  = sys.argv[4]
-  typeList = ["inetnum", "inet6num", "orgnisation", "irt", "mntner", "person", "role", "aut-num", "as-set", "as-block", "domain", "route-set"]
+  isPerson = int(sys.argv[5])
+  if isPerson == 1:
+    typeList = ["person"]
+    print "merge data for only person"
+  elif isPerson == 2:
+    typeList = ["organisation"]
+    print "merge data for only org"
+  else:
+    typeList = ["inetnum", "inet6num", "organisation", "irt", "mntner", "role", "aut-num", "as-set", "as-block", "domain", "route-set"]
+    print "merge data for types except for person"
   date = time.strftime("%Y-%m-%d-%H-%M-%S")
   startTime = time.time()
   for type in typeList:

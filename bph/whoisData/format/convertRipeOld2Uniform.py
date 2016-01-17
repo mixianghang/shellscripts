@@ -5,7 +5,7 @@ import re
 from ConfigParser import SafeConfigParser
 from netaddr import *
 import time
-from apnicUtil import *
+from ripeOldUtil import *
 from pprint import pprint
 from uniformUtil import *
 
@@ -36,8 +36,8 @@ def main():
 
 #create cidrAsnMap
   cidrAsnMap = {}
-  routeFile = os.path.join(sourceDir, "apnic.db.route")
-  route6File = os.path.join(sourceDir, "apnic.db.route6")
+  routeFile = os.path.join(sourceDir, "ripe.db.route")
+  route6File = os.path.join(sourceDir, "ripe.db.route6")
   createCidrAsnMap(routeFile, cidrAsnMap)
   createCidrAsnMap(route6File, cidrAsnMap)
   print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
@@ -49,7 +49,7 @@ def main():
     name = obj[0]
     type = obj[1]
     if not convDict.has_key(name):
-      resultFilePath = os.path.join(resultDir, "{0}_apnic".format(name))
+      resultFilePath = os.path.join(resultDir, "{0}_ripe".format(name))
       convObj = BaseConverter(resultFilePath, configParser, name)
       convObj.refreshType(type)
       convDict[name] = convObj
@@ -58,7 +58,7 @@ def main():
     else:
       convObj = convDict[name]
       convObj.refreshType(type)
-    sourceFilePath = os.path.join(sourceDir, "apnic.db.{0}".format(type))
+    sourceFilePath = os.path.join(sourceDir, "ripe.db.{0}".format(type))
     if not os.path.exists(sourceFilePath):
       print "source file {0} doesn't exist".format(sourceFilePath)
       continue

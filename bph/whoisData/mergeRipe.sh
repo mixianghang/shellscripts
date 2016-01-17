@@ -14,7 +14,6 @@ date=$(date +"%Y%m%d")
 
 startDate=$date
 endDate=$date
-yesterday=$((date -1))
 dataDir=/data/salrwais/BPH/Whois/API/RIPE/Data
 keyDir=/data/salrwais/BPH/Whois/API/RIPE/Keys
 scriptDir=/data/seclab/BPH/Xianghang/bulkData/Scripts
@@ -22,9 +21,6 @@ scriptDir=/data/seclab/BPH/Xianghang/bulkData/Scripts
 if [[ $# -ge 2 ]]; then
     startDate=$1
 	endDate=$2
-    yesterday=$((startDate - 1))
-	date=$startDate
-	$scriptDir/
 fi
 
 if [[ $# -ge 5 ]];then
@@ -32,10 +28,12 @@ if [[ $# -ge 5 ]];then
   keyDir=$4
   scriptDir=$5
 fi
+date=$startDate
+yesterday=$(date -d "$date -1day" +"%Y%m%d")
 while [ $date -le $endDate ]
 do
   echo $yesterday $date
-  $scriptDir/mergeRipe.py $keyDir $dataDir $yesterday $date
-  ((date++))
-  ((yesterday++))
+  $scriptDir/mergeRipe.py $keyDir $dataDir $yesterday $date 0
+  yesterday=$date
+  date=$(date -d "$date +1day" +"%Y%m%d")
 done 

@@ -50,6 +50,7 @@ def main():
   currPK = None
   currObj = []
   lineNum = 0
+  duplicate = 0
   for line in oldDataFd:
     lineNum += 1
     if len(currObj) == 0:
@@ -57,6 +58,11 @@ def main():
           currPK = None
           currObj.append(line)
         continue
+    if startRe.match(line):
+      currPK = None
+      currObj = []
+      currObj.append(line)
+      continue
     currObj.append(line)
     if len(currObj) >= maxLimit:
       sys.stderr.write("error to parse old data when reading more than {0} lines at {1}".format(maxLimit, lineNum))
@@ -80,9 +86,11 @@ def main():
         currPK = None
         continue
       else:
-        keyMap.pop(currPK, None)
-        if len(currObj) > 0:
+        if keyMap.has_key(currPK) :
           newDataFd.write("".join(currObj))
+        else:
+          duplicate += 1
+        keyMap.pop(currPK, None)
         currObj = []
         currPK  = None
   oldDataFd.close()
@@ -92,7 +100,7 @@ def main():
     newKeyFd.write(key + "\n")
   newKeyFd.close()
   print "finish with time cost of {0:.2f}".format(endTime - startTime)
-  print "find out {0} failed keys".format(len(keyMap))
+  print "find out {0} failed keys and {1} duplicate objects".format(len(keyMap), duplicate)
     
 if __name__ == "__main__":
   main()

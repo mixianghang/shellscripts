@@ -61,6 +61,9 @@ def main():
       convObj = convDict[name]
       convObj.refreshType(type)
     sourceFilePath = os.path.join(sourceDir, "{0}".format(type))
+    if not os.path.exists(sourceFilePath):
+      print "file doestn't exist: {0}".format(sourceFilePath)
+      continue
     sourceFileFd = open(sourceFilePath, "r")
     kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
     startRe = re.compile("[ \t\n\r]+<attributes>", re.I)

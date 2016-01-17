@@ -38,10 +38,10 @@ do
       echo "generate keys from $sourceDir/$date/$object"
       grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$date/$object |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
     fi
-    if [ -f $sourceDir/$date/$object.appended ]
+    if [ -f $sourceDir/$date/${object}_appended ]
     then
-      echo "generate keys from $sourceDir/$date/$object.appended"
-      grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$date/$object.appended |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
+      echo "generate keys from $sourceDir/$date/${object}_appended"
+      grep -E -i "name=\"(admin-c|tech-c)\".*person" $sourceDir/$date/${object}_appended |sed -r 's/.*value=\"(.+)\" .*/\1/g' >>$tempDir/resultList
     fi
     ((index++))
 done

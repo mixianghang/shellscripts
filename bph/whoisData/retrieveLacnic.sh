@@ -14,12 +14,10 @@ date=$(date +"%Y%m%d")
 
 startDate=$date
 endDate=$date
-yesterday=$((date -1))
 
 if [[ $# -ge 2 ]]; then
     startDate=$1
 	endDate=$2
-    yesterday=$((startDate - 1))
 fi
 
 bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/LACNIC"
@@ -28,6 +26,7 @@ resultDataDir="/data/salrwais/BPH/Whois/API/LACNIC/Data"
 scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 
 date=$startDate
+yesterday=$(date -d "$date -1day" +"%Y%m%d")
 while [ $date -le $endDate ]
 do
   echo $yesterday $date
@@ -51,7 +50,7 @@ do
   echo "copy to $resultDataDir/$date"
   mkdir -p $resultDataDir/$date
   cp -r $resultDataDir/latest/* $resultDataDir/$date 
-  ((date++))
-  ((yesterday++))
+  yesterday=$date
+  date=$(date -d "$date +1day" +"%Y%m%d")
 done
 
