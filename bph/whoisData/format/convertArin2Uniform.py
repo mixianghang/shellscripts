@@ -53,7 +53,7 @@ def main():
   classKeys = classes.keys()
   currObj = None
   kwRe = re.compile("([\w-]+):[ \t]*(.*)", re.I)
-  blankRe = re.compile("[ \t\n\r]+", re.I)
+  blankRe = re.compile("^[ \t\n\r]+$", re.I)
   for line in sourceFileFd:
     lineNum += 1
     if currObj is not None:
@@ -72,6 +72,8 @@ def main():
         currObj = matchObject.group(1)
         if currObj == "V6NetHandle":
           classes[currObj].refreshType("inet6num")
+        elif currObj == "NetHandle":
+          classes[currObj].refreshType("inetnum")
         if classes[currObj].processNewLine(line) != 0:
           print "error when process new line {0} for {1}".format(line, currObj)
         continue

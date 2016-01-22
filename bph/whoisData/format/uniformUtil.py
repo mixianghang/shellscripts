@@ -4,6 +4,8 @@ import netaddr
 import sys
 from pprint import pprint
 import re
+import requests
+import time
 def findMappedCidrForCidr(cidrStr, cidrAsnMap):
   response = {}
   cidr = netaddr.IPNetwork(cidrStr)
@@ -96,6 +98,29 @@ def createCidrAsnMap(routeFile, mapDict, routeRe = None, originRe = None):
   routeFileFd.close()
   return 0
 
+def downloadFile(requestUrl, resultFile):
+  response={}
+  resp = requests.get(requestUrl, stream=True)
+  if resp.status_code != 200:
+    response['code'] = -1
+    response['body'] = "request error with response code {0}".format(resp.status_code)
+    return response
+  date = time.strftime("%Y%m%d_%H%M%S")
+  if os.path.exists(resultFile):
+    os.rename(resultFile, resultFile + "_bak_" + date)
+  with open(resultFile, "w") as result:
+    for content in resp.iter_content(chunk_size = 4096):
+      result.write(content)
+    response["code"] = 0
+    response['body'] = ""
+    return response
+
+  response["code"] = -1
+  response['body'] = "unexpected error"
+  return response
+
+
+  
 if __name__ == "__main__":
   routeFile = sys.argv[1]
   inetnumFile = sys.argv[2]

@@ -14,6 +14,7 @@ then
 else
   currDir=$(pwd)
 fi
+yesterday=$(date -d "$date -1day" +"%Y%m%d")
 
 objects=('inetnum' 'inet6num' 'role' 'organisation' 'irt' 'mntner' 'aut-num' 'as-set' 'as-block' 'domain' 'route-set')
 keys=('inetnum' 'inet6num' 'nic-hdl' 'organisation' 'irt' 'mntner' 'aut-num' 'as-set' 'as-block' 'domain' 'route-set')
@@ -51,16 +52,16 @@ then
   echo "no result generated"
   exit 1
 fi
-if [ -e $resultDir/latest/person_kwlist ]
+if [ -e $resultDir/$yesterday/person_kwlist ]
 then
   echo "append old keylsit"
-  cat $resultDir/latest/person_kwlist >> $tempDir/resultList
+  cat $resultDir/$yesterday/person_kwlist >> $tempDir/resultList
 fi
 echo "sort and remove duplicates"
 sort $tempDir/resultList | uniq > $tempDir/uniqList
-if [ -e $resultDir/latest/person_kwlist ]
+if [ -e $resultDir/$yesterday/person_kwlist ]
 then
-  diff -iEBb $resultDir/latest/person_kwlist $tempDir/uniqList > $tempDir/diffList
+  diff -iEBb $resultDir/$yesterday/person_kwlist $tempDir/uniqList > $tempDir/diffList
   grep -E ">" $tempDir/diffList | sed -r 's/>[ ]+(.*)/\1/g' > $tempDir/appendedList
   grep -E "<" $tempDir/diffList | sed -r 's/<[ ]+(.*)/\1/g' > $tempDir/deletedList
 else

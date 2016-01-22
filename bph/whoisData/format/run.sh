@@ -77,6 +77,9 @@ do
 	$currDir/convertLacnic2Uniform.py $bulkDir $apiDir $resultDir $configFile 
   fi
 
+  echo "$currDir/addAsn2Inetnum.sh"
+  $currDir/addAsn2Inetnum.sh
+
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")
 done

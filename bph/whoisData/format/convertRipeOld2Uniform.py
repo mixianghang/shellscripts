@@ -64,7 +64,7 @@ def main():
       continue
     sourceFileFd = open(sourceFilePath, "r")
     kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
-    blankRe = re.compile("[ \t\n\r]+", re.I)
+    blankRe = re.compile("^[ \t\n\r]+$", re.I)
     lineNum = 0
     currObj = 0
     for line in sourceFileFd:

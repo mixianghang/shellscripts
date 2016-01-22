@@ -129,8 +129,14 @@ def main():
   configFile= sys.argv[4]
 
   startTime = time.time()
-  readFromBulk(sourceDir, resultDir, configFile)
-  readFromApiData(sourceDir2, resultDir, configFile)
+  if os.path.exists(sourceDir):
+    readFromBulk(sourceDir, resultDir, configFile)
+  else:
+    sys.stderr.write("skip read from bulk since bulk data doesn't exist:{0}".format(sourceDir))
+  if os.path.exists(sourceDir2):
+    readFromApiData(sourceDir2, resultDir, configFile)
+  else:
+    sys.stderr.write("skip read from api since bulk data doesn't exist:{0}".format(sourceDir2))
 
   endTime=time.time()
   print "time cost is {0:.2f}".format(endTime - startTime)
