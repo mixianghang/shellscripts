@@ -46,8 +46,11 @@ def readFromBulk(sourceDir, resultDir,configFile):
   startRe = re.compile("^[ \t\r\n]+$", re.I)
   kvRe = re.compile("([\w/-]+):[ \t]+(.*)", re.I)
   endRe   = startRe
+  commentRe = re.compile("^%.*", re.I)
   for line in sourceFileFd:
     lineNum += 1
+    if commentRe.match(line):
+      continue
     if curObj is not None:
       if endRe.match(line):
         curObj.writeAndClear()

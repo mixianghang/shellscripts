@@ -52,10 +52,13 @@ def main():
   startTime=time.time()
   classKeys = classes.keys()
   currObj = None
-  kwRe = re.compile("([\w-]+):[ \t]*(.*)", re.I)
+  kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
   blankRe = re.compile("^[ \t\n\r]+$", re.I)
+  commentRe = re.compile("^%.*", re.I)
   for line in sourceFileFd:
     lineNum += 1
+    if commentRe.match(line):
+      continue
     if currObj is not None:
       if blankRe.match(line) is None:
         if classes[currObj].processNewLine(line) != 0:
@@ -65,7 +68,7 @@ def main():
         currObj = None
         objectNum += 1
     else:
-      if blankRe.match(line) is not None:
+      if kwRe.match(line) is None:
         continue
       matchObject = kwRe.match(line)
       if matchObject is not None and matchObject.group(1) in classKeys:

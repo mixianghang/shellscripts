@@ -18,18 +18,27 @@ fi
 date=$startDate
 while [ $date -le $endDate ]
 do
-  tempDir=$currDir/temp
+  echo $date
+  tempDir=$currDir/temp_formatRipe_$(date +"%Y%m%d-%H%M%S")
   mkdir -p $tempDir
   mkdir -p $resultBaseDir/$date
   resultDir=$resultBaseDir/$date
 
 #for ripe
-  sourceRipe=/data/salrwais/BPH/Whois/API/RIPE/Data/$date
+  apiRipe=/data/salrwais/BPH/Whois/API/RIPE/Data/$date
   bulkRipe=/data/salrwais/BPH/Whois/bulkWhois/RIPE/$date
-  if [ ! -e "$sourceRipe" ];then
-	echo "$sourceRipe doesn't exist"
-    date=$(date -d "$date +1day" +"%Y%m%d")
-	continue
+  if [ ! -e "$apiRipe" ];then
+	if [ ! -e ${apiRipe}.7z ];then
+	  echo "$apiRipe and ${apiRipe}.7z doesn't exist"
+	  date=$(date -d "$date +1day" +"%Y%m%d")
+	  continue
+	else
+	  echo "7z x -o$tempDir ${apiRipe}.7z $date/organisation"
+	  7z x -o$tempDir ${apiRipe}.7z $date/organisation
+	  sourceDir=$tempDir/$date
+	fi
+  else
+	sourceDir=$apiRipe
   fi
   #if [ ! -e "$bulkRipe" ];then
   #  echo "$bulkRipe doesn't exist"
@@ -39,7 +48,11 @@ do
   #cp -r /data/salrwais/BPH/Whois/bulkWhois/RIPE/$date $tempDir/ripe
   #gzip -d $tempDir/ripe/*.gz
 #run unformat script
-  $currDir/convertRipe2Uniform_test.py $sourceRipe $resultDir $configFile  $tempDir/ripe
+  if [ -e $resultDir/org_ripe ];then
+	echo "bak old org: $resultDir/org_ripe"
+	mv $resultDir/org_ripe $resultDir/org_ripe_bak
+  fi
+  $currDir/convertRipe2Uniform_test.py $sourceDir $resultDir $configFile  $tempDir
 
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")

@@ -1,7 +1,7 @@
 #!/bin/bash
 resultBaseDir=/data/seclab/BPH/Uniform/
 configFile=/data/seclab/BPH/Xianghang/bulkData/Scripts/format/uniformFormat.cfg
-currDir=/data/seclab/BPH/Xianghang/bulkData/Scripts/format/
+currDir=/data/seclab/BPH/Xianghang/bulkData/Scripts/format
 startDate=$(date +"%Y%m%d")
 endDate=$(date +"%Y%m%d")
 if [ $# -ge 2 ];then
@@ -23,8 +23,22 @@ do
   tempDir=$tempDir_1/$date
   echo $tempDir
   mkdir -p $tempDir
+  if [ -e $resultBaseDir/$date ];then
+	rm -rf $resultBaseDir/$date
+  fi
   mkdir -p $resultBaseDir/$date
   resultDir=$resultBaseDir/$date
+
+#for ripe
+  bulkRipe=/data/salrwais/BPH/Whois/bulkWhois/RIPE/$date
+  if [ ! -e "$bulkRipe" ];then
+	echo "$bulkRipe doesn't exist"
+  else
+	cp -r /data/salrwais/BPH/Whois/bulkWhois/RIPE/$date $tempDir/ripe
+	gzip -d $tempDir/ripe/*.gz
+#run unformat script
+	$currDir/convertRipeOld2Uniform.py $tempDir/ripe $resultDir $configFile
+  fi
 
 #for arin
 #copy and unzip to temp
@@ -37,25 +51,26 @@ do
   fi
 
 #for apnic
-  if [ ! -e "/data/salrwais/BPH/Whois/bulkWhois/APNIC/$date" ];then
-	echo "/data/salrwais/BPH/Whois/bulkWhois/APNIC/$date doesn't exist"
+  apnicDir=/data/salrwais/BPH/Whois/bulkWhois/APNIC/$date/
+  mkdir -p $tempDir/apnic
+  if [ ! -e $apnicDir ];then
+	echo "$apnicDir doesn't exist"
   else
-	cp -r /data/salrwais/BPH/Whois/bulkWhois/APNIC/$date $tempDir/apnic
-	gzip -d $tempDir/apnic/split/*.gz
+	if [ -e $apnicDir/apnic.db.inetnum.gz ];then
+	  echo "copy from $apnicDir"
+	  cp -r $apnicDir/* $tempDir/apnic
+	else
+	  echo "copy from $apnicDir/split"
+	  cp -r $apnicDir/split/* $tempDir/apnic
+	fi
+	gzip -d $tempDir/apnic/*.gz
 #run unformat script
-	$currDir/convertApnic2Uniform2.py $tempDir/apnic/split $resultDir $configFile
+	if [ $? -eq 0 ];then
+	  echo "start to run $currDir/convertApnic2Uniform2.py $tempDir/apnic $resultDir $configFile"
+	  $currDir/convertApnic2Uniform2.py $tempDir/apnic $resultDir $configFile
+	fi
   fi
 
-#for ripe
-  bulkRipe=/data/salrwais/BPH/Whois/bulkWhois/RIPE/$date
-  if [ ! -e "$bulkRipe" ];then
-	echo "$bulkRipe doesn't exist"
-  else
-	cp -r /data/salrwais/BPH/Whois/bulkWhois/RIPE/$date $tempDir/ripe
-	gzip -d $tempDir/ripe/*.gz
-#run unformat script
-	$currDir/convertRipeOld2Uniform.py $tempDir/ripe $resultDir $configFile
-  fi
 
 #for afrinic
   mkdir -p $tempDir/afrinic
@@ -77,6 +92,16 @@ do
   else
 	$currDir/convertLacnic2Uniform.py $bulkDir $apiDir $resultDir $configFile 
   fi
+
+#complement history
+  echo "$currDir/complementHistory.sh $date $date"
+  $currDir/complementHistory.sh $date $date
+#crossmatching for ripe inetnum
+  echo "$currDir/../crossMatchForRipe.sh $date $date"
+  $currDir/../crossMatchForRipe.sh $date $date
+#add asn for lacnic and afrinic
+  echo "$currDir/addAsn2Inetnum.sh"
+  $currDir/addAsn2Inetnum.sh $date $date
 
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")

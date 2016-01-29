@@ -28,7 +28,7 @@ def readFromBulk(sourceDir, resultDir,configFile):
 
   #create cidrAsnMap
   cidrAsnMap = {}
-  createCidrAsnMap(sourceFile1, cidrAsnMap)
+  #createCidrAsnMap(sourceFile1, cidrAsnMap)
   print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
 
   configParser = SafeConfigParser()
@@ -37,9 +37,10 @@ def readFromBulk(sourceDir, resultDir,configFile):
   inetnumConv = BaseConverter(netResultFile, configParser, "inetnum")
   asnConv = BaseConverter(asnResultFile, configParser, "asn")
   mntnerConv = BaseConverter(personResultFile, configParser, "person")
+  orgConv = BaseConverter(orgResultFile, configParser, "org")
 
   inetnumConv.refreshCidrAsnMap(cidrAsnMap)
-  convDict = {"inetnum":inetnumConv, "inet6num":inetnumConv, "mntner":mntnerConv, "aut-num":asnConv}
+  convDict = {"organisation":orgConv, "inetnum":inetnumConv, "inet6num":inetnumConv, "mntner":mntnerConv, "aut-num":asnConv}
 
   lineNum = 0
   startTime=time.time()
@@ -47,9 +48,12 @@ def readFromBulk(sourceDir, resultDir,configFile):
   type = ""
   startRe = re.compile("^[ \t\r\n]+$", re.I)
   kvRe = re.compile("([\w/-]+):[ \t]+(.*)", re.I)
+  commentRe = re.compile("^%.*", re.I)
   endRe   = startRe
   for line in sourceFileFd:
     lineNum += 1
+    if commentRe.match(line):
+      continue
     if curObj is not None:
       if endRe.match(line):
         curObj.writeAndClear()
@@ -76,11 +80,12 @@ def readFromBulk(sourceDir, resultDir,configFile):
 def readFromApiData(sourceDir, resultDir, configFile):
   configParser = SafeConfigParser()
   configParser.read(configFile)
-  orgResultFile = os.path.join(resultDir, "org_afrinic")
+  #orgResultFile = os.path.join(resultDir, "org_afrinic")
   personResultFile = os.path.join(resultDir, "person_afrinic")
-  orgConv = OrgConverter(orgResultFile, configParser, "org")
+  #orgConv = OrgConverter(orgResultFile, configParser, "org")
   personConv = PersonConverter(personResultFile, configParser, "person")
-  objList = [("org", "org", "organisation",orgConv),("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
+  #objList = [("org", "org", "organisation",orgConv),("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
+  objList = [("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
   #objList = [("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
   for obj in objList:
     name = obj[0]
@@ -119,7 +124,7 @@ def readFromApiData(sourceDir, resultDir, configFile):
         else:
           currObj = 1
           convObj.newStart()
-  orgConv.finishAndClean()
+  #orgConv.finishAndClean()
   personConv.finishAndClean()
 def main():
   #check and assign cl args to variables

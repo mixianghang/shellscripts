@@ -35,8 +35,8 @@ def main():
 #source file
   #objList = [("inetnum", "inetnum"), ("inetnum", "inet6num"), ("person", "person"), ("person", "role"),
   #("person", "irt"), ("person", "mntner"),("asn", "aut-num"),("org","organisation")]
-  objList = [("person", "person")]
-  print "only format person data"
+  objList = [("org", "organisation")]
+  print "only format organisation data"
   convDict = {}
 
 #read config file

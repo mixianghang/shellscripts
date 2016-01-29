@@ -36,7 +36,8 @@ class BaseConverter(object):
     self.readConfig(configParser, self.name)
     self.resultFileFd.write(self.columnSep.join(self.mappedOptions) + "\n")
     self.lastKey = ""
-    self.inetnumRe = re.compile("^inetnum:[ \t]+([^ \t\n-]+)[ \t-]+([^ \t\n-]+)")
+    self.inetnumRe = re.compile("[ \t]*([^ \t\n\|-]+)[ \t\|-]+([^ \t\n\|-]+)")
+    self.onlyValueSep  = " "
     self.cidrAsnMap = {}
   def init(self):
     return 0
@@ -49,6 +50,7 @@ class BaseConverter(object):
     if self.commentRe.match(line):
       return 0
     matchObject = self.kwRe.match(line)
+    hasKey = True
     if matchObject is None:
       matchObject = self.valueRe.match(line)
       if matchObject is None:
@@ -58,14 +60,22 @@ class BaseConverter(object):
       else:
         key = self.lastKey
         value = matchObject.group(1)
+        hasKey = False
     else:
       kv = matchObject.groups()
       key = kv[0]
       value = kv[1]
     value = value.strip(" \n\r\t")
     value = self.stripRe.sub(" ", value)
-    if key == "inetnum":
-      matchObj = self.inetnumRe.match(line)
+    if self.resultDict.has_key(key):
+      self.resultDict[key] = self.valueSep.join([self.resultDict[key], value])
+    elif self.resultDict.has_key(key) and not hasKey:
+      self.resultDict[key] = self.onlyValueSep.join([self.resultDict[key], value])
+    else:
+      self.resultDict[key] = value
+    self.lastKey = key
+    if key == "inetnum" and len(self.cidrAsnMap) > 0:
+      matchObj = self.inetnumRe.match(self.resultDict[key])
       if matchObj is not None:
         startIp = matchObj.group(1)
         endIp   = matchObj.group(2)
@@ -79,16 +89,11 @@ class BaseConverter(object):
           print startIp, endIp
           print line
           sys.exit(1)
-    if key == "inet6num":
-      response = findMappedCidrForCidr(value, self.cidrAsnMap)
+    if key == "inet6num" and len(self.cidrAsnMap) > 0:
+      response = findMappedCidrForCidr(self.resultDict[key], self.cidrAsnMap)
       if response['code'] == 0:
         cidrKey = response['key']
         self.resultDict['asn'] = self.cidrAsnMap[cidrKey]
-    if self.resultDict.has_key(key):
-      self.resultDict[key] = self.valueSep.join([self.resultDict[key], value])
-    else:
-      self.resultDict[key] = value
-    self.lastKey = key
     return 0
   def writeAndClear(self):
     if len(self.resultDict) <= 0:

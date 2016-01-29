@@ -56,7 +56,7 @@ class BaseConverter(object):
       value = kv[1]
     value = value.strip(" \n\r\t")
     value = self.stripRe.sub(" ", value)
-    if key == "inetnum":
+    if key == "inetnum" and len(self.cidrAsnMap) > 0:
       matchObj = self.inetnumRe.match(value)
       if matchObj is not None:
         startIp = matchObj.group(1)
@@ -74,7 +74,7 @@ class BaseConverter(object):
           print "line is {0}".format(line)
           return -1
         
-    if key == "inet6num":
+    if key == "inet6num" and len(self.cidrAsnMap) > 0:
       response = findMappedCidrForCidr(value, self.cidrAsnMap)
       if response['code'] == 0:
         cidrKey = response['key']

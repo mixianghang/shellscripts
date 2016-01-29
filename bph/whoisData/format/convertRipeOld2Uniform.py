@@ -36,10 +36,10 @@ def main():
 
 #create cidrAsnMap
   cidrAsnMap = {}
-  routeFile = os.path.join(sourceDir, "ripe.db.route")
-  route6File = os.path.join(sourceDir, "ripe.db.route6")
-  createCidrAsnMap(routeFile, cidrAsnMap)
-  createCidrAsnMap(route6File, cidrAsnMap)
+  #routeFile = os.path.join(sourceDir, "ripe.db.route")
+  #route6File = os.path.join(sourceDir, "ripe.db.route6")
+  #createCidrAsnMap(routeFile, cidrAsnMap)
+  #createCidrAsnMap(route6File, cidrAsnMap)
   print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
 
 
@@ -65,10 +65,14 @@ def main():
     sourceFileFd = open(sourceFilePath, "r")
     kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
     blankRe = re.compile("^[ \t\n\r]+$", re.I)
+    commentRe = re.compile("^%.*", re.I)
+    kwRe=re.compile("([-\w/]+):[ \t]*(.*)", re.I)
     lineNum = 0
     currObj = 0
     for line in sourceFileFd:
       lineNum += 1
+      if commentRe.match(line):
+        continue
       if currObj == 1:
         if blankRe.match(line) is None:
           if convObj.processNewLine(line) != 0:
@@ -77,7 +81,7 @@ def main():
           convObj.writeAndClear()
           currObj = 0
       else:
-        if blankRe.match(line) is not None:
+        if kwRe.match(line) is None:
           continue
         else:
           currObj = 1

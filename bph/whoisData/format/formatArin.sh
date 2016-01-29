@@ -18,7 +18,7 @@ fi
 date=$startDate
 while [ $date -le $endDate ]
 do
-  tempDir=$currDir/temp
+  tempDir=$currDir/temp_formatArin_$(date +"%Y%m%d-%H%M%S")
   mkdir -p $tempDir
   mkdir -p $resultBaseDir/$date
   resultDir=$resultBaseDir/$date

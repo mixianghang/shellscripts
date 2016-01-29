@@ -90,7 +90,9 @@ def addAsn2Inetnum(formatDir, bgpFile, resultDir, registries):
         print "failed to parse bgp line at {0}: {1}".format(lineNum, line)
     print "finish retrieving bgp file and get {0} cidr-asn mappings and failed {1}".format(success, failed)
 
-  ipRangeRe = re.compile("[ ]*([0-9a-z\.]+)[ ]+-[ ]+([0-9a-z\.]+)", re.I)
+  ipRangeRe = re.compile("[ ]*([0-9a-z\.:]+)[ ]+-[ ]+([0-9a-z\.:]+)", re.I)
+  asSubRe = re.compile("(as)+", re.I)
+  asRe = re.compile("[0-9\|,]*as", re.I)
   for registry in registries:
     inetnumFilePath = os.path.join(formatDir, "inetnum_{0}".format(registry))
     if not os.path.exists(inetnumFilePath):
@@ -112,15 +114,16 @@ def addAsn2Inetnum(formatDir, bgpFile, resultDir, registries):
         resultFd.write(line)
         continue
       attrs = line.split("\t")
-      if len(attrs) < 2:
+      if len(attrs) < 3:
         print "split line failed:{0}".format(line) 
         continue
-      primaryKey = attrs[1]
+      if registry == "arin":
+        primaryKey = attrs[2]
+      else:
+        primaryKey = attrs[1]
       response = None
       if "/" in primaryKey:#key is cidr
         response = findMappedCidrForCidr(primaryKey, cidrAsnMap)
-        if ":" in primaryKey:
-          ipv6Added += 1
       else:
         matchedIps = ipRangeRe.match(primaryKey)
         if matchedIps:
@@ -130,11 +133,16 @@ def addAsn2Inetnum(formatDir, bgpFile, resultDir, registries):
         else:
           print "parse ip range failed for line: {0}".format(line)
       if response and response['code'] == 0:
-        asn = cidrAsnMap[response['key']]
-        attrs[6] = asn
+        asnList = response['body']
+        attrs[6] = "|".join(asnList)
         added += 1
+        if ":" in primaryKey:
+          ipv6Added += 1
         if added %  1000 ==0:
           print "add asn to {0} inetnums from registry {1}, among them, {2} are ipv6".format(added, registry, ipv6Added)
+      matchObj = asRe.match(attrs[6])
+      if matchObj:
+        attrs[6] = asSubRe.sub("", attrs[6])
       resultFd.write("\t".join(attrs))
     print "complement asn for {0} ({3} are ipv6) out of {1} inetnum objects from {2} registry".format(added, lineNum, registry, ipv6Added)
     resultFd.close()

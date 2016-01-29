@@ -12,7 +12,7 @@ fi
 if [ $# -ge 4 ];then
   startDate=$1
   endDate=$2
-  resultBaseDir=$3
+  formatBaseDir=$3
   currDir=$4
 fi
 tempBaseDir=$currDir/temp_addAsn2Inetnum_$(date +"%Y%m%d_%H%M%S")
@@ -26,6 +26,31 @@ do
   mkdir -p $tempDir
   mkdir -p $formatDir
   mkdir -p $bgpDir
+
+  echo "$scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir ripe"
+  $scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir ripe
+  if [ ! $? -eq 0 ];then
+    echo "run addAsn2Inetnum.py failed for $date ripe" 
+    date=$(date -d "$date +1day" +"%Y%m%d")
+    continue
+  fi
+
+  echo "$scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir apnic"
+  $scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir apnic
+  if [ ! $? -eq 0 ];then
+    echo "run addAsn2Inetnum.py failed for $date apnic" 
+    date=$(date -d "$date +1day" +"%Y%m%d")
+    continue
+  fi
+
+  echo "$scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir arin"
+  $scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir arin
+  if [ ! $? -eq 0 ];then
+    echo "run addAsn2Inetnum.py failed for $date arin" 
+    date=$(date -d "$date +1day" +"%Y%m%d")
+    continue
+  fi
+
   echo "$scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir lacnic"
   $scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir lacnic
   if [ ! $? -eq 0 ];then
@@ -33,6 +58,7 @@ do
     date=$(date -d "$date +1day" +"%Y%m%d")
     continue
   fi
+
   echo "$scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir afrinic"
   $scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir afrinic
   if [ ! $? -eq 0 ];then

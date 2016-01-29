@@ -18,7 +18,8 @@ fi
 date=$startDate
 while [ $date -le $endDate ]
 do
-  tempDir=$currDir/temp_formatApnic
+  echo $date
+  tempDir=$currDir/temp_formatApnic_$date
   mkdir -p $tempDir
   mkdir -p $resultBaseDir/$date
   resultDir=$resultBaseDir/$date
