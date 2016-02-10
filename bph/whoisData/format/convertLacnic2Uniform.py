@@ -126,20 +126,20 @@ def main():
     print len(sys.argv)
     sys.exit(0)
 
-  sourceDir= sys.argv[1]
-  sourceDir2 = sys.argv[2]
+  bulkDir = sys.argv[1]
+  apiDir  = sys.argv[2]
   resultDir= sys.argv[3]
   configFile= sys.argv[4]
 
   startTime = time.time()
-  if os.path.exists(sourceDir):
-    readFromBulk(sourceDir, resultDir, configFile)
+  if os.path.exists(bulkDir):
+    readFromBulk(bulkDir, resultDir, configFile)
   else:
-    sys.stderr.write("skip read from bulk since bulk data doesn't exist:{0}".format(sourceDir))
-  if os.path.exists(sourceDir2):
-    readFromApiData(sourceDir2, resultDir, configFile)
+    sys.stderr.write("skip read from bulk since bulk data doesn't exist:{0}".format(bulkDir))
+  if os.path.exists(apiDir):
+    readFromApiData(apiDir, resultDir, configFile)
   else:
-    sys.stderr.write("skip read from api since bulk data doesn't exist:{0}".format(sourceDir2))
+    sys.stderr.write("skip read from api since bulk data doesn't exist:{0}".format(apiDir))
 
   endTime=time.time()
   print "time cost is {0:.2f}".format(endTime - startTime)

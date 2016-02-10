@@ -30,7 +30,7 @@ class BaseConverter(object):
     self.name = name
     self.type = name
     self.readConfig(configParser, self.name)
-    #self.resultFileFd.write(self.columnSep.join(self.mappedOptions) + "\n")
+    self.resultFileFd.write(self.columnSep.join(self.mappedOptions) + "\n")
     self.lastKey = ""
     self.cidrAsnMap = {}
   def init(self):

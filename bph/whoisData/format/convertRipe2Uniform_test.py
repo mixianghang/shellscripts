@@ -33,10 +33,7 @@ def main():
   #print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
 
 #source file
-  #objList = [("inetnum", "inetnum"), ("inetnum", "inet6num"), ("person", "person"), ("person", "role"),
-  #("person", "irt"), ("person", "mntner"),("asn", "aut-num"),("org","organisation")]
-  objList = [("org", "organisation")]
-  print "only format organisation data"
+  objList = [("inetnum", "inetnum"), ("inetnum", "inet6num")]
   convDict = {}
 
 #read config file
@@ -52,6 +49,9 @@ def main():
     type = obj[1]
     if not convDict.has_key(name):
       resultFilePath = os.path.join(resultDir, "{0}_ripe".format(name))
+      if os.path.exists(resultFilePath):
+        print "{0} exists, remove it".format(resultFilePath)
+        os.remove(resultFilePath)
       print "create obj for name {0} and type {1}".format(name, type)
       convObj = BaseConverter(resultFilePath, configParser, name)
       convObj.refreshType(type)

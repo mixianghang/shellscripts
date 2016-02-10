@@ -35,23 +35,23 @@ do
     continue
   fi
   sourceDir=$apiDir
-  #if [ ! -e "$apiDir" ];then
-  #  if [ ! -e ${apiDir}.7z ];then
-  #    echo "$apiDir and ${apiDir}.7z doesn't exist"
-  #    date=$(date -d "$date +1day" +"%Y%m%d")
-  #    continue
-  #  else
-  #    7z x -o$tempDir ${apiDir}.7z
-  #    sourceDir=$tempDir/$date
-  #  fi
-  #else
-  #  sourceDir=$apiDir
-  #fi
+  if [ ! -e "$apiDir" ];then
+    if [ ! -e ${apiDir}.7z ];then
+      echo "$apiDir and ${apiDir}.7z doesn't exist"
+      date=$(date -d "$date +1day" +"%Y%m%d")
+      continue
+    else
+      7z x -o$tempDir ${apiDir}.7z
+      sourceDir=$tempDir/$date
+    fi
+  else
+    sourceDir=$apiDir
+  fi
   cp $bulkAfrinic $tempDir/afrinic/
   gzip -d $tempDir/afrinic/*
-  if [ -e $resultDir/org_afrinic ];then
-	echo "rm old org data $resultDir/org_afrinic"
-	rm $resultDir/org_afrinic
+  if [ -e $resultDir/person_afrinic ];then
+    echo "rm old person data $resultDir/person_afrinic"
+    rm $resultDir/person_afrinic
   fi
   $currDir/convertAfrinic2Uniform_onetime.py $tempDir/afrinic/ $sourceDir $resultDir $configFile 
   rm -rf $tempDir

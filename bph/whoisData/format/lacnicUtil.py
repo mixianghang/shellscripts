@@ -263,7 +263,7 @@ class OrgConverter(BaseConverter):
     if decoded.has_key("entities"):
       entities = decoded["entities"]
       self.parseEntityArray(entities)
-    self.resultDict["org"] = decoded["handle"]
+    self.resultDict["organisation"] = decoded["handle"]
     self.writeAndClear()
     self.rawJson = []
 class NetnumConverter(BaseConverter):

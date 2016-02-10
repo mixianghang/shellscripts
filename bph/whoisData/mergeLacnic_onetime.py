@@ -12,8 +12,8 @@ def main():
   dataDir = sys.argv[2]
   oldDate   = sys.argv[3]
   newDate  = sys.argv[4]
-  typeList = ["person", "inetnum"]
-  #typeList = ["inetnum"]
+  #typeList = ["person", "inetnum"]
+  typeList = ["inetnum"]
   date = time.strftime("%Y-%m-%d-%H-%M-%S")
   startTime = time.time()
   for type in typeList:
@@ -25,8 +25,8 @@ def main():
     newDataFile   = os.path.join(dataDir, newDate, type)
 
     if os.path.exists(newDataFile):
-      print "newDate file exists, so rename and bak it"
-      os.rename(newDataFile, newDataFile + "_bak_" + date)
+      print "newDate file exists, so remove it"
+      os.remove(newDataFile)
     newDataFd = open(newDataFile, "a")
     if not os.path.exists(oldDataFile):
       sys.stderr.write("Error: file not exist for type {0}: {1}".format(type, oldDataFile))

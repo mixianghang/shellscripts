@@ -26,18 +26,10 @@ fi
 mkdir -p $tempDir
 cp $sourceDir/$date/afrinic.db.gz $tempDir/
 gzip -d $tempDir/afrinic.db.gz
-objects=("organisation" "irt")
-keys=("organisation" "irt")
-object="organisation"
-index=0
-for object in ${objects[@]}
-do
-    kw=${keys[$index]}
-    ((index++))
-    grep -E -i  "^$kw:" $tempDir/afrinic.db | sed -r "s/$kw:[ ]+(.*)/\1/g" > $resultDir/$date/${object}_kwlist
-done
 
 #generate person kwlist 
-grep -E -i "^(owner-c|tech-c|abuse-c|nic-hdl):" $tempDir/afrinic.db | awk '{if (NF >= 2) {print $2}}' | sort | uniq > $resultDir/$date/person_role_kwlist
-cp -r $resultDir/$date/* $resultDir/latest
+grep -E -i "^(owner-c|tech-c|abuse-c|nic-hdl):" $tempDir/afrinic.db | awk '{if (NF >= 2) {print $2}}' | sort | uniq > $resultDir/$date/person_role_new_kwlist
+grep -E -i "^(nic-hdl):" $tempDir/afrinic.db | awk '{if (NF >= 2) {print $2}}' | sort | uniq > $resultDir/$date/person_role_old_kwlist
+diff -iEBb $resultDir/$date/person_role_old_kwlist $resultDir/$date/person_role_new_kwlist | grep -E "^>.*" | awk '{if (NF >= 2) {print $2}}' | sort | uniq > $resultDir/$date/person_role_kwlist
+cp -r $resultDir/$date/person_role_kwlist $resultDir/latest
 rm -rf $tempDir

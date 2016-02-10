@@ -75,10 +75,14 @@ do
 	echo "$bulkDir  or $apiDir doesn't exist"
   else
 	$currDir/convertLacnic2Uniform.py $bulkDir $apiDir $resultDir $configFile 
+	$currDir/convLacnicOrg2Uniform.py $apiDir $resultDir $configFile
+	echo "$currDir/preprocessLacnic.sh"
+	$currDir/preprocessLacnic.sh $date $date
   fi
 
   echo "$currDir/addAsn2Inetnum.sh"
   $currDir/addAsn2Inetnum.sh
+
 
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")

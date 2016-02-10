@@ -48,11 +48,13 @@ do
   #cp -r /data/salrwais/BPH/Whois/bulkWhois/RIPE/$date $tempDir/ripe
   #gzip -d $tempDir/ripe/*.gz
 #run unformat script
-  if [ -e $resultDir/org_ripe ];then
-	echo "bak old org: $resultDir/org_ripe"
-	mv $resultDir/org_ripe $resultDir/org_ripe_bak
-  fi
+  #if [ -e $resultDir/org_ripe ];then
+  #  echo "bak old org: $resultDir/org_ripe"
+  #  mv $resultDir/org_ripe $resultDir/org_ripe_bak
+  #fi
   $currDir/convertRipe2Uniform_test.py $sourceDir $resultDir $configFile  $tempDir
+  echo " $currDir/addAsn2InetnumForRipe.sh $date $date"
+  $currDir/addAsn2InetnumForRipe.sh $date $date
 
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")
