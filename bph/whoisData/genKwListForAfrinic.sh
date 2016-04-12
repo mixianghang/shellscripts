@@ -37,7 +37,7 @@ do
     grep -E -i  "^$kw:" $tempDir/afrinic.db | sed -r "s/$kw:[ ]+(.*)/\1/g" > $resultDir/$date/${object}_kwlist
 done
 
-#person and role
-grep -E -i  "^nic-hdl:" $tempDir/afrinic.db | sed -r "s/nic-hdl:[ ]+(.*)/\1/g" > $resultDir/$date/person_role_kwlist
+#generate person kwlist 
+grep -E -i "^(owner-c|tech-c|abuse-c|nic-hdl):" $tempDir/afrinic.db | awk '{if (NF >= 2) {print $2}}' | sort | uniq > $resultDir/$date/person_role_kwlist
 cp -r $resultDir/$date/* $resultDir/latest
 rm -rf $tempDir

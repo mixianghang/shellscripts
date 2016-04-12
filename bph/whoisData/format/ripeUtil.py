@@ -11,7 +11,7 @@ class BaseConverter(object):
     self.columnSep = "\t"
     self.valueSep  = "|"
     self.optionSep = "|"
-    self.kwRe=re.compile("[ \t]*<attribute[ \t]+name=\"([-\w/]+)\"[ \t]+value=\"([^\"]+)\".*", re.I)
+    self.kwRe=re.compile("[ \t]*<attribute[ \t]+name=\"([-\w/]+)\"[ \t]+value=\"([^\"]*)\".*", re.I)
     self.isKwRe = re.compile("[ \t]*<attribute.*")
     self.valueRe=re.compile("[ \t]*([^:]+)", re.I)
     self.commentRe=re.compile("^#", re.I)
@@ -47,21 +47,16 @@ class BaseConverter(object):
       return 0
     matchObject = self.kwRe.match(line)
     if matchObject is None:
-      matchObject = self.valueRe.match(line)
-      if matchObject is None:
         print "parse error for line {0}".format(line)
-        sys.stderr.write("parse error for {1} line: {0}".format(line, lineNum))
+        sys.stderr.write("parse error for line: {0}".format(line))
         return -1
-      else:
-        key = self.lastKey
-        value = matchObject.group(1)
     else:
       kv = matchObject.groups()
       key = kv[0]
       value = kv[1]
     value = value.strip(" \n\r\t")
     value = self.stripRe.sub(" ", value)
-    if key == "inetnum":
+    if key == "inetnum" and len(self.cidrAsnMap) > 0:
       matchObj = self.inetnumRe.match(value)
       if matchObj is not None:
         startIp = matchObj.group(1)
@@ -74,11 +69,12 @@ class BaseConverter(object):
         except Exception as e:
           print repr(e)
           print startIp, endIp
-          print key
-          print value
-          sys.exit(1)
+          print "key is {0}".format(key)
+          print "valus is {0}".format(value)
+          print "line is {0}".format(line)
+          return -1
         
-    if key == "inet6num":
+    if key == "inet6num" and len(self.cidrAsnMap) > 0:
       response = findMappedCidrForCidr(value, self.cidrAsnMap)
       if response['code'] == 0:
         cidrKey = response['key']

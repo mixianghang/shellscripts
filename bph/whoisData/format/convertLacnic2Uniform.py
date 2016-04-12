@@ -16,6 +16,9 @@ sys.setdefaultencoding('utf8')
 def readFromBulk(sourceDir, resultDir,configFile):
   #read inetnum inetnum6 mnter aut-num from the same file
   sourceFile1 = os.path.join(sourceDir, "lacnic.dp")
+  if not os.path.exists(sourceFile1):
+    print "lacnic source file doesn't exist {0}".format(sourceFile1)
+    return -1
 
   sourceFileFd = open(sourceFile1, "r")
   netResultFile = os.path.join(resultDir, "inetnum_lacnic")
@@ -43,8 +46,11 @@ def readFromBulk(sourceDir, resultDir,configFile):
   startRe = re.compile("^[ \t\r\n]+$", re.I)
   kvRe = re.compile("([\w/-]+):[ \t]+(.*)", re.I)
   endRe   = startRe
+  commentRe = re.compile("^%.*", re.I)
   for line in sourceFileFd:
     lineNum += 1
+    if commentRe.match(line):
+      continue
     if curObj is not None:
       if endRe.match(line):
         curObj.writeAndClear()
@@ -82,6 +88,9 @@ def readFromApiData(sourceDir, resultDir, configFile):
     convObj = obj[3]
     convObj.refreshType(type)
     sourceFilePath = os.path.join(sourceDir, "{0}".format(fileName))
+    if not os.path.exists(sourceFilePath):
+      print "file doesn't exist:{0}".format(sourceFilePath)
+      continue
     sourceFileFd = open(sourceFilePath, "r")
     kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
     startRe = re.compile("^}?{\n$", re.I)
@@ -117,14 +126,20 @@ def main():
     print len(sys.argv)
     sys.exit(0)
 
-  sourceDir= sys.argv[1]
-  sourceDir2 = sys.argv[2]
+  bulkDir = sys.argv[1]
+  apiDir  = sys.argv[2]
   resultDir= sys.argv[3]
   configFile= sys.argv[4]
 
   startTime = time.time()
-  readFromBulk(sourceDir, resultDir, configFile)
-  readFromApiData(sourceDir2, resultDir, configFile)
+  if os.path.exists(bulkDir):
+    readFromBulk(bulkDir, resultDir, configFile)
+  else:
+    sys.stderr.write("skip read from bulk since bulk data doesn't exist:{0}".format(bulkDir))
+  if os.path.exists(apiDir):
+    readFromApiData(apiDir, resultDir, configFile)
+  else:
+    sys.stderr.write("skip read from api since bulk data doesn't exist:{0}".format(apiDir))
 
   endTime=time.time()
   print "time cost is {0:.2f}".format(endTime - startTime)

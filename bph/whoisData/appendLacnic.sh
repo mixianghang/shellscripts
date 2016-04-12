@@ -14,12 +14,10 @@ date=$(date +"%Y%m%d")
 
 startDate=$date
 endDate=$date
-yesterday=$((date -1))
 
 if [[ $# -ge 2 ]]; then
     startDate=$1
 	endDate=$2
-    yesterday=$((startDate - 1))
 fi
 
 bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/LACNIC"
@@ -30,27 +28,28 @@ scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 #try to overwrite default configuration
 if [[ $# -ge 3 ]]; then
   bulkDataDir=$3
-if
+fi
 
 if [[ $# -ge 4 ]]; then
   keysDir=$4
-if
+fi
 
 if [[ $# -ge 5 ]]; then
   resultDataDir=$5
-if
+fi
 
 if [[ $# -ge 6 ]]; then
   scriptDir=$6
-if
+fi
 
 date=$startDate
+yesterday=$(date -d "$date -1day" +"%Y%m%d")
 while [ $date -le $endDate ]
 do
   echo $yesterday $date
   #generage key list
   echo "start to generate a key list of objects"
-  echo "$scriptDir/genKwListForLacnic.sh $bulkDataDir  $keysDir $date"
+  echo "$scriptDir/genChangedKeysForLacnic.sh $bulkDataDir  $keysDir $date"
   $scriptDir/genChangedKeysForLacnic.sh $bulkDataDir  $yesterday $date $keysDir $scriptDir
 
   #run retrieve process
@@ -68,7 +67,16 @@ do
   echo "copy to $resultDataDir/$date"
   mkdir -p $resultDataDir/$date
   cp -r $resultDataDir/latest/* $resultDataDir/$date 
-  ((date++))
-  ((yesterday++))
+  
+  echo "start to merge person data"
+  echo "$scriptDir/mergeLacnic.py $keysDir $resultDataDir $yesterday $date"
+  $scriptDir/mergeLacnic.py $keysDir $resultDataDir $yesterday $date
+
+  #copy result from date dir to latest dir
+  echo "copy to $resultDataDir/latest"
+  cp -r $resultDataDir/$date/* $resultDataDir/latest
+
+  yesterday=$date
+  date=$(date -d "$date +1day" +"%Y%m%d")
 done
 

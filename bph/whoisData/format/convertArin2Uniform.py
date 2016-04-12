@@ -42,6 +42,9 @@ def main():
   classes['POCHandle'] = BaseConverter(personResultFile, configParser, "person")
 
 #open source file and result file
+  if not os.path.exists(sourceFile):
+    print "arin source file doesn't exist {0}".format(sourceFile)
+    return -1
   sourceFileFd = open(sourceFile, "r")
 
   lineNum = 0
@@ -49,10 +52,13 @@ def main():
   startTime=time.time()
   classKeys = classes.keys()
   currObj = None
-  kwRe = re.compile("([\w-]+):[ \t]*(.*)", re.I)
-  blankRe = re.compile("[ \t\n\r]+", re.I)
+  kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
+  blankRe = re.compile("^[ \t\n\r]+$", re.I)
+  commentRe = re.compile("^%.*", re.I)
   for line in sourceFileFd:
     lineNum += 1
+    if commentRe.match(line):
+      continue
     if currObj is not None:
       if blankRe.match(line) is None:
         if classes[currObj].processNewLine(line) != 0:
@@ -62,13 +68,15 @@ def main():
         currObj = None
         objectNum += 1
     else:
-      if blankRe.match(line) is not None:
+      if kwRe.match(line) is None:
         continue
       matchObject = kwRe.match(line)
       if matchObject is not None and matchObject.group(1) in classKeys:
         currObj = matchObject.group(1)
         if currObj == "V6NetHandle":
           classes[currObj].refreshType("inet6num")
+        elif currObj == "NetHandle":
+          classes[currObj].refreshType("inetnum")
         if classes[currObj].processNewLine(line) != 0:
           print "error when process new line {0} for {1}".format(line, currObj)
         continue
