@@ -1,10 +1,18 @@
 #!/bin/bash
+minSize=16777216
+defaultSize=16777216
+maxSize=33554432
+if [ $# -ge 3 ];then
+  minSize=$1
+  defaultSize=$2
+  maxSize=$3
+fi
 cp /etc/sysctl.conf.bak /etc/sysctl.conf
-echo 'net.core.wmem_max=16777216' >> /etc/sysctl.conf
-echo 'net.core.rmem_max=16777216' >> /etc/sysctl.conf
+echo "net.core.wmem_max=$maxSize" >> /etc/sysctl.conf
+echo "net.core.rmem_max=$maxSize" >> /etc/sysctl.conf
 #min default max buffer size, will be constrained by net.core.rmem_max
-echo 'net.ipv4.tcp_rmem= 10240 87380 16777216' >> /etc/sysctl.conf
-echo 'net.ipv4.tcp_wmem= 10240 87380 16777216' >> /etc/sysctl.conf
+echo "net.ipv4.tcp_wmem= $minSize $defaultSize $maxSize" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_rmem= $minSize $defaultSize $maxSize" >> /etc/sysctl.conf
 # if this set, the rece windown size can be larger than 64kb
 echo 'net.ipv4.tcp_window_scaling = 1' >> /etc/sysctl.conf
 #enbale tcp timestamp before enabling tcp_sack
