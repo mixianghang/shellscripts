@@ -37,9 +37,9 @@ def main():
   configParser.read(configFile)
   #classes['NetHandle'] = BaseConverter(inetnumResultFile, configParser, "inetnum")
   #classes['V6NetHandle'] = classes['NetHandle'] 
-  classes['OrgID'] = BaseConverter(orgResultFile, configParser, "org")
+  #classes['OrgID'] = BaseConverter(orgResultFile, configParser, "org")
   #classes['ASHandle'] = BaseConverter(asnResultFile, configParser, "asn")
-  #classes['POCHandle'] = BaseConverter(personResultFile, configParser, "person")
+  classes['POCHandle'] = BaseConverter(personResultFile, configParser, "person")
 
 #open source file and result file
   if not os.path.exists(sourceFile):

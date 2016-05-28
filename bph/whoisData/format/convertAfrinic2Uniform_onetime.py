@@ -24,7 +24,7 @@ def readFromBulk(sourceDir, resultDir,configFile):
   netResultFile = os.path.join(resultDir, "inetnum_afrinic")
   asnResultFile = os.path.join(resultDir, "asn_afrinic")
   orgResultFile = os.path.join(resultDir, "org_afrinic")
-  personResultFile = os.path.join(resultDir, "person_afrinic")
+  #personResultFile = os.path.join(resultDir, "person_afrinic")
 
   #create cidrAsnMap
   cidrAsnMap = {}
@@ -34,16 +34,16 @@ def readFromBulk(sourceDir, resultDir,configFile):
   configParser = SafeConfigParser()
   configParser.read(configFile)
 #create converter
-  #inetnumConv = BaseConverter(netResultFile, configParser, "inetnum")
-  #asnConv = BaseConverter(asnResultFile, configParser, "asn")
-  mntnerConv = BaseConverter(personResultFile, configParser, "person")
-  #orgConv = BaseConverter(orgResultFile, configParser, "org")
+  inetnumConv = BaseConverter(netResultFile, configParser, "inetnum")
+  asnConv = BaseConverter(asnResultFile, configParser, "asn")
+  #mntnerConv = BaseConverter(personResultFile, configParser, "person")
+  orgConv = BaseConverter(orgResultFile, configParser, "org")
 
 
   #inetnumConv.refreshCidrAsnMap(cidrAsnMap)
-  #convDict = {"inetnum":inetnumConv, "inet6num":inetnumConv, "mntner":mntnerConv, "aut-num":asnConv}
-  convDict = {"mntner":mntnerConv}
-  print "only retrieve mntner from bulk"
+  #convDict = {"organisation":orgConv, "inetnum":inetnumConv, "inet6num":inetnumConv, "mntner":mntnerConv, "aut-num":asnConv}
+  convDict = {"organisation":orgConv, "inetnum":inetnumConv, "inet6num":inetnumConv, "aut-num":asnConv}
+  print "only retrieve org inetnum asn from bulk"
 
   lineNum = 0
   startTime=time.time()
@@ -142,7 +142,7 @@ def main():
   configFile= sys.argv[4]
 
   startTime = time.time()
-  readFromBulk(sourceDir, resultDir, configFile)
+  #readFromBulk(sourceDir, resultDir, configFile)
   readFromApiData(sourceDir2, resultDir, configFile)
 
   endTime=time.time()

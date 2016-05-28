@@ -9,13 +9,18 @@ if [ $# -ge 2 ];then
   endDate=$2
 fi
 if [ $# -ge 3 ];then
-  apiDir=$3
+  registryList=$3
+else
+  registryList=("RIPE" "LACNIC" "AFRINIC")
 fi
 if [ $# -ge 4 ];then
-  currDir=$4
+  apiDir=$4
+fi
+if [ $# -ge 5 ];then
+  currDir=$5
 fi
 date=$startDate
-registryList=("RIPE" "LACNIC" "AFRINIC")
+#registryList=("RIPE" "LACNIC" "AFRINIC")
 echo "start to compress for $startDate to $endDate of dir $apiDir"
 while [ $date -le $endDate ]
 do

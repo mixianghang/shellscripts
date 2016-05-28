@@ -33,6 +33,7 @@ do
   unzip -x /data/salrwais/BPH/Whois/bulkWhois/ARIN/$date/arin.zip -d $tempDir/arin
 #run unformat script
   $currDir/convertArin2Uniform.py $tempDir/arin $resultDir $configFile
+  $currDir/addAsn2InetnumForOneRegistry.sh $date $date arin
 
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")

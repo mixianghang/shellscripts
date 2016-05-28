@@ -55,7 +55,7 @@ do
 
   #merge data for other objects
   echo "$scriptDir/mergeRipe.py $keysDir $resultDataDir $yesterday $date 0"
-  $scriptDir/mergeRipe.py $keysDir $resultDataDir $yesterday $date 0
+  $scriptDir/mergeRipe.py $keysDir $resultDataDir $yesterday $date 0 2>$logError
 
   echo "copy merged objects to $resultDataDir/latest"
   cp -r $resultDataDir/$date/* $resultDataDir/latest 
@@ -75,7 +75,7 @@ do
 
   #merge data for other objects
   echo "$scriptDir/mergeRipe.py $keysDir $resultDataDir $yesterday $date "
-  $scriptDir/mergeRipe.py $keysDir $resultDataDir $yesterday $date 1
+  $scriptDir/mergeRipe.py $keysDir $resultDataDir $yesterday $date 1 2>$logError
 
   #copy result to current date file
   echo "copy to $resultDataDir/latest"

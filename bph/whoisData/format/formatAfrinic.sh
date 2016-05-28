@@ -41,6 +41,7 @@ do
   cp $bulkAfrinic $tempDir/afrinic/
   gzip -d $tempDir/afrinic/*
   $currDir/convertAfrinic2Uniform.py $tempDir/afrinic/ $apiDir $resultDir $configFile 
+  $currDir/addAsn2InetnumForOneRegistry.sh  $date $date afrinic
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")
 done

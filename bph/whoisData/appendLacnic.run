@@ -1,0 +1,616 @@
+20160526 20160527
+start to generate a key list of objects
+/data/seclab/BPH/Xianghang/bulkData/Scripts//genChangedKeysForLacnic.sh /data/salrwais/BPH/Whois/bulkWhois/LACNIC  /data/salrwais/BPH/Whois/API/LACNIC/Keys 20160527
+start to retrieve objects for the key list
+/data/seclab/BPH/Xianghang/bulkData/Scripts//retrieveLacnic.py /data/seclab/BPH/Xianghang/bulkData/Scripts//appendLacnicConfig.cfg 2>/data/seclab/BPH/Xianghang/bulkData/Scripts//log/logErrorForRetrieveLacnic_20160527
+person
+path doesn't exists /data/salrwais/BPH/Whois/API/LACNIC/Data/latest/person_appended
+kw num is 7, numPerMin is 9, lenAlarm is 1000
+recv len 1599 with requestNum: 0 and failed: 0
+recv len 1539 with requestNum: 1 and failed: 0
+recv len 1590 with requestNum: 2 and failed: 0
+recv len 1556 with requestNum: 3 and failed: 0
+recv len 1563 with requestNum: 4 and failed: 0
+recv len 1584 with requestNum: 5 and failed: 0
+recv len 1593 with requestNum: 6 and failed: 0
+inetnum
+path doesn't exists /data/salrwais/BPH/Whois/API/LACNIC/Data/latest/inetnum_appended
+kw num is 73, numPerMin is 9, lenAlarm is 1000
+recv len 3913 with requestNum: 0 and failed: 0
+recv len 4416 with requestNum: 1 and failed: 0
+recv len 3644 with requestNum: 2 and failed: 0
+recv len 3677 with requestNum: 3 and failed: 0
+recv len 3812 with requestNum: 4 and failed: 0
+recv len 3853 with requestNum: 5 and failed: 0
+recv len 3853 with requestNum: 6 and failed: 0
+recv len 3842 with requestNum: 7 and failed: 0
+recv len 3709 with requestNum: 8 and failed: 0
+sleep 60 before sending requests again
+recv len 3853 with requestNum: 9 and failed: 0
+recv len 3806 with requestNum: 10 and failed: 0
+recv len 3847 with requestNum: 11 and failed: 0
+recv len 3789 with requestNum: 12 and failed: 0
+recv len 3807 with requestNum: 13 and failed: 0
+recv len 3847 with requestNum: 14 and failed: 0
+recv len 3770 with requestNum: 15 and failed: 0
+recv len 3675 with requestNum: 16 and failed: 0
+recv len 3639 with requestNum: 17 and failed: 0
+sleep 60 before sending requests again
+recv len 3790 with requestNum: 18 and failed: 0
+recv len 3730 with requestNum: 19 and failed: 0
+recv len 3700 with requestNum: 20 and failed: 0
+recv len 3754 with requestNum: 21 and failed: 0
+recv len 3853 with requestNum: 22 and failed: 0
+recv len 3710 with requestNum: 23 and failed: 0
+recv len 3898 with requestNum: 24 and failed: 0
+recv len 3732 with requestNum: 25 and failed: 0
+recv len 3906 with requestNum: 26 and failed: 0
+sleep 60 before sending requests again
+recv len 3906 with requestNum: 27 and failed: 0
+recv len 3751 with requestNum: 28 and failed: 0
+recv len 3751 with requestNum: 29 and failed: 0
+recv len 3661 with requestNum: 30 and failed: 0
+recv len 3645 with requestNum: 31 and failed: 0
+recv len 3632 with requestNum: 32 and failed: 0
+recv len 3664 with requestNum: 33 and failed: 0
+recv len 3642 with requestNum: 34 and failed: 0
+recv len 3664 with requestNum: 35 and failed: 0
+sleep 60 before sending requests again
+recv len 3648 with requestNum: 36 and failed: 0
+recv len 3619 with requestNum: 37 and failed: 0
+recv len 3516 with requestNum: 38 and failed: 0
+recv len 3625 with requestNum: 39 and failed: 0
+recv len 3577 with requestNum: 40 and failed: 0
+recv len 3631 with requestNum: 41 and failed: 0
+recv len 3679 with requestNum: 42 and failed: 0
+recv len 3675 with requestNum: 43 and failed: 0
+recv len 3818 with requestNum: 44 and failed: 0
+sleep 60 before sending requests again
+recv len 3730 with requestNum: 45 and failed: 0
+recv len 3737 with requestNum: 46 and failed: 0
+recv len 3664 with requestNum: 47 and failed: 0
+recv len 3719 with requestNum: 48 and failed: 0
+recv len 3658 with requestNum: 49 and failed: 0
+recv len 3663 with requestNum: 50 and failed: 0
+recv len 3668 with requestNum: 51 and failed: 0
+recv len 3669 with requestNum: 52 and failed: 0
+recv len 3674 with requestNum: 53 and failed: 0
+sleep 60 before sending requests again
+recv len 4326 with requestNum: 54 and failed: 0
+recv len 4326 with requestNum: 55 and failed: 0
+recv len 4326 with requestNum: 56 and failed: 0
+recv len 3605 with requestNum: 57 and failed: 0
+recv len 4578 with requestNum: 58 and failed: 0
+recv len 4578 with requestNum: 59 and failed: 0
+recv len 3673 with requestNum: 60 and failed: 0
+recv len 3778 with requestNum: 61 and failed: 0
+recv len 3787 with requestNum: 62 and failed: 0
+sleep 60 before sending requests again
+recv len 3694 with requestNum: 63 and failed: 0
+recv len 3701 with requestNum: 64 and failed: 0
+recv len 4328 with requestNum: 65 and failed: 0
+recv len 4338 with requestNum: 66 and failed: 0
+recv len 4350 with requestNum: 67 and failed: 0
+recv len 3717 with requestNum: 68 and failed: 0
+recv len 3818 with requestNum: 69 and failed: 0
+recv len 3703 with requestNum: 70 and failed: 0
+recv len 4428 with requestNum: 71 and failed: 0
+sleep 60 before sending requests again
+recv len 4438 with requestNum: 72 and failed: 0
+copy to /data/salrwais/BPH/Whois/API/LACNIC/Data/20160527
+try to uncompress
+start to uncompress for 20160526 to 20160526 of dir /data/salrwais/BPH/Whois/API/
+LACNIC
+/data/salrwais/BPH/Whois/API//LACNIC/Data/20160526
+nothing for /data/salrwais/BPH/Whois/API//LACNIC/Data/20160526
+start to merge person data
+/data/seclab/BPH/Xianghang/bulkData/Scripts//mergeLacnic.py /data/salrwais/BPH/Whois/API/LACNIC/Keys /data/salrwais/BPH/Whois/API/LACNIC/Data 20160526 20160527
+Start type person with newkey List 70365 and excludeList 10
+finish 2286280 lines of old files with 70312 added objects and 3 excluded objects for type person
+append data from appendDataFile /data/salrwais/BPH/Whois/API/LACNIC/Data/20160527/person_appended
+Start type inetnum with newkey List 366630 and excludeList 112
+finish 31075102 lines of old files with 364899 added objects and 14 excluded objects for type inetnum
+append data from appendDataFile /data/salrwais/BPH/Whois/API/LACNIC/Data/20160527/inetnum_appended
+finish all the types with time cost of 478.54
+copy to /data/salrwais/BPH/Whois/API/LACNIC/Data/latest
+finish 10000 objects of type inetnum and name inetnum
+finish 20000 objects of type inetnum and name inetnum
+finish 30000 objects of type inetnum and name inetnum
+finish 40000 objects of type inetnum and name inetnum
+finish 50000 objects of type inetnum and name inetnum
+finish 60000 objects of type inetnum and name inetnum
+finish 70000 objects of type inetnum and name inetnum
+finish 80000 objects of type inetnum and name inetnum
+finish 90000 objects of type inetnum and name inetnum
+finish 100000 objects of type inetnum and name inetnum
+finish 110000 objects of type inetnum and name inetnum
+finish 120000 objects of type inetnum and name inetnum
+finish 130000 objects of type inetnum and name inetnum
+finish 140000 objects of type inetnum and name inetnum
+finish 150000 objects of type inetnum and name inetnum
+finish 160000 objects of type inetnum and name inetnum
+finish 170000 objects of type inetnum and name inetnum
+finish 180000 objects of type inetnum and name inetnum
+finish 190000 objects of type inetnum and name inetnum
+finish 200000 objects of type inetnum and name inetnum
+finish 210000 objects of type inetnum and name inetnum
+finish 220000 objects of type inetnum and name inetnum
+finish 230000 objects of type inetnum and name inetnum
+finish 240000 objects of type inetnum and name inetnum
+finish 250000 objects of type inetnum and name inetnum
+finish 260000 objects of type inetnum and name inetnum
+finish 270000 objects of type inetnum and name inetnum
+finish 280000 objects of type inetnum and name inetnum
+finish 290000 objects of type inetnum and name inetnum
+finish 300000 objects of type inetnum and name inetnum
+finish 310000 objects of type inetnum and name inetnum
+finish 320000 objects of type inetnum and name inetnum
+finish 330000 objects of type inetnum and name inetnum
+finish 340000 objects of type inetnum and name inetnum
+finish 350000 objects of type inetnum and name inetnum
+finish 360000 objects of type inetnum and name inetnum
+name person, type person, fileperson
+finish 10000 objects of type person and name person
+finish 20000 objects of type person and name person
+finish 30000 objects of type person and name person
+finish 40000 objects of type person and name person
+finish 50000 objects of type person and name person
+finish 60000 objects of type person and name person
+finish 70000 objects of type person and name person
+finish person with 70318 objects
+time cost is 793.67
+process 10000 objects and 9999 of them have org
+process 20000 objects and 19999 of them have org
+process 30000 objects and 29999 of them have org
+process 40000 objects and 39999 of them have org
+process 50000 objects and 49999 of them have org
+process 60000 objects and 59999 of them have org
+process 70000 objects and 69999 of them have org
+process 80000 objects and 79999 of them have org
+process 90000 objects and 89999 of them have org
+process 100000 objects and 99999 of them have org
+process 110000 objects and 109999 of them have org
+process 120000 objects and 119999 of them have org
+process 130000 objects and 129999 of them have org
+process 140000 objects and 139999 of them have org
+process 150000 objects and 149999 of them have org
+process 160000 objects and 159999 of them have org
+process 170000 objects and 169999 of them have org
+process 180000 objects and 179999 of them have org
+process 190000 objects and 189999 of them have org
+process 200000 objects and 199999 of them have org
+process 210000 objects and 209999 of them have org
+process 220000 objects and 219999 of them have org
+process 230000 objects and 229999 of them have org
+process 240000 objects and 239999 of them have org
+process 250000 objects and 249999 of them have org
+process 260000 objects and 259999 of them have org
+process 270000 objects and 269999 of them have org
+process 280000 objects and 279999 of them have org
+process 290000 objects and 289999 of them have org
+process 300000 objects and 299999 of them have org
+process 310000 objects and 309999 of them have org
+process 320000 objects and 319999 of them have org
+process 330000 objects and 329999 of them have org
+process 340000 objects and 339999 of them have org
+process 350000 objects and 349999 of them have org
+process 360000 objects and 359999 of them have org
+finish processing 364972 objects and 364972 of them have org
+find out 189169 org objects
+/data/seclab/BPH/Xianghang/bulkData/Scripts/format//preprocessLacnic.sh
+/data/seclab/BPH/Xianghang/bulkData/Scripts/format//preprocessLacnic.py /data/seclab/BPH/Uniform//20160527 /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp_preprocessLacnic_20160527-185209
+retrieve 364972 net-org key pairs
+finish 366640 lines with 364981 mapped
+20160527
+/data/seclab/BPH/Xianghang/bulkData/Scripts/format//addAsn2Inetnum.py /data/seclab/BPH/Uniform//20160527 /data/salrwais/BPH/Whois/API/BGP//20160527/bpgTable /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp_addAsn2Inetnum_20160527_185222/20160527 lacnic
+succeed in downloading bgp table for ipV4: /data/salrwais/BPH/Whois/API/BGP//20160527/bgpTable_ipv4
+succeed in downloading bgp table for ipV6: /data/salrwais/BPH/Whois/API/BGP//20160527/bgpTable_ipv6
+finish format 1000 bgpV6 records and failed 0
+finish format 2000 bgpV6 records and failed 0
+finish format 3000 bgpV6 records and failed 0
+parse error for 2001:df9::/32 at line 14956
+finish format 4000 bgpV6 records and failed 1
+finish format 5000 bgpV6 records and failed 1
+finish format 6000 bgpV6 records and failed 1
+parse error for 2401:2000:4000::/35 at line 28168
+finish format 7000 bgpV6 records and failed 2
+finish format 8000 bgpV6 records and failed 2
+finish format 9000 bgpV6 records and failed 2
+finish format 10000 bgpV6 records and failed 2
+finish format 11000 bgpV6 records and failed 2
+finish format 12000 bgpV6 records and failed 2
+finish format 13000 bgpV6 records and failed 2
+finish format 14000 bgpV6 records and failed 2
+finish format 15000 bgpV6 records and failed 2
+finish format 16000 bgpV6 records and failed 2
+finish format 17000 bgpV6 records and failed 2
+finish format 18000 bgpV6 records and failed 2
+finish format 19000 bgpV6 records and failed 2
+finish format 20000 bgpV6 records and failed 2
+finish format 21000 bgpV6 records and failed 2
+finish format 22000 bgpV6 records and failed 2
+finish format 23000 bgpV6 records and failed 2
+finish format 24000 bgpV6 records and failed 2
+finish format 25000 bgpV6 records and failed 2
+finish format 26000 bgpV6 records and failed 2
+finish format 27000 bgpV6 records and failed 2
+finish format 28000 bgpV6 records and failed 2
+finish format 29000 bgpV6 records and failed 2
+finish formatting bgpV6 file:/data/salrwais/BPH/Whois/API/BGP//20160527/bgpTable_ipv6
+finish retrieving bgp file and get 624104 cidr-asn mappings and failed 0
+start to process file:/data/seclab/BPH/Uniform//20160527/inetnum_lacnic
+add asn to 1000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 2000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 3000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 4000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 5000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 6000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 7000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 8000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 9000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 10000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 11000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 12000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 13000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 14000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 15000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 16000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 17000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 18000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 19000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 20000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 21000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 22000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 23000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 24000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 25000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 26000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 27000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 28000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 29000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 30000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 31000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 32000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 33000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 34000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 35000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 36000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 37000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 38000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 39000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 40000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 41000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 42000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 43000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 44000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 45000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 46000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 47000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 48000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 49000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 50000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 51000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 52000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 53000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 54000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 55000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 56000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 57000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 58000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 59000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 60000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 61000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 62000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 63000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 64000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 65000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 66000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 67000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 68000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 69000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 70000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 71000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 72000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 73000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 74000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 75000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 76000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 77000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 78000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 79000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 80000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 81000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 82000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 83000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 84000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 85000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 86000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 87000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 88000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 89000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 90000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 91000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 92000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 93000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 94000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 95000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 96000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 97000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 98000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 99000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 100000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 101000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 102000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 103000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 104000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 105000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 106000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 107000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 108000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 109000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 110000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 111000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 112000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 113000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 114000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 115000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 116000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 117000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 118000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 119000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 120000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 121000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 122000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 123000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 124000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 125000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 126000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 127000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 128000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 129000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 130000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 131000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 132000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 133000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 134000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 135000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 136000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 137000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 138000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 139000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 140000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 141000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 142000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 143000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 144000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 145000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 146000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 147000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 148000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 149000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 150000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 151000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 152000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 153000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 154000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 155000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 156000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 157000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 158000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 159000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 160000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 161000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 162000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 163000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 164000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 165000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 166000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 167000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 168000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 169000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 170000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 171000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 172000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 173000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 174000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 175000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 176000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 177000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 178000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 179000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 180000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 181000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 182000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 183000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 184000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 185000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 186000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 187000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 188000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 189000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 190000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 191000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 192000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 193000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 194000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 195000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 196000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 197000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 198000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 199000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 200000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 201000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 202000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 203000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 204000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 205000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 206000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 207000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 208000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 209000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 210000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 211000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 212000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 213000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 214000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 215000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 216000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 217000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 218000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 219000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 220000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 221000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 222000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 223000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 224000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 225000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 226000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 227000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 228000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 229000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 230000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 231000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 232000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 233000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 234000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 235000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 236000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 237000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 238000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 239000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 240000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 241000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 242000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 243000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 244000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 245000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 246000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 247000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 248000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 249000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 250000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 251000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 252000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 253000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 254000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 255000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 256000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 257000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 258000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 259000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 260000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 261000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 262000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 263000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 264000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 265000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 266000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 267000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 268000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 269000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 270000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 271000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 272000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 273000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 274000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 275000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 276000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 277000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 278000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 279000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 280000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 281000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 282000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 283000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 284000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 285000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 286000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 287000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 288000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 289000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 290000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 291000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 292000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 293000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 294000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 295000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 296000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 297000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 298000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 299000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 300000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 301000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 302000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 303000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 304000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 305000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 306000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 307000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 308000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 309000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 310000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 311000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 312000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 313000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 314000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 315000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 316000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 317000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 318000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 319000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 320000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 321000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 322000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 323000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 324000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 325000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 326000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 327000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 328000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 329000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 330000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 331000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 332000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 333000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 334000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 335000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 336000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 337000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 338000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 339000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 340000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 341000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 342000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 343000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 344000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 345000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 346000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 347000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 348000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 349000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 350000 inetnums from registry lacnic, among them, 0 are ipv6
+add asn to 351000 inetnums from registry lacnic, among them, 723 are ipv6
+add asn to 352000 inetnums from registry lacnic, among them, 1723 are ipv6
+add asn to 353000 inetnums from registry lacnic, among them, 2723 are ipv6
+add asn to 354000 inetnums from registry lacnic, among them, 3723 are ipv6
+add asn to 355000 inetnums from registry lacnic, among them, 4723 are ipv6
+complement asn for 355952 (5675 are ipv6) out of 366640 inetnum objects from lacnic registry
+compress 20160526
+start to compress for 20160526 to 20160526 of dir /data/salrwais/BPH/Whois/API/
+/data/salrwais/BPH/Whois/API//LACNIC/Data/20160526
+
+7-Zip [64] 15.09 beta : Copyright (c) 1999-2015 Igor Pavlov : 2015-10-16
+p7zip Version 15.09 beta (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,24 CPUs Intel(R) Xeon(R) CPU E5-2630 0 @ 2.30GHz (206D7),ASM,AES-NI)
+
+Scanning the drive:
+1 folder, 4 files, 1906279611 bytes (1818 MiB)
+
+Creating archive: /data/salrwais/BPH/Whois/API//LACNIC/Data/20160526.7z
+
+Items to compress: 5
+
+
+Files read from disk: 4
+Archive size: 32147219 bytes (31 MiB)
+Everything is Ok
+success compress /data/salrwais/BPH/Whois/API//LACNIC/Data/20160526

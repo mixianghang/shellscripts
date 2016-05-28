@@ -18,6 +18,7 @@ fi
 date=$startDate
 while [ $date -le $endDate ]
 do
+  START=$(date +%s)
   tempDir=$currDir/temp_formatArin_$(date +"%Y%m%d-%H%M%S")
   mkdir -p $tempDir
   mkdir -p $resultBaseDir/$date
@@ -31,17 +32,21 @@ do
 	continue
   fi
   7z x /data/salrwais/BPH/Whois/bulkWhois/ARIN/$date/arin.zip -o$tempDir/arin arin_db.txt
-  if [ -e $resultDir/org_arin ];then
-	mv $resultDir/org_arin  $resultDir/org_arin_bak
+#TODO currently, the uniform code has been modified to only generate data for person objects
+  if [ -e $resultDir/person_arin ];then
+	mv $resultDir/person_arin  $resultDir/person_arin_bak
   fi
 #run unformat script
   $currDir/convertArin2Uniform_onetime.py $tempDir/arin $resultDir $configFile
   if [ $? -ne 0 ];then
-	mv $resultDir/org_arin_bak  $resultDir/org_arin
+	mv $resultDir/person_arin_bak  $resultDir/person_arin
   else
-	rm $resultDir/org_arin_bak
+	rm $resultDir/person_arin_bak
   fi
 
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")
+  END=$(date +%s)
+  DIFF=$(($END - $START))
+  echo "time cost is $DIFF"
 done

@@ -16,6 +16,7 @@ if [ $# -ge 5 ];then
   currDir=$5
 fi
 date=$startDate
+parentDir=/data/seclab/BPH/Xianghang/bulkData/Scripts/
 while [ $date -le $endDate ]
 do
   tempDir=$currDir/temp
@@ -31,16 +32,20 @@ do
 	((date++))
 	continue
   fi
-  if [ ! -e "$bulkRipe" ];then
-	echo "$bulkRipe doesn't exist"
-    date=$(date -d "$date +1day" +"%Y%m%d")
-	continue
-  fi
-  cp -r /data/salrwais/BPH/Whois/bulkWhois/RIPE/$date $tempDir/ripe
-  gzip -d $tempDir/ripe/*.gz
+  #if [ ! -e "$bulkRipe" ];then
+  #  echo "$bulkRipe doesn't exist"
+  #  date=$(date -d "$date +1day" +"%Y%m%d")
+  #  continue
+  #fi
+  #cp -r /data/salrwais/BPH/Whois/bulkWhois/RIPE/$date $tempDir/ripe
+  #gzip -d $tempDir/ripe/*.gz
 #run unformat script
   $currDir/convertRipe2Uniform.py $sourceRipe $resultDir $configFile  $tempDir/ripe
+  $currDir/addAsn2InetnumForOneRegistry.sh $date $date ripe
 
+  yesterday=$(date -d "$date -1day" +"%Y%m%d")
+  echo "compress $yesterday"
+  $parentDir/compress.sh $yesterday $yesterday "RIPE"
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")
 done

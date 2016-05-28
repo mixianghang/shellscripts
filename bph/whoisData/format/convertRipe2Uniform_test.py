@@ -14,7 +14,7 @@ sys.setdefaultencoding('utf8')
 
 def main():
   #check and assign cl args to variables
-  if len(sys.argv) < 5:
+  if len(sys.argv) < 4:
     print "Usage: sourceDir resultDir configFile bulkDir"
     print len(sys.argv)
     sys.exit(0)
@@ -22,7 +22,7 @@ def main():
   sourceDir=sys.argv[1]
   resultDir=sys.argv[2]
   configFile=sys.argv[3]
-  bulkDir = sys.argv[4]
+  #bulkDir = sys.argv[4]
 
   #create cidrAsnMap
   cidrAsnMap = {}
@@ -33,7 +33,10 @@ def main():
   #print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
 
 #source file
-  objList = [("inetnum", "inetnum"), ("inetnum", "inet6num")]
+  #objList = [("inetnum", "inetnum"), ("inetnum", "inet6num")]
+  #objList = [("person", "person"), ("person", "role"),("person", "irt"), ("person", "mntner")]
+#only generate person objects
+  objList = [("asn", "aut-num")]
   convDict = {}
 
 #read config file
@@ -61,7 +64,8 @@ def main():
     else:
       convObj = convDict[name]
       convObj.refreshType(type)
-    sourceFilePath = os.path.join(sourceDir, "{0}".format(type))
+    #sourceFilePath = os.path.join(sourceDir, "{0}".format(type))
+    sourceFilePath = os.path.join(sourceDir, type)
     if not os.path.exists(sourceFilePath):
       print "file doestn't exist: {0}".format(sourceFilePath)
       continue

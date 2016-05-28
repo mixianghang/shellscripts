@@ -2,6 +2,7 @@
 resultBaseDir=/data/seclab/BPH/Uniform/
 configFile=/data/seclab/BPH/Xianghang/bulkData/Scripts/format/uniformFormat.cfg
 currDir=/data/seclab/BPH/Xianghang/bulkData/Scripts/format/
+parentDir=/data/seclab/BPH/Xianghang/bulkData/Scripts/
 startDate=$(date +"%Y%m%d")
 endDate=$(date +"%Y%m%d")
 if [ $# -ge 2 ];then
@@ -23,6 +24,9 @@ do
   mkdir -p $tempDir
   mkdir -p $resultBaseDir/$date
   resultDir=$resultBaseDir/$date
+
+  echo "try to uncompress"
+  $parentDir/uncompress.sh $date $date "RIPE AFRINIC"
 
 #for arin
 #copy and unzip to temp
@@ -69,21 +73,26 @@ do
   fi
 
 #for lacnic
-  bulkDir=/data/salrwais/BPH/Whois/bulkWhois/LACNIC/$date/
-  apiDir=/data/salrwais/BPH/Whois/API/LACNIC/Data/$date/
-  if [ ! -e "$bulkDir" -o ! -e "$apiDir" ];then
-	echo "$bulkDir  or $apiDir doesn't exist"
-  else
-	$currDir/convertLacnic2Uniform.py $bulkDir $apiDir $resultDir $configFile 
-	$currDir/convLacnicOrg2Uniform.py $apiDir $resultDir $configFile
-	echo "$currDir/preprocessLacnic.sh"
-	$currDir/preprocessLacnic.sh $date $date
-  fi
+  #bulkDir=/data/salrwais/BPH/Whois/bulkWhois/LACNIC/$date/
+  #apiDir=/data/salrwais/BPH/Whois/API/LACNIC/Data/$date/
+  #if [ ! -e "$bulkDir" -o ! -e "$apiDir" ];then
+  #  echo "$bulkDir  or $apiDir doesn't exist"
+  #else
+  #  $currDir/convertLacnic2Uniform.py $bulkDir $apiDir $resultDir $configFile 
+  #  $currDir/convLacnicOrg2Uniform.py $apiDir $resultDir $configFile
+  #  echo "$currDir/preprocessLacnic.sh"
+  #  $currDir/preprocessLacnic.sh $date $date
+  #fi
 
   echo "$currDir/addAsn2Inetnum.sh"
-  $currDir/addAsn2Inetnum.sh
+  $currDir/addAsn2Inetnum.sh $date $date
 
 
   rm -rf $tempDir
+
+  yesterday=$(date -d "$date -1day" +"%Y%m%d")
+  echo "compress $yesterday"
+  $parentDir/compress.sh $yesterday $yesterday "RIPE AFRINIC"
+
   date=$(date -d "$date +1day" +"%Y%m%d")
 done

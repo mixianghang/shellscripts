@@ -69,6 +69,7 @@ class RetrieveThread(threading.Thread):
             RetrieveThread.requestCount -= 1
             RetrieveThread.partCount -= 1
             RetrieveThread.errorIndicate = 1
+            print "got 429 error code"
             while True:
                 if RetrieveThread.errorIndicate != 0:
                     time.sleep(30)

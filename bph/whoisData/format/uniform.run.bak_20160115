@@ -1,0 +1,2403 @@
+20160115
+Archive:  /data/salrwais/BPH/Whois/bulkWhois/ARIN/20160115/arin.zip
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/arin_db.xml  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/arin_db.txt  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/legacy.xsl  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/README.txt  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/schemas/asn.rnc  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/schemas/bwi.rnc  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/schemas/net.rnc  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/schemas/org.rnc  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/schemas/poc.rnc  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/schemas/util/anything.rnc  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/schemas/util/comment.rnc  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/schemas/util/foreignElements.rnc  
+  inflating: /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/arin/schemas/util/phone.rnc  
+finish 10000 objects of type asn and name asn
+finish 20000 objects of type asn and name asn
+finish 10000 objects of type person and name person
+finish 20000 objects of type person and name person
+finish 30000 objects of type person and name person
+finish 40000 objects of type person and name person
+finish 50000 objects of type person and name person
+finish 60000 objects of type person and name person
+finish 70000 objects of type person and name person
+finish 80000 objects of type person and name person
+finish 90000 objects of type person and name person
+finish 100000 objects of type person and name person
+finish 110000 objects of type person and name person
+finish 120000 objects of type person and name person
+finish 130000 objects of type person and name person
+finish 140000 objects of type person and name person
+finish 150000 objects of type person and name person
+finish 160000 objects of type person and name person
+finish 170000 objects of type person and name person
+finish 180000 objects of type person and name person
+finish 190000 objects of type person and name person
+finish 200000 objects of type person and name person
+finish 210000 objects of type person and name person
+finish 220000 objects of type person and name person
+finish 230000 objects of type person and name person
+finish 240000 objects of type person and name person
+finish 250000 objects of type person and name person
+finish 260000 objects of type person and name person
+finish 270000 objects of type person and name person
+finish 280000 objects of type person and name person
+finish 290000 objects of type person and name person
+finish 300000 objects of type person and name person
+finish 310000 objects of type person and name person
+finish 320000 objects of type person and name person
+finish 330000 objects of type person and name person
+finish 340000 objects of type person and name person
+finish 350000 objects of type person and name person
+finish 360000 objects of type person and name person
+finish 370000 objects of type person and name person
+finish 380000 objects of type person and name person
+finish 390000 objects of type person and name person
+finish 400000 objects of type person and name person
+finish 410000 objects of type person and name person
+finish 420000 objects of type person and name person
+finish 430000 objects of type person and name person
+finish 440000 objects of type person and name person
+finish 450000 objects of type person and name person
+finish 460000 objects of type person and name person
+finish 470000 objects of type person and name person
+finish 480000 objects of type person and name person
+finish 490000 objects of type person and name person
+finish 500000 objects of type person and name person
+finish 510000 objects of type person and name person
+finish 520000 objects of type person and name person
+finish 530000 objects of type person and name person
+finish 540000 objects of type person and name person
+finish 550000 objects of type person and name person
+finish 560000 objects of type person and name person
+finish 570000 objects of type person and name person
+finish 580000 objects of type person and name person
+finish 590000 objects of type person and name person
+finish 600000 objects of type person and name person
+finish 10000 objects of type org and name org
+finish 20000 objects of type org and name org
+finish 30000 objects of type org and name org
+finish 40000 objects of type org and name org
+finish 50000 objects of type org and name org
+finish 60000 objects of type org and name org
+finish 70000 objects of type org and name org
+finish 80000 objects of type org and name org
+finish 90000 objects of type org and name org
+finish 100000 objects of type org and name org
+finish 110000 objects of type org and name org
+finish 120000 objects of type org and name org
+finish 130000 objects of type org and name org
+finish 140000 objects of type org and name org
+finish 150000 objects of type org and name org
+finish 160000 objects of type org and name org
+finish 170000 objects of type org and name org
+finish 180000 objects of type org and name org
+finish 190000 objects of type org and name org
+finish 200000 objects of type org and name org
+finish 210000 objects of type org and name org
+finish 220000 objects of type org and name org
+finish 230000 objects of type org and name org
+finish 240000 objects of type org and name org
+finish 250000 objects of type org and name org
+finish 260000 objects of type org and name org
+finish 270000 objects of type org and name org
+finish 280000 objects of type org and name org
+finish 290000 objects of type org and name org
+finish 300000 objects of type org and name org
+finish 310000 objects of type org and name org
+finish 320000 objects of type org and name org
+finish 330000 objects of type org and name org
+finish 340000 objects of type org and name org
+finish 350000 objects of type org and name org
+finish 360000 objects of type org and name org
+finish 370000 objects of type org and name org
+finish 380000 objects of type org and name org
+finish 390000 objects of type org and name org
+finish 400000 objects of type org and name org
+finish 410000 objects of type org and name org
+finish 420000 objects of type org and name org
+finish 430000 objects of type org and name org
+finish 440000 objects of type org and name org
+finish 450000 objects of type org and name org
+finish 460000 objects of type org and name org
+finish 470000 objects of type org and name org
+finish 480000 objects of type org and name org
+finish 490000 objects of type org and name org
+finish 500000 objects of type org and name org
+finish 510000 objects of type org and name org
+finish 520000 objects of type org and name org
+finish 530000 objects of type org and name org
+finish 540000 objects of type org and name org
+finish 550000 objects of type org and name org
+finish 560000 objects of type org and name org
+finish 570000 objects of type org and name org
+finish 580000 objects of type org and name org
+finish 590000 objects of type org and name org
+finish 600000 objects of type org and name org
+finish 610000 objects of type org and name org
+finish 620000 objects of type org and name org
+finish 630000 objects of type org and name org
+finish 640000 objects of type org and name org
+finish 650000 objects of type org and name org
+finish 660000 objects of type org and name org
+finish 670000 objects of type org and name org
+finish 680000 objects of type org and name org
+finish 690000 objects of type org and name org
+finish 700000 objects of type org and name org
+finish 710000 objects of type org and name org
+finish 720000 objects of type org and name org
+finish 730000 objects of type org and name org
+finish 740000 objects of type org and name org
+finish 750000 objects of type org and name org
+finish 760000 objects of type org and name org
+finish 770000 objects of type org and name org
+finish 780000 objects of type org and name org
+finish 790000 objects of type org and name org
+finish 800000 objects of type org and name org
+finish 810000 objects of type org and name org
+finish 820000 objects of type org and name org
+finish 830000 objects of type org and name org
+finish 840000 objects of type org and name org
+finish 850000 objects of type org and name org
+finish 860000 objects of type org and name org
+finish 870000 objects of type org and name org
+finish 880000 objects of type org and name org
+finish 890000 objects of type org and name org
+finish 900000 objects of type org and name org
+finish 910000 objects of type org and name org
+finish 920000 objects of type org and name org
+finish 930000 objects of type org and name org
+finish 940000 objects of type org and name org
+finish 950000 objects of type org and name org
+finish 960000 objects of type org and name org
+finish 970000 objects of type org and name org
+finish 980000 objects of type org and name org
+finish 990000 objects of type org and name org
+finish 1000000 objects of type org and name org
+finish 1010000 objects of type org and name org
+finish 1020000 objects of type org and name org
+finish 1030000 objects of type org and name org
+finish 1040000 objects of type org and name org
+finish 1050000 objects of type org and name org
+finish 1060000 objects of type org and name org
+finish 1070000 objects of type org and name org
+finish 1080000 objects of type org and name org
+finish 1090000 objects of type org and name org
+finish 1100000 objects of type org and name org
+finish 1110000 objects of type org and name org
+finish 1120000 objects of type org and name org
+finish 1130000 objects of type org and name org
+finish 1140000 objects of type org and name org
+finish 1150000 objects of type org and name org
+finish 1160000 objects of type org and name org
+finish 1170000 objects of type org and name org
+finish 1180000 objects of type org and name org
+finish 1190000 objects of type org and name org
+finish 1200000 objects of type org and name org
+finish 1210000 objects of type org and name org
+finish 1220000 objects of type org and name org
+finish 1230000 objects of type org and name org
+finish 1240000 objects of type org and name org
+finish 1250000 objects of type org and name org
+finish 1260000 objects of type org and name org
+finish 1270000 objects of type org and name org
+finish 1280000 objects of type org and name org
+finish 1290000 objects of type org and name org
+finish 1300000 objects of type org and name org
+finish 1310000 objects of type org and name org
+finish 1320000 objects of type org and name org
+finish 1330000 objects of type org and name org
+finish 1340000 objects of type org and name org
+finish 1350000 objects of type org and name org
+finish 1360000 objects of type org and name org
+finish 1370000 objects of type org and name org
+finish 1380000 objects of type org and name org
+finish 1390000 objects of type org and name org
+finish 1400000 objects of type org and name org
+finish 1410000 objects of type org and name org
+finish 1420000 objects of type org and name org
+finish 1430000 objects of type org and name org
+finish 1440000 objects of type org and name org
+finish 1450000 objects of type org and name org
+finish 1460000 objects of type org and name org
+finish 1470000 objects of type org and name org
+finish 1480000 objects of type org and name org
+finish 1490000 objects of type org and name org
+finish 1500000 objects of type org and name org
+finish 1510000 objects of type org and name org
+finish 1520000 objects of type org and name org
+finish 1530000 objects of type org and name org
+finish 1540000 objects of type org and name org
+finish 1550000 objects of type org and name org
+finish 1560000 objects of type org and name org
+finish 1570000 objects of type org and name org
+finish 1580000 objects of type org and name org
+finish 1590000 objects of type org and name org
+finish 1600000 objects of type org and name org
+finish 1610000 objects of type org and name org
+finish 1620000 objects of type org and name org
+finish 1630000 objects of type org and name org
+finish 1640000 objects of type org and name org
+finish 1650000 objects of type org and name org
+finish 1660000 objects of type org and name org
+finish 1670000 objects of type org and name org
+finish 1680000 objects of type org and name org
+finish 1690000 objects of type org and name org
+finish 1700000 objects of type org and name org
+finish 1710000 objects of type org and name org
+finish 1720000 objects of type org and name org
+finish 1730000 objects of type org and name org
+finish 1740000 objects of type org and name org
+finish 1750000 objects of type org and name org
+finish 1760000 objects of type org and name org
+finish 1770000 objects of type org and name org
+finish 1780000 objects of type org and name org
+finish 1790000 objects of type org and name org
+finish 1800000 objects of type org and name org
+finish 1810000 objects of type org and name org
+finish 1820000 objects of type org and name org
+finish 1830000 objects of type org and name org
+finish 1840000 objects of type org and name org
+finish 1850000 objects of type org and name org
+finish 1860000 objects of type org and name org
+finish 1870000 objects of type org and name org
+finish 1880000 objects of type org and name org
+finish 1890000 objects of type org and name org
+finish 1900000 objects of type org and name org
+finish 1910000 objects of type org and name org
+finish 1920000 objects of type org and name org
+finish 1930000 objects of type org and name org
+finish 1940000 objects of type org and name org
+finish 1950000 objects of type org and name org
+finish 1960000 objects of type org and name org
+finish 1970000 objects of type org and name org
+finish 1980000 objects of type org and name org
+finish 1990000 objects of type org and name org
+finish 2000000 objects of type org and name org
+finish 2010000 objects of type org and name org
+finish 2020000 objects of type org and name org
+finish 2030000 objects of type org and name org
+finish 2040000 objects of type org and name org
+finish 2050000 objects of type org and name org
+finish 2060000 objects of type org and name org
+finish 2070000 objects of type org and name org
+finish 2080000 objects of type org and name org
+finish 2090000 objects of type org and name org
+finish 2100000 objects of type org and name org
+finish 2110000 objects of type org and name org
+finish 2120000 objects of type org and name org
+finish 2130000 objects of type org and name org
+finish 2140000 objects of type org and name org
+finish 2150000 objects of type org and name org
+finish 2160000 objects of type org and name org
+finish 2170000 objects of type org and name org
+finish 2180000 objects of type org and name org
+finish 2190000 objects of type org and name org
+finish 2200000 objects of type org and name org
+finish 2210000 objects of type org and name org
+finish 2220000 objects of type org and name org
+finish 2230000 objects of type org and name org
+finish 2240000 objects of type org and name org
+finish 2250000 objects of type org and name org
+finish 2260000 objects of type org and name org
+finish 2270000 objects of type org and name org
+finish 2280000 objects of type org and name org
+finish 2290000 objects of type org and name org
+finish 2300000 objects of type org and name org
+finish 2310000 objects of type org and name org
+finish 2320000 objects of type org and name org
+finish 2330000 objects of type org and name org
+finish 2340000 objects of type org and name org
+finish 2350000 objects of type org and name org
+finish 2360000 objects of type org and name org
+finish 2370000 objects of type org and name org
+finish 2380000 objects of type org and name org
+finish 2390000 objects of type org and name org
+finish 2400000 objects of type org and name org
+finish 2410000 objects of type org and name org
+finish 2420000 objects of type org and name org
+finish 2430000 objects of type org and name org
+finish 2440000 objects of type org and name org
+finish 2450000 objects of type org and name org
+finish 2460000 objects of type org and name org
+finish 2470000 objects of type org and name org
+finish 2480000 objects of type org and name org
+finish 2490000 objects of type org and name org
+finish 2500000 objects of type org and name org
+finish 2510000 objects of type org and name org
+finish 2520000 objects of type org and name org
+finish 2530000 objects of type org and name org
+finish 2540000 objects of type org and name org
+finish 2550000 objects of type org and name org
+finish 2560000 objects of type org and name org
+finish 2570000 objects of type org and name org
+finish 2580000 objects of type org and name org
+finish 2590000 objects of type org and name org
+finish 2600000 objects of type org and name org
+finish 2610000 objects of type org and name org
+finish 2620000 objects of type org and name org
+finish 2630000 objects of type org and name org
+finish 2640000 objects of type org and name org
+finish 2650000 objects of type org and name org
+finish 2660000 objects of type org and name org
+finish 2670000 objects of type org and name org
+finish 2680000 objects of type org and name org
+finish 2690000 objects of type org and name org
+finish 2700000 objects of type org and name org
+finish 2710000 objects of type org and name org
+finish 2720000 objects of type org and name org
+finish 2730000 objects of type org and name org
+finish 2740000 objects of type org and name org
+finish 2750000 objects of type org and name org
+finish 2760000 objects of type org and name org
+finish 2770000 objects of type org and name org
+finish 2780000 objects of type org and name org
+finish 2790000 objects of type org and name org
+finish 2800000 objects of type org and name org
+finish 2810000 objects of type org and name org
+finish 2820000 objects of type org and name org
+finish 2830000 objects of type org and name org
+finish 2840000 objects of type org and name org
+finish 2850000 objects of type org and name org
+finish 2860000 objects of type org and name org
+finish 2870000 objects of type org and name org
+finish 2880000 objects of type org and name org
+finish 2890000 objects of type org and name org
+finish 2900000 objects of type org and name org
+finish 2910000 objects of type org and name org
+finish 2920000 objects of type org and name org
+finish 2930000 objects of type org and name org
+finish 2940000 objects of type org and name org
+finish 2950000 objects of type org and name org
+finish 2960000 objects of type org and name org
+finish 2970000 objects of type org and name org
+finish 2980000 objects of type org and name org
+finish 2990000 objects of type org and name org
+finish 3000000 objects of type org and name org
+finish 3010000 objects of type org and name org
+finish 3020000 objects of type org and name org
+finish 3030000 objects of type org and name org
+finish 3040000 objects of type org and name org
+finish 3050000 objects of type org and name org
+finish 3060000 objects of type org and name org
+finish 3070000 objects of type org and name org
+finish 10000 objects of type inetnum and name inetnum
+finish 20000 objects of type inetnum and name inetnum
+finish 30000 objects of type inetnum and name inetnum
+finish 40000 objects of type inetnum and name inetnum
+finish 50000 objects of type inetnum and name inetnum
+finish 60000 objects of type inetnum and name inetnum
+finish 70000 objects of type inetnum and name inetnum
+finish 80000 objects of type inetnum and name inetnum
+finish 90000 objects of type inetnum and name inetnum
+finish 100000 objects of type inetnum and name inetnum
+finish 110000 objects of type inetnum and name inetnum
+finish 120000 objects of type inetnum and name inetnum
+finish 130000 objects of type inetnum and name inetnum
+finish 140000 objects of type inetnum and name inetnum
+finish 150000 objects of type inetnum and name inetnum
+finish 160000 objects of type inetnum and name inetnum
+finish 170000 objects of type inetnum and name inetnum
+finish 180000 objects of type inetnum and name inetnum
+finish 190000 objects of type inetnum and name inetnum
+finish 200000 objects of type inetnum and name inetnum
+finish 210000 objects of type inetnum and name inetnum
+finish 220000 objects of type inetnum and name inetnum
+finish 230000 objects of type inetnum and name inetnum
+finish 240000 objects of type inetnum and name inetnum
+finish 250000 objects of type inetnum and name inetnum
+finish 260000 objects of type inetnum and name inetnum
+finish 270000 objects of type inetnum and name inetnum
+finish 280000 objects of type inetnum and name inetnum
+finish 290000 objects of type inetnum and name inetnum
+finish 300000 objects of type inetnum and name inetnum
+finish 310000 objects of type inetnum and name inetnum
+finish 320000 objects of type inetnum and name inetnum
+finish 330000 objects of type inetnum and name inetnum
+finish 340000 objects of type inetnum and name inetnum
+finish 350000 objects of type inetnum and name inetnum
+finish 360000 objects of type inetnum and name inetnum
+finish 370000 objects of type inetnum and name inetnum
+finish 380000 objects of type inetnum and name inetnum
+finish 390000 objects of type inetnum and name inetnum
+finish 400000 objects of type inetnum and name inetnum
+finish 410000 objects of type inetnum and name inetnum
+finish 420000 objects of type inetnum and name inetnum
+finish 430000 objects of type inetnum and name inetnum
+finish 440000 objects of type inetnum and name inetnum
+finish 450000 objects of type inetnum and name inetnum
+finish 460000 objects of type inetnum and name inetnum
+finish 470000 objects of type inetnum and name inetnum
+finish 480000 objects of type inetnum and name inetnum
+finish 490000 objects of type inetnum and name inetnum
+finish 500000 objects of type inetnum and name inetnum
+finish 510000 objects of type inetnum and name inetnum
+finish 520000 objects of type inetnum and name inetnum
+finish 530000 objects of type inetnum and name inetnum
+finish 540000 objects of type inetnum and name inetnum
+finish 550000 objects of type inetnum and name inetnum
+finish 560000 objects of type inetnum and name inetnum
+finish 570000 objects of type inetnum and name inetnum
+finish 580000 objects of type inet6num and name inetnum
+finish 590000 objects of type inet6num and name inetnum
+finish 600000 objects of type inet6num and name inetnum
+finish 610000 objects of type inet6num and name inetnum
+finish 620000 objects of type inet6num and name inetnum
+finish 630000 objects of type inet6num and name inetnum
+finish 640000 objects of type inet6num and name inetnum
+finish 650000 objects of type inet6num and name inetnum
+finish 660000 objects of type inet6num and name inetnum
+finish 670000 objects of type inet6num and name inetnum
+finish 680000 objects of type inet6num and name inetnum
+finish 690000 objects of type inet6num and name inetnum
+finish 700000 objects of type inet6num and name inetnum
+finish 710000 objects of type inet6num and name inetnum
+finish 720000 objects of type inet6num and name inetnum
+finish 730000 objects of type inet6num and name inetnum
+finish 740000 objects of type inet6num and name inetnum
+finish 750000 objects of type inet6num and name inetnum
+finish 760000 objects of type inet6num and name inetnum
+finish 770000 objects of type inet6num and name inetnum
+finish 780000 objects of type inet6num and name inetnum
+finish 790000 objects of type inet6num and name inetnum
+finish 800000 objects of type inet6num and name inetnum
+finish 810000 objects of type inet6num and name inetnum
+finish 820000 objects of type inet6num and name inetnum
+finish 830000 objects of type inet6num and name inetnum
+finish 840000 objects of type inet6num and name inetnum
+finish 850000 objects of type inet6num and name inetnum
+finish 860000 objects of type inet6num and name inetnum
+finish 870000 objects of type inet6num and name inetnum
+finish 880000 objects of type inet6num and name inetnum
+finish 890000 objects of type inet6num and name inetnum
+finish 900000 objects of type inet6num and name inetnum
+finish 910000 objects of type inet6num and name inetnum
+finish 920000 objects of type inet6num and name inetnum
+finish 930000 objects of type inet6num and name inetnum
+finish 940000 objects of type inet6num and name inetnum
+finish 950000 objects of type inet6num and name inetnum
+finish 960000 objects of type inet6num and name inetnum
+finish 970000 objects of type inet6num and name inetnum
+finish 980000 objects of type inet6num and name inetnum
+finish 990000 objects of type inet6num and name inetnum
+finish 1000000 objects of type inet6num and name inetnum
+finish 1010000 objects of type inet6num and name inetnum
+finish 1020000 objects of type inet6num and name inetnum
+finish 1030000 objects of type inet6num and name inetnum
+finish 1040000 objects of type inet6num and name inetnum
+finish 1050000 objects of type inet6num and name inetnum
+finish 1060000 objects of type inet6num and name inetnum
+finish 1070000 objects of type inet6num and name inetnum
+finish 1080000 objects of type inet6num and name inetnum
+finish 1090000 objects of type inet6num and name inetnum
+finish 1100000 objects of type inet6num and name inetnum
+finish 1110000 objects of type inet6num and name inetnum
+finish 1120000 objects of type inet6num and name inetnum
+finish 1130000 objects of type inet6num and name inetnum
+finish 1140000 objects of type inet6num and name inetnum
+finish 1150000 objects of type inet6num and name inetnum
+finish 1160000 objects of type inet6num and name inetnum
+finish 1170000 objects of type inet6num and name inetnum
+finish 1180000 objects of type inet6num and name inetnum
+finish 1190000 objects of type inet6num and name inetnum
+finish 1200000 objects of type inet6num and name inetnum
+finish 1210000 objects of type inet6num and name inetnum
+finish 1220000 objects of type inet6num and name inetnum
+finish 1230000 objects of type inet6num and name inetnum
+finish 1240000 objects of type inet6num and name inetnum
+finish 1250000 objects of type inet6num and name inetnum
+finish 1260000 objects of type inet6num and name inetnum
+finish 1270000 objects of type inet6num and name inetnum
+finish 1280000 objects of type inet6num and name inetnum
+finish 1290000 objects of type inet6num and name inetnum
+finish 1300000 objects of type inet6num and name inetnum
+finish 1310000 objects of type inet6num and name inetnum
+finish 1320000 objects of type inet6num and name inetnum
+finish 1330000 objects of type inet6num and name inetnum
+finish 1340000 objects of type inet6num and name inetnum
+finish 1350000 objects of type inet6num and name inetnum
+finish 1360000 objects of type inet6num and name inetnum
+finish 1370000 objects of type inet6num and name inetnum
+finish 1380000 objects of type inet6num and name inetnum
+finish 1390000 objects of type inet6num and name inetnum
+finish 1400000 objects of type inet6num and name inetnum
+finish 1410000 objects of type inet6num and name inetnum
+finish 1420000 objects of type inet6num and name inetnum
+finish 1430000 objects of type inet6num and name inetnum
+finish 1440000 objects of type inet6num and name inetnum
+finish 1450000 objects of type inet6num and name inetnum
+finish 1460000 objects of type inet6num and name inetnum
+finish 1470000 objects of type inet6num and name inetnum
+finish 1480000 objects of type inet6num and name inetnum
+finish 1490000 objects of type inet6num and name inetnum
+finish 1500000 objects of type inet6num and name inetnum
+finish 1510000 objects of type inet6num and name inetnum
+finish 1520000 objects of type inet6num and name inetnum
+finish 1530000 objects of type inet6num and name inetnum
+finish 1540000 objects of type inet6num and name inetnum
+finish 1550000 objects of type inet6num and name inetnum
+finish 1560000 objects of type inet6num and name inetnum
+finish 1570000 objects of type inet6num and name inetnum
+finish 1580000 objects of type inet6num and name inetnum
+finish 1590000 objects of type inet6num and name inetnum
+finish 1600000 objects of type inet6num and name inetnum
+finish 1610000 objects of type inet6num and name inetnum
+finish 1620000 objects of type inet6num and name inetnum
+finish 1630000 objects of type inet6num and name inetnum
+finish 1640000 objects of type inet6num and name inetnum
+finish 1650000 objects of type inet6num and name inetnum
+finish 1660000 objects of type inet6num and name inetnum
+finish 1670000 objects of type inet6num and name inetnum
+finish 1680000 objects of type inet6num and name inetnum
+finish 1690000 objects of type inet6num and name inetnum
+finish 1700000 objects of type inet6num and name inetnum
+finish 1710000 objects of type inet6num and name inetnum
+finish 1720000 objects of type inet6num and name inetnum
+finish 1730000 objects of type inet6num and name inetnum
+finish 1740000 objects of type inet6num and name inetnum
+finish 1750000 objects of type inet6num and name inetnum
+finish 1760000 objects of type inet6num and name inetnum
+finish 1770000 objects of type inet6num and name inetnum
+finish 1780000 objects of type inet6num and name inetnum
+finish 1790000 objects of type inet6num and name inetnum
+finish 1800000 objects of type inet6num and name inetnum
+finish 1810000 objects of type inet6num and name inetnum
+finish 1820000 objects of type inet6num and name inetnum
+finish 1830000 objects of type inet6num and name inetnum
+finish 1840000 objects of type inet6num and name inetnum
+finish 1850000 objects of type inet6num and name inetnum
+finish 1860000 objects of type inet6num and name inetnum
+finish 1870000 objects of type inet6num and name inetnum
+finish 1880000 objects of type inet6num and name inetnum
+finish 1890000 objects of type inet6num and name inetnum
+finish 1900000 objects of type inet6num and name inetnum
+finish 1910000 objects of type inet6num and name inetnum
+finish 1920000 objects of type inet6num and name inetnum
+finish 1930000 objects of type inet6num and name inetnum
+finish 1940000 objects of type inet6num and name inetnum
+finish 1950000 objects of type inet6num and name inetnum
+finish 1960000 objects of type inet6num and name inetnum
+finish 1970000 objects of type inet6num and name inetnum
+finish 1980000 objects of type inet6num and name inetnum
+finish 1990000 objects of type inet6num and name inetnum
+finish 2000000 objects of type inet6num and name inetnum
+finish 2010000 objects of type inet6num and name inetnum
+finish 2020000 objects of type inet6num and name inetnum
+finish 2030000 objects of type inet6num and name inetnum
+finish 2040000 objects of type inet6num and name inetnum
+finish 2050000 objects of type inet6num and name inetnum
+finish 2060000 objects of type inet6num and name inetnum
+finish 2070000 objects of type inet6num and name inetnum
+finish 2080000 objects of type inet6num and name inetnum
+finish 2090000 objects of type inet6num and name inetnum
+finish 2100000 objects of type inet6num and name inetnum
+finish 2110000 objects of type inet6num and name inetnum
+finish 2120000 objects of type inet6num and name inetnum
+finish 2130000 objects of type inet6num and name inetnum
+finish 2140000 objects of type inet6num and name inetnum
+finish 2150000 objects of type inet6num and name inetnum
+finish 2160000 objects of type inet6num and name inetnum
+finish 2170000 objects of type inet6num and name inetnum
+finish 2180000 objects of type inet6num and name inetnum
+finish 2190000 objects of type inet6num and name inetnum
+finish 2200000 objects of type inet6num and name inetnum
+finish 2210000 objects of type inet6num and name inetnum
+finish 2220000 objects of type inet6num and name inetnum
+finish 2230000 objects of type inet6num and name inetnum
+finish 2240000 objects of type inet6num and name inetnum
+finish 2250000 objects of type inet6num and name inetnum
+finish 2260000 objects of type inet6num and name inetnum
+finish 2270000 objects of type inet6num and name inetnum
+finish 2280000 objects of type inet6num and name inetnum
+finish 2290000 objects of type inet6num and name inetnum
+finish 2300000 objects of type inet6num and name inetnum
+finish 2310000 objects of type inet6num and name inetnum
+finish 2320000 objects of type inet6num and name inetnum
+finish 2330000 objects of type inet6num and name inetnum
+finish 2340000 objects of type inet6num and name inetnum
+finish 2350000 objects of type inet6num and name inetnum
+finish 2360000 objects of type inet6num and name inetnum
+finish 2370000 objects of type inet6num and name inetnum
+finish 2380000 objects of type inet6num and name inetnum
+finish 2390000 objects of type inet6num and name inetnum
+finish 2400000 objects of type inet6num and name inetnum
+finish 2410000 objects of type inet6num and name inetnum
+finish 2420000 objects of type inet6num and name inetnum
+finish 2430000 objects of type inet6num and name inetnum
+finish 2440000 objects of type inet6num and name inetnum
+finish 2450000 objects of type inet6num and name inetnum
+finish 2460000 objects of type inet6num and name inetnum
+finish 2470000 objects of type inet6num and name inetnum
+finish 2480000 objects of type inet6num and name inetnum
+finish 2490000 objects of type inet6num and name inetnum
+finish 2500000 objects of type inet6num and name inetnum
+finish 2510000 objects of type inet6num and name inetnum
+finish 2520000 objects of type inet6num and name inetnum
+finish 2530000 objects of type inet6num and name inetnum
+finish 2540000 objects of type inet6num and name inetnum
+finish 2550000 objects of type inet6num and name inetnum
+finish 2560000 objects of type inet6num and name inetnum
+finish 2570000 objects of type inet6num and name inetnum
+finish 2580000 objects of type inet6num and name inetnum
+finish 2590000 objects of type inet6num and name inetnum
+finish 2600000 objects of type inet6num and name inetnum
+finish 2610000 objects of type inet6num and name inetnum
+finish 2620000 objects of type inet6num and name inetnum
+finish 2630000 objects of type inet6num and name inetnum
+finish 2640000 objects of type inet6num and name inetnum
+finish 2650000 objects of type inet6num and name inetnum
+finish 2660000 objects of type inet6num and name inetnum
+finish 2670000 objects of type inet6num and name inetnum
+finish 2680000 objects of type inet6num and name inetnum
+finish 2690000 objects of type inet6num and name inetnum
+finish 2700000 objects of type inet6num and name inetnum
+finish 2710000 objects of type inet6num and name inetnum
+finish 2720000 objects of type inet6num and name inetnum
+finish 2730000 objects of type inet6num and name inetnum
+finish 2740000 objects of type inet6num and name inetnum
+finish 2750000 objects of type inet6num and name inetnum
+finish 2760000 objects of type inet6num and name inetnum
+finish 2770000 objects of type inet6num and name inetnum
+finish 2780000 objects of type inet6num and name inetnum
+finish 2790000 objects of type inet6num and name inetnum
+finish 2800000 objects of type inet6num and name inetnum
+finish 2810000 objects of type inet6num and name inetnum
+finish 2820000 objects of type inet6num and name inetnum
+finish 2830000 objects of type inet6num and name inetnum
+finish 2840000 objects of type inet6num and name inetnum
+finish 2850000 objects of type inet6num and name inetnum
+finish 2860000 objects of type inet6num and name inetnum
+finish 2870000 objects of type inet6num and name inetnum
+finish 2880000 objects of type inet6num and name inetnum
+finish 2890000 objects of type inet6num and name inetnum
+finish 2900000 objects of type inet6num and name inetnum
+finish 2910000 objects of type inet6num and name inetnum
+finish 2920000 objects of type inet6num and name inetnum
+finish 2930000 objects of type inet6num and name inetnum
+finish 2940000 objects of type inet6num and name inetnum
+finish 2950000 objects of type inet6num and name inetnum
+finish 2960000 objects of type inet6num and name inetnum
+finish 2970000 objects of type inet6num and name inetnum
+retrieve 93038738 lines, get 6688487 objects with timeCost 889.25
+finish 1010958 lines and get 93515 maps for file /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/apnic/split/apnic.db.route
+finish 1422899 lines and get 212621 maps for file /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/apnic/split/apnic.db.route6
+retrieve 212621 cidr asn mappings
+finish 10000 objects of type inetnum and name inetnum
+finish 20000 objects of type inetnum and name inetnum
+finish 30000 objects of type inetnum and name inetnum
+finish 40000 objects of type inetnum and name inetnum
+finish 50000 objects of type inetnum and name inetnum
+finish 60000 objects of type inetnum and name inetnum
+finish 70000 objects of type inetnum and name inetnum
+finish 80000 objects of type inetnum and name inetnum
+finish 90000 objects of type inetnum and name inetnum
+finish 100000 objects of type inetnum and name inetnum
+finish 110000 objects of type inetnum and name inetnum
+finish 120000 objects of type inetnum and name inetnum
+finish 130000 objects of type inetnum and name inetnum
+finish 140000 objects of type inetnum and name inetnum
+finish 150000 objects of type inetnum and name inetnum
+finish 160000 objects of type inetnum and name inetnum
+finish 170000 objects of type inetnum and name inetnum
+finish 180000 objects of type inetnum and name inetnum
+finish 190000 objects of type inetnum and name inetnum
+finish 200000 objects of type inetnum and name inetnum
+finish 210000 objects of type inetnum and name inetnum
+finish 220000 objects of type inetnum and name inetnum
+finish 230000 objects of type inetnum and name inetnum
+finish 240000 objects of type inetnum and name inetnum
+finish 250000 objects of type inetnum and name inetnum
+finish 260000 objects of type inetnum and name inetnum
+finish 270000 objects of type inetnum and name inetnum
+finish 280000 objects of type inetnum and name inetnum
+finish 290000 objects of type inetnum and name inetnum
+finish 300000 objects of type inetnum and name inetnum
+finish 310000 objects of type inetnum and name inetnum
+finish 320000 objects of type inetnum and name inetnum
+finish 330000 objects of type inetnum and name inetnum
+finish 340000 objects of type inetnum and name inetnum
+finish 350000 objects of type inetnum and name inetnum
+finish 360000 objects of type inetnum and name inetnum
+finish 370000 objects of type inetnum and name inetnum
+finish 380000 objects of type inetnum and name inetnum
+finish 390000 objects of type inetnum and name inetnum
+finish 400000 objects of type inetnum and name inetnum
+finish 410000 objects of type inetnum and name inetnum
+finish 420000 objects of type inetnum and name inetnum
+finish 430000 objects of type inetnum and name inetnum
+finish 440000 objects of type inetnum and name inetnum
+finish 450000 objects of type inetnum and name inetnum
+finish 460000 objects of type inetnum and name inetnum
+finish 470000 objects of type inetnum and name inetnum
+finish 480000 objects of type inetnum and name inetnum
+finish 490000 objects of type inetnum and name inetnum
+finish 500000 objects of type inetnum and name inetnum
+finish 510000 objects of type inetnum and name inetnum
+finish 520000 objects of type inetnum and name inetnum
+finish 530000 objects of type inetnum and name inetnum
+finish 540000 objects of type inetnum and name inetnum
+finish 550000 objects of type inetnum and name inetnum
+finish 560000 objects of type inetnum and name inetnum
+finish 570000 objects of type inetnum and name inetnum
+finish 580000 objects of type inetnum and name inetnum
+finish 590000 objects of type inetnum and name inetnum
+finish 600000 objects of type inetnum and name inetnum
+finish 610000 objects of type inetnum and name inetnum
+finish 620000 objects of type inetnum and name inetnum
+finish 630000 objects of type inetnum and name inetnum
+finish 640000 objects of type inetnum and name inetnum
+finish 650000 objects of type inetnum and name inetnum
+finish 660000 objects of type inetnum and name inetnum
+finish 670000 objects of type inetnum and name inetnum
+finish 680000 objects of type inetnum and name inetnum
+finish 690000 objects of type inetnum and name inetnum
+finish 700000 objects of type inetnum and name inetnum
+finish 710000 objects of type inetnum and name inetnum
+finish 720000 objects of type inetnum and name inetnum
+finish 730000 objects of type inetnum and name inetnum
+finish 740000 objects of type inetnum and name inetnum
+finish 750000 objects of type inetnum and name inetnum
+finish 760000 objects of type inetnum and name inetnum
+finish 770000 objects of type inetnum and name inetnum
+finish 780000 objects of type inetnum and name inetnum
+finish 790000 objects of type inetnum and name inetnum
+finish 800000 objects of type inetnum and name inetnum
+finish 810000 objects of type inetnum and name inetnum
+finish 820000 objects of type inetnum and name inetnum
+finish 830000 objects of type inetnum and name inetnum
+finish 840000 objects of type inetnum and name inetnum
+finish 850000 objects of type inetnum and name inetnum
+finish 860000 objects of type inetnum and name inetnum
+finish 870000 objects of type inetnum and name inetnum
+finish 880000 objects of type inetnum and name inetnum
+finish 890000 objects of type inetnum and name inetnum
+finish 900000 objects of type inetnum and name inetnum
+finish 910000 objects of type inetnum and name inetnum
+finish 920000 objects of type inetnum and name inetnum
+finish 930000 objects of type inetnum and name inetnum
+finish 940000 objects of type inet6num and name inetnum
+finish 950000 objects of type inet6num and name inetnum
+finish 960000 objects of type inet6num and name inetnum
+finish 970000 objects of type inet6num and name inetnum
+finish 980000 objects of type inet6num and name inetnum
+finish 990000 objects of type inet6num and name inetnum
+finish 1000000 objects of type inet6num and name inetnum
+finish 10000 objects of type person and name person
+finish 20000 objects of type person and name person
+finish 30000 objects of type person and name person
+finish 40000 objects of type person and name person
+finish 50000 objects of type person and name person
+finish 60000 objects of type person and name person
+finish 70000 objects of type person and name person
+finish 80000 objects of type person and name person
+finish 90000 objects of type person and name person
+finish 100000 objects of type person and name person
+finish 110000 objects of type person and name person
+finish 120000 objects of type person and name person
+finish 130000 objects of type person and name person
+finish 140000 objects of type person and name person
+finish 150000 objects of type person and name person
+finish 160000 objects of type person and name person
+finish 170000 objects of type person and name person
+finish 180000 objects of type person and name person
+finish 190000 objects of type person and name person
+finish 200000 objects of type person and name person
+finish 210000 objects of type person and name person
+finish 220000 objects of type person and name person
+finish 230000 objects of type person and name person
+finish 240000 objects of type person and name person
+finish 250000 objects of type person and name person
+finish 260000 objects of type person and name person
+finish 270000 objects of type person and name person
+finish 280000 objects of type person and name person
+finish 290000 objects of type person and name person
+finish 300000 objects of type person and name person
+finish 310000 objects of type person and name person
+finish 320000 objects of type person and name person
+finish 330000 objects of type person and name person
+finish 340000 objects of type person and name person
+finish 350000 objects of type person and name person
+finish 360000 objects of type person and name person
+finish 370000 objects of type person and name person
+finish 380000 objects of type person and name person
+finish 390000 objects of type person and name person
+finish 400000 objects of type person and name person
+finish 410000 objects of type person and name person
+finish 420000 objects of type person and name person
+finish 430000 objects of type person and name person
+finish 440000 objects of type irt and name person
+finish 450000 objects of type irt and name person
+finish 460000 objects of type mntner and name person
+finish 470000 objects of type mntner and name person
+finish 10000 objects of type aut-num and name asn
+finish 20000 objects of type aut-num and name asn
+finish person with 472151 objects
+finish inetnum with 1001371 objects
+finish asn with 27550 objects
+time cost is 1501.64
+finish 4641369 lines and get 262771 maps for file /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/ripe/ripe.db.route
+finish 227408 lines and get 276164 maps for file /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/ripe/ripe.db.route6
+retrieve 276164 cidr asn mappings
+create obj for name inetnum and type inetnum
+finish 10000 objects of type inetnum and name inetnum
+finish 20000 objects of type inetnum and name inetnum
+finish 30000 objects of type inetnum and name inetnum
+finish 40000 objects of type inetnum and name inetnum
+finish 50000 objects of type inetnum and name inetnum
+finish 60000 objects of type inetnum and name inetnum
+finish 70000 objects of type inetnum and name inetnum
+finish 80000 objects of type inetnum and name inetnum
+finish 90000 objects of type inetnum and name inetnum
+finish 100000 objects of type inetnum and name inetnum
+finish 110000 objects of type inetnum and name inetnum
+finish 120000 objects of type inetnum and name inetnum
+finish 130000 objects of type inetnum and name inetnum
+finish 140000 objects of type inetnum and name inetnum
+finish 150000 objects of type inetnum and name inetnum
+finish 160000 objects of type inetnum and name inetnum
+finish 170000 objects of type inetnum and name inetnum
+finish 180000 objects of type inetnum and name inetnum
+finish 190000 objects of type inetnum and name inetnum
+finish 200000 objects of type inetnum and name inetnum
+finish 210000 objects of type inetnum and name inetnum
+finish 220000 objects of type inetnum and name inetnum
+finish 230000 objects of type inetnum and name inetnum
+finish 240000 objects of type inetnum and name inetnum
+finish 250000 objects of type inetnum and name inetnum
+finish 260000 objects of type inetnum and name inetnum
+finish 270000 objects of type inetnum and name inetnum
+finish 280000 objects of type inetnum and name inetnum
+finish 290000 objects of type inetnum and name inetnum
+finish 300000 objects of type inetnum and name inetnum
+finish 310000 objects of type inetnum and name inetnum
+finish 320000 objects of type inetnum and name inetnum
+finish 330000 objects of type inetnum and name inetnum
+finish 340000 objects of type inetnum and name inetnum
+finish 350000 objects of type inetnum and name inetnum
+finish 360000 objects of type inetnum and name inetnum
+finish 370000 objects of type inetnum and name inetnum
+finish 380000 objects of type inetnum and name inetnum
+finish 390000 objects of type inetnum and name inetnum
+finish 400000 objects of type inetnum and name inetnum
+finish 410000 objects of type inetnum and name inetnum
+finish 420000 objects of type inetnum and name inetnum
+finish 430000 objects of type inetnum and name inetnum
+finish 440000 objects of type inetnum and name inetnum
+finish 450000 objects of type inetnum and name inetnum
+finish 460000 objects of type inetnum and name inetnum
+finish 470000 objects of type inetnum and name inetnum
+finish 480000 objects of type inetnum and name inetnum
+finish 490000 objects of type inetnum and name inetnum
+finish 500000 objects of type inetnum and name inetnum
+finish 510000 objects of type inetnum and name inetnum
+finish 520000 objects of type inetnum and name inetnum
+finish 530000 objects of type inetnum and name inetnum
+finish 540000 objects of type inetnum and name inetnum
+finish 550000 objects of type inetnum and name inetnum
+finish 560000 objects of type inetnum and name inetnum
+finish 570000 objects of type inetnum and name inetnum
+finish 580000 objects of type inetnum and name inetnum
+finish 590000 objects of type inetnum and name inetnum
+finish 600000 objects of type inetnum and name inetnum
+finish 610000 objects of type inetnum and name inetnum
+finish 620000 objects of type inetnum and name inetnum
+finish 630000 objects of type inetnum and name inetnum
+finish 640000 objects of type inetnum and name inetnum
+finish 650000 objects of type inetnum and name inetnum
+finish 660000 objects of type inetnum and name inetnum
+finish 670000 objects of type inetnum and name inetnum
+finish 680000 objects of type inetnum and name inetnum
+finish 690000 objects of type inetnum and name inetnum
+finish 700000 objects of type inetnum and name inetnum
+finish 710000 objects of type inetnum and name inetnum
+finish 720000 objects of type inetnum and name inetnum
+finish 730000 objects of type inetnum and name inetnum
+finish 740000 objects of type inetnum and name inetnum
+finish 750000 objects of type inetnum and name inetnum
+finish 760000 objects of type inetnum and name inetnum
+finish 770000 objects of type inetnum and name inetnum
+finish 780000 objects of type inetnum and name inetnum
+finish 790000 objects of type inetnum and name inetnum
+finish 800000 objects of type inetnum and name inetnum
+finish 810000 objects of type inetnum and name inetnum
+finish 820000 objects of type inetnum and name inetnum
+finish 830000 objects of type inetnum and name inetnum
+finish 840000 objects of type inetnum and name inetnum
+finish 850000 objects of type inetnum and name inetnum
+finish 860000 objects of type inetnum and name inetnum
+finish 870000 objects of type inetnum and name inetnum
+finish 880000 objects of type inetnum and name inetnum
+finish 890000 objects of type inetnum and name inetnum
+finish 900000 objects of type inetnum and name inetnum
+finish 910000 objects of type inetnum and name inetnum
+finish 920000 objects of type inetnum and name inetnum
+finish 930000 objects of type inetnum and name inetnum
+finish 940000 objects of type inetnum and name inetnum
+finish 950000 objects of type inetnum and name inetnum
+finish 960000 objects of type inetnum and name inetnum
+finish 970000 objects of type inetnum and name inetnum
+finish 980000 objects of type inetnum and name inetnum
+finish 990000 objects of type inetnum and name inetnum
+finish 1000000 objects of type inetnum and name inetnum
+finish 1010000 objects of type inetnum and name inetnum
+finish 1020000 objects of type inetnum and name inetnum
+finish 1030000 objects of type inetnum and name inetnum
+finish 1040000 objects of type inetnum and name inetnum
+finish 1050000 objects of type inetnum and name inetnum
+finish 1060000 objects of type inetnum and name inetnum
+finish 1070000 objects of type inetnum and name inetnum
+finish 1080000 objects of type inetnum and name inetnum
+finish 1090000 objects of type inetnum and name inetnum
+finish 1100000 objects of type inetnum and name inetnum
+finish 1110000 objects of type inetnum and name inetnum
+finish 1120000 objects of type inetnum and name inetnum
+finish 1130000 objects of type inetnum and name inetnum
+finish 1140000 objects of type inetnum and name inetnum
+finish 1150000 objects of type inetnum and name inetnum
+finish 1160000 objects of type inetnum and name inetnum
+finish 1170000 objects of type inetnum and name inetnum
+finish 1180000 objects of type inetnum and name inetnum
+finish 1190000 objects of type inetnum and name inetnum
+finish 1200000 objects of type inetnum and name inetnum
+finish 1210000 objects of type inetnum and name inetnum
+finish 1220000 objects of type inetnum and name inetnum
+finish 1230000 objects of type inetnum and name inetnum
+finish 1240000 objects of type inetnum and name inetnum
+finish 1250000 objects of type inetnum and name inetnum
+finish 1260000 objects of type inetnum and name inetnum
+finish 1270000 objects of type inetnum and name inetnum
+finish 1280000 objects of type inetnum and name inetnum
+finish 1290000 objects of type inetnum and name inetnum
+finish 1300000 objects of type inetnum and name inetnum
+finish 1310000 objects of type inetnum and name inetnum
+finish 1320000 objects of type inetnum and name inetnum
+finish 1330000 objects of type inetnum and name inetnum
+finish 1340000 objects of type inetnum and name inetnum
+finish 1350000 objects of type inetnum and name inetnum
+finish 1360000 objects of type inetnum and name inetnum
+finish 1370000 objects of type inetnum and name inetnum
+finish 1380000 objects of type inetnum and name inetnum
+finish 1390000 objects of type inetnum and name inetnum
+finish 1400000 objects of type inetnum and name inetnum
+finish 1410000 objects of type inetnum and name inetnum
+finish 1420000 objects of type inetnum and name inetnum
+finish 1430000 objects of type inetnum and name inetnum
+finish 1440000 objects of type inetnum and name inetnum
+finish 1450000 objects of type inetnum and name inetnum
+finish 1460000 objects of type inetnum and name inetnum
+finish 1470000 objects of type inetnum and name inetnum
+finish 1480000 objects of type inetnum and name inetnum
+finish 1490000 objects of type inetnum and name inetnum
+finish 1500000 objects of type inetnum and name inetnum
+finish 1510000 objects of type inetnum and name inetnum
+finish 1520000 objects of type inetnum and name inetnum
+finish 1530000 objects of type inetnum and name inetnum
+finish 1540000 objects of type inetnum and name inetnum
+finish 1550000 objects of type inetnum and name inetnum
+finish 1560000 objects of type inetnum and name inetnum
+finish 1570000 objects of type inetnum and name inetnum
+finish 1580000 objects of type inetnum and name inetnum
+finish 1590000 objects of type inetnum and name inetnum
+finish 1600000 objects of type inetnum and name inetnum
+finish 1610000 objects of type inetnum and name inetnum
+finish 1620000 objects of type inetnum and name inetnum
+finish 1630000 objects of type inetnum and name inetnum
+finish 1640000 objects of type inetnum and name inetnum
+finish 1650000 objects of type inetnum and name inetnum
+finish 1660000 objects of type inetnum and name inetnum
+finish 1670000 objects of type inetnum and name inetnum
+finish 1680000 objects of type inetnum and name inetnum
+finish 1690000 objects of type inetnum and name inetnum
+finish 1700000 objects of type inetnum and name inetnum
+finish 1710000 objects of type inetnum and name inetnum
+finish 1720000 objects of type inetnum and name inetnum
+finish 1730000 objects of type inetnum and name inetnum
+finish 1740000 objects of type inetnum and name inetnum
+finish 1750000 objects of type inetnum and name inetnum
+finish 1760000 objects of type inetnum and name inetnum
+finish 1770000 objects of type inetnum and name inetnum
+finish 1780000 objects of type inetnum and name inetnum
+finish 1790000 objects of type inetnum and name inetnum
+finish 1800000 objects of type inetnum and name inetnum
+finish 1810000 objects of type inetnum and name inetnum
+finish 1820000 objects of type inetnum and name inetnum
+finish 1830000 objects of type inetnum and name inetnum
+finish 1840000 objects of type inetnum and name inetnum
+finish 1850000 objects of type inetnum and name inetnum
+finish 1860000 objects of type inetnum and name inetnum
+finish 1870000 objects of type inetnum and name inetnum
+finish 1880000 objects of type inetnum and name inetnum
+finish 1890000 objects of type inetnum and name inetnum
+finish 1900000 objects of type inetnum and name inetnum
+finish 1910000 objects of type inetnum and name inetnum
+finish 1920000 objects of type inetnum and name inetnum
+finish 1930000 objects of type inetnum and name inetnum
+finish 1940000 objects of type inetnum and name inetnum
+finish 1950000 objects of type inetnum and name inetnum
+finish 1960000 objects of type inetnum and name inetnum
+finish 1970000 objects of type inetnum and name inetnum
+finish 1980000 objects of type inetnum and name inetnum
+finish 1990000 objects of type inetnum and name inetnum
+finish 2000000 objects of type inetnum and name inetnum
+finish 2010000 objects of type inetnum and name inetnum
+finish 2020000 objects of type inetnum and name inetnum
+finish 2030000 objects of type inetnum and name inetnum
+finish 2040000 objects of type inetnum and name inetnum
+finish 2050000 objects of type inetnum and name inetnum
+finish 2060000 objects of type inetnum and name inetnum
+finish 2070000 objects of type inetnum and name inetnum
+finish 2080000 objects of type inetnum and name inetnum
+finish 2090000 objects of type inetnum and name inetnum
+finish 2100000 objects of type inetnum and name inetnum
+finish 2110000 objects of type inetnum and name inetnum
+finish 2120000 objects of type inetnum and name inetnum
+finish 2130000 objects of type inetnum and name inetnum
+finish 2140000 objects of type inetnum and name inetnum
+finish 2150000 objects of type inetnum and name inetnum
+finish 2160000 objects of type inetnum and name inetnum
+finish 2170000 objects of type inetnum and name inetnum
+finish 2180000 objects of type inetnum and name inetnum
+finish 2190000 objects of type inetnum and name inetnum
+finish 2200000 objects of type inetnum and name inetnum
+finish 2210000 objects of type inetnum and name inetnum
+finish 2220000 objects of type inetnum and name inetnum
+finish 2230000 objects of type inetnum and name inetnum
+finish 2240000 objects of type inetnum and name inetnum
+finish 2250000 objects of type inetnum and name inetnum
+finish 2260000 objects of type inetnum and name inetnum
+finish 2270000 objects of type inetnum and name inetnum
+finish 2280000 objects of type inetnum and name inetnum
+finish 2290000 objects of type inetnum and name inetnum
+finish 2300000 objects of type inetnum and name inetnum
+finish 2310000 objects of type inetnum and name inetnum
+finish 2320000 objects of type inetnum and name inetnum
+finish 2330000 objects of type inetnum and name inetnum
+finish 2340000 objects of type inetnum and name inetnum
+finish 2350000 objects of type inetnum and name inetnum
+finish 2360000 objects of type inetnum and name inetnum
+finish 2370000 objects of type inetnum and name inetnum
+finish 2380000 objects of type inetnum and name inetnum
+finish 2390000 objects of type inetnum and name inetnum
+finish 2400000 objects of type inetnum and name inetnum
+finish 2410000 objects of type inetnum and name inetnum
+finish 2420000 objects of type inetnum and name inetnum
+finish 2430000 objects of type inetnum and name inetnum
+finish 2440000 objects of type inetnum and name inetnum
+finish 2450000 objects of type inetnum and name inetnum
+finish 2460000 objects of type inetnum and name inetnum
+finish 2470000 objects of type inetnum and name inetnum
+finish 2480000 objects of type inetnum and name inetnum
+finish 2490000 objects of type inetnum and name inetnum
+finish 2500000 objects of type inetnum and name inetnum
+finish 2510000 objects of type inetnum and name inetnum
+finish 2520000 objects of type inetnum and name inetnum
+finish 2530000 objects of type inetnum and name inetnum
+finish 2540000 objects of type inetnum and name inetnum
+finish 2550000 objects of type inetnum and name inetnum
+finish 2560000 objects of type inetnum and name inetnum
+finish 2570000 objects of type inetnum and name inetnum
+finish 2580000 objects of type inetnum and name inetnum
+finish 2590000 objects of type inetnum and name inetnum
+finish 2600000 objects of type inetnum and name inetnum
+finish 2610000 objects of type inetnum and name inetnum
+finish 2620000 objects of type inetnum and name inetnum
+finish 2630000 objects of type inetnum and name inetnum
+finish 2640000 objects of type inetnum and name inetnum
+finish 2650000 objects of type inetnum and name inetnum
+finish 2660000 objects of type inetnum and name inetnum
+finish 2670000 objects of type inetnum and name inetnum
+finish 2680000 objects of type inetnum and name inetnum
+finish 2690000 objects of type inetnum and name inetnum
+finish 2700000 objects of type inetnum and name inetnum
+finish 2710000 objects of type inetnum and name inetnum
+finish 2720000 objects of type inetnum and name inetnum
+finish 2730000 objects of type inetnum and name inetnum
+finish 2740000 objects of type inetnum and name inetnum
+finish 2750000 objects of type inetnum and name inetnum
+finish 2760000 objects of type inetnum and name inetnum
+finish 2770000 objects of type inetnum and name inetnum
+finish 2780000 objects of type inetnum and name inetnum
+finish 2790000 objects of type inetnum and name inetnum
+finish 2800000 objects of type inetnum and name inetnum
+finish 2810000 objects of type inetnum and name inetnum
+finish 2820000 objects of type inetnum and name inetnum
+finish 2830000 objects of type inetnum and name inetnum
+finish 2840000 objects of type inetnum and name inetnum
+finish 2850000 objects of type inetnum and name inetnum
+finish 2860000 objects of type inetnum and name inetnum
+finish 2870000 objects of type inetnum and name inetnum
+finish 2880000 objects of type inetnum and name inetnum
+finish 2890000 objects of type inetnum and name inetnum
+finish 2900000 objects of type inetnum and name inetnum
+finish 2910000 objects of type inetnum and name inetnum
+finish 2920000 objects of type inetnum and name inetnum
+finish 2930000 objects of type inetnum and name inetnum
+finish 2940000 objects of type inetnum and name inetnum
+finish 2950000 objects of type inetnum and name inetnum
+finish 2960000 objects of type inetnum and name inetnum
+finish 2970000 objects of type inetnum and name inetnum
+finish 2980000 objects of type inetnum and name inetnum
+finish 2990000 objects of type inetnum and name inetnum
+finish 3000000 objects of type inetnum and name inetnum
+finish 3010000 objects of type inetnum and name inetnum
+finish 3020000 objects of type inetnum and name inetnum
+finish 3030000 objects of type inetnum and name inetnum
+finish 3040000 objects of type inetnum and name inetnum
+finish 3050000 objects of type inetnum and name inetnum
+finish 3060000 objects of type inetnum and name inetnum
+finish 3070000 objects of type inetnum and name inetnum
+finish 3080000 objects of type inetnum and name inetnum
+finish 3090000 objects of type inetnum and name inetnum
+finish 3100000 objects of type inetnum and name inetnum
+finish 3110000 objects of type inetnum and name inetnum
+finish 3120000 objects of type inetnum and name inetnum
+finish 3130000 objects of type inetnum and name inetnum
+finish 3140000 objects of type inetnum and name inetnum
+finish 3150000 objects of type inetnum and name inetnum
+finish 3160000 objects of type inetnum and name inetnum
+finish 3170000 objects of type inetnum and name inetnum
+finish 3180000 objects of type inetnum and name inetnum
+finish 3190000 objects of type inetnum and name inetnum
+finish 3200000 objects of type inetnum and name inetnum
+finish 3210000 objects of type inetnum and name inetnum
+finish 3220000 objects of type inetnum and name inetnum
+finish 3230000 objects of type inetnum and name inetnum
+finish 3240000 objects of type inetnum and name inetnum
+finish 3250000 objects of type inetnum and name inetnum
+finish 3260000 objects of type inetnum and name inetnum
+finish 3270000 objects of type inetnum and name inetnum
+finish 3280000 objects of type inetnum and name inetnum
+finish 3290000 objects of type inetnum and name inetnum
+finish 3300000 objects of type inetnum and name inetnum
+finish 3310000 objects of type inetnum and name inetnum
+finish 3320000 objects of type inetnum and name inetnum
+finish 3330000 objects of type inetnum and name inetnum
+finish 3340000 objects of type inetnum and name inetnum
+finish 3350000 objects of type inetnum and name inetnum
+finish 3360000 objects of type inetnum and name inetnum
+finish 3370000 objects of type inetnum and name inetnum
+finish 3380000 objects of type inetnum and name inetnum
+finish 3390000 objects of type inetnum and name inetnum
+finish 3400000 objects of type inetnum and name inetnum
+finish 3410000 objects of type inetnum and name inetnum
+finish 3420000 objects of type inetnum and name inetnum
+finish 3430000 objects of type inetnum and name inetnum
+finish 3440000 objects of type inetnum and name inetnum
+finish 3450000 objects of type inetnum and name inetnum
+finish 3460000 objects of type inetnum and name inetnum
+finish 3470000 objects of type inetnum and name inetnum
+finish 3480000 objects of type inetnum and name inetnum
+finish 3490000 objects of type inetnum and name inetnum
+finish 3500000 objects of type inetnum and name inetnum
+finish 3510000 objects of type inetnum and name inetnum
+finish 3520000 objects of type inetnum and name inetnum
+finish 3530000 objects of type inetnum and name inetnum
+finish 3540000 objects of type inetnum and name inetnum
+finish 3550000 objects of type inetnum and name inetnum
+finish 3560000 objects of type inetnum and name inetnum
+finish 3570000 objects of type inetnum and name inetnum
+finish 3580000 objects of type inetnum and name inetnum
+finish 3590000 objects of type inetnum and name inetnum
+finish 3600000 objects of type inetnum and name inetnum
+finish 3610000 objects of type inetnum and name inetnum
+finish 3620000 objects of type inetnum and name inetnum
+finish 3630000 objects of type inetnum and name inetnum
+finish 3640000 objects of type inetnum and name inetnum
+finish 3650000 objects of type inetnum and name inetnum
+finish 3660000 objects of type inetnum and name inetnum
+finish 3670000 objects of type inetnum and name inetnum
+finish 3680000 objects of type inetnum and name inetnum
+finish 3690000 objects of type inetnum and name inetnum
+finish 3700000 objects of type inetnum and name inetnum
+finish 3710000 objects of type inetnum and name inetnum
+finish 3720000 objects of type inetnum and name inetnum
+finish 3730000 objects of type inetnum and name inetnum
+finish 3740000 objects of type inetnum and name inetnum
+finish 3750000 objects of type inetnum and name inetnum
+finish 3760000 objects of type inetnum and name inetnum
+finish 3770000 objects of type inetnum and name inetnum
+finish 3780000 objects of type inetnum and name inetnum
+finish 3790000 objects of type inetnum and name inetnum
+finish 3800000 objects of type inetnum and name inetnum
+finish 3810000 objects of type inetnum and name inetnum
+finish 3820000 objects of type inetnum and name inetnum
+finish 3830000 objects of type inetnum and name inetnum
+finish 3840000 objects of type inetnum and name inetnum
+finish 3850000 objects of type inetnum and name inetnum
+finish 3860000 objects of type inetnum and name inetnum
+finish 3870000 objects of type inetnum and name inetnum
+finish 3880000 objects of type inetnum and name inetnum
+finish 3890000 objects of type inetnum and name inetnum
+finish 3900000 objects of type inetnum and name inetnum
+finish 3910000 objects of type inetnum and name inetnum
+finish 3920000 objects of type inetnum and name inetnum
+finish 3930000 objects of type inetnum and name inetnum
+finish 3940000 objects of type inetnum and name inetnum
+finish 3950000 objects of type inetnum and name inetnum
+finish 3960000 objects of type inetnum and name inetnum
+finish 3970000 objects of type inetnum and name inetnum
+finish 3980000 objects of type inetnum and name inetnum
+finish 3990000 objects of type inetnum and name inetnum
+finish 4000000 objects of type inetnum and name inetnum
+finish 4010000 objects of type inetnum and name inetnum
+finish 4020000 objects of type inetnum and name inetnum
+finish 4030000 objects of type inetnum and name inetnum
+finish 4040000 objects of type inetnum and name inetnum
+finish 4050000 objects of type inetnum and name inetnum
+finish 4060000 objects of type inetnum and name inetnum
+finish 4070000 objects of type inetnum and name inetnum
+finish 4080000 objects of type inet6num and name inetnum
+finish 4090000 objects of type inet6num and name inetnum
+finish 4100000 objects of type inet6num and name inetnum
+finish 4110000 objects of type inet6num and name inetnum
+finish 4120000 objects of type inet6num and name inetnum
+finish 4130000 objects of type inet6num and name inetnum
+finish 4140000 objects of type inet6num and name inetnum
+finish 4150000 objects of type inet6num and name inetnum
+finish 4160000 objects of type inet6num and name inetnum
+finish 4170000 objects of type inet6num and name inetnum
+finish 4180000 objects of type inet6num and name inetnum
+finish 4190000 objects of type inet6num and name inetnum
+finish 4200000 objects of type inet6num and name inetnum
+finish 4210000 objects of type inet6num and name inetnum
+finish 4220000 objects of type inet6num and name inetnum
+finish 4230000 objects of type inet6num and name inetnum
+finish 4240000 objects of type inet6num and name inetnum
+finish 4250000 objects of type inet6num and name inetnum
+finish 4260000 objects of type inet6num and name inetnum
+finish 4270000 objects of type inet6num and name inetnum
+finish 4280000 objects of type inet6num and name inetnum
+finish 4290000 objects of type inet6num and name inetnum
+finish 4300000 objects of type inet6num and name inetnum
+finish 4310000 objects of type inet6num and name inetnum
+finish 4320000 objects of type inet6num and name inetnum
+finish 4330000 objects of type inet6num and name inetnum
+finish 4340000 objects of type inet6num and name inetnum
+finish 4350000 objects of type inet6num and name inetnum
+finish 4360000 objects of type inet6num and name inetnum
+finish 4370000 objects of type inet6num and name inetnum
+finish 4380000 objects of type inet6num and name inetnum
+finish 4390000 objects of type inet6num and name inetnum
+finish 4400000 objects of type inet6num and name inetnum
+finish 4410000 objects of type inet6num and name inetnum
+finish 4420000 objects of type inet6num and name inetnum
+finish 4430000 objects of type inet6num and name inetnum
+create obj for name person and type person
+parse error for line         <attribute name="last-mod<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="last-mod<?xml version="1.0" encoding="UTF-8"?>
+ for person at 208801
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 208810
+finish 10000 objects of type person and name person
+finish 20000 objects of type person and name person
+parse error for line         <attribute name<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name<?xml version="1.0" encoding="UTF-8"?>
+ for person at 770747
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 770756
+finish 30000 objects of type person and name person
+parse error for line         <attribute nam<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute nam<?xml version="1.0" encoding="UTF-8"?>
+ for person at 1097127
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 1097136
+parse error for line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+ for person at 1098102
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 1098111
+finish 40000 objects of type person and name person
+parse error for line         <attribute name="chan<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="chan<?xml version="1.0" encoding="UTF-8"?>
+ for person at 1221005
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 1221014
+parse error for line         <attribute name="chang<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="chang<?xml version="1.0" encoding="UTF-8"?>
+ for person at 1225686
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 1225695
+parse error for line         <attribute name="person<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="person<?xml version="1.0" encoding="UTF-8"?>
+ for person at 1262612
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 1262621
+finish 50000 objects of type person and name person
+finish 60000 objects of type person and name person
+finish 70000 objects of type person and name person
+parse error for line         <attribute name<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name<?xml version="1.0" encoding="UTF-8"?>
+ for person at 2009757
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 2009766
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 2132656
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 2218601
+finish 80000 objects of type person and name person
+finish 90000 objects of type person and name person
+finish 100000 objects of type person and name person
+parse error for line         <attribute name="c<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="c<?xml version="1.0" encoding="UTF-8"?>
+ for person at 3107715
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 3107724
+parse error for line         <attribute name="last-modified" value<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="last-modified" value<?xml version="1.0" encoding="UTF-8"?>
+ for person at 3108532
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 3108541
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 3108969
+finish 110000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 3231633
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 3272864
+finish 120000 objects of type person and name person
+finish 130000 objects of type person and name person
+finish 140000 objects of type person and name person
+parse error for line         <attribute name="address" val<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="address" val<?xml version="1.0" encoding="UTF-8"?>
+ for person at 4023044
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 4023053
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 4141214
+finish 150000 objects of type person and name person
+finish 160000 objects of type person and name person
+finish 170000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 5117812
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 5117921
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 5129143
+finish 180000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 5241185
+finish 190000 objects of type person and name person
+finish 200000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 6017289
+finish 210000 objects of type person and name person
+parse error for line         <attribute name="sour<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="sour<?xml version="1.0" encoding="UTF-8"?>
+ for person at 6226483
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 6226492
+finish 220000 objects of type person and name person
+finish 230000 objects of type person and name person
+parse error for line         <attribute <?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute <?xml version="1.0" encoding="UTF-8"?>
+ for person at 6783539
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 6783548
+finish 240000 objects of type person and name person
+parse error for line         <attribute<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute<?xml version="1.0" encoding="UTF-8"?>
+ for person at 7111607
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 7111616
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 7111636
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 7111897
+parse error for line         <attribute name="change<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="change<?xml version="1.0" encoding="UTF-8"?>
+ for person at 7112028
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 7112037
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 7123434
+finish 250000 objects of type person and name person
+finish 260000 objects of type person and name person
+finish 270000 objects of type person and name person
+finish 280000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 8136383
+finish 290000 objects of type person and name person
+finish 300000 objects of type person and name person
+parse error for line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+ for person at 8776395
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 8776404
+finish 310000 objects of type person and name person
+parse error for line         <attribute name="created" valu<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="created" valu<?xml version="1.0" encoding="UTF-8"?>
+ for person at 9103644
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 9103653
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 9103847
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 9104511
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 9104651
+parse error for line         <attribute name="<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="<?xml version="1.0" encoding="UTF-8"?>
+ for person at 9110573
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 9110582
+finish 320000 objects of type person and name person
+finish 330000 objects of type person and name person
+finish 340000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 10001281
+finish 350000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 10124299
+finish 360000 objects of type person and name person
+parse error for line         <attribute name<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name<?xml version="1.0" encoding="UTF-8"?>
+ for person at 10427493
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 10427502
+finish 370000 objects of type person and name person
+finish 380000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 11090492
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 11091272
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 11091436
+finish 390000 objects of type person and name person
+finish 400000 objects of type person and name person
+finish 410000 objects of type person and name person
+parse error for line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+ for person at 11989743
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 11989752
+finish 420000 objects of type person and name person
+parse error for line         <attribute name="la<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="la<?xml version="1.0" encoding="UTF-8"?>
+ for person at 12113340
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 12113349
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 12192489
+finish 430000 objects of type person and name person
+finish 440000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 12752101
+finish 450000 objects of type person and name person
+parse error for line         <attribute name="source" v<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="source" v<?xml version="1.0" encoding="UTF-8"?>
+ for person at 13080695
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 13080704
+parse error for line         <attribute name="sou<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="sou<?xml version="1.0" encoding="UTF-8"?>
+ for person at 13080905
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 13080914
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 13081097
+parse error for line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+ for person at 13081244
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 13081253
+parse error for line         <attribute na<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute na<?xml version="1.0" encoding="UTF-8"?>
+ for person at 13091923
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 13091932
+finish 460000 objects of type person and name person
+finish 470000 objects of type person and name person
+finish 480000 objects of type person and name person
+finish 490000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 14153338
+finish 500000 objects of type person and name person
+finish 510000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 14702130
+finish 520000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 15027244
+parse error for line         <attribute name="change<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="change<?xml version="1.0" encoding="UTF-8"?>
+ for person at 15145294
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 15145303
+finish 530000 objects of type person and name person
+finish 540000 objects of type person and name person
+finish 550000 objects of type person and name person
+finish 560000 objects of type person and name person
+finish 570000 objects of type person and name person
+finish 580000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 16677300
+finish 590000 objects of type person and name person
+parse error for line         <attribute name="nic-h<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="nic-h<?xml version="1.0" encoding="UTF-8"?>
+ for person at 17005033
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 17005042
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 17005154
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 17005466
+finish 600000 objects of type person and name person
+finish 610000 objects of type person and name person
+finish 620000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 17899592
+finish 630000 objects of type person and name person
+parse error for line         <attribute nam<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute nam<?xml version="1.0" encoding="UTF-8"?>
+ for person at 18103435
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 18103444
+finish 640000 objects of type person and name person
+finish 650000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 18661788
+finish 660000 objects of type person and name person
+parse error for line         <attribute name="changed" value<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="changed" value<?xml version="1.0" encoding="UTF-8"?>
+ for person at 18989553
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 18989562
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 18990864
+parse error for line         <attribute name="ch<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="ch<?xml version="1.0" encoding="UTF-8"?>
+ for person at 19112754
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 19112763
+finish 670000 objects of type person and name person
+finish 680000 objects of type person and name person
+finish 690000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 19893116
+finish 700000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 20097760
+finish 710000 objects of type person and name person
+finish 720000 objects of type person and name person
+finish 730000 objects of type person and name person
+parse error for line         <attribute name="changed" value<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="changed" value<?xml version="1.0" encoding="UTF-8"?>
+ for person at 20987145
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 20987154
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 20987619
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 20987955
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 20988121
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 20988259
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 20999927
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 21115642
+finish 740000 objects of type person and name person
+finish 750000 objects of type person and name person
+finish 760000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 21889482
+finish 770000 objects of type person and name person
+finish 780000 objects of type person and name person
+finish 790000 objects of type person and name person
+finish 800000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 22987749
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 22987800
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 22987821
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 22998938
+finish 810000 objects of type person and name person
+finish 820000 objects of type person and name person
+finish 830000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 23888155
+parse error for line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+ for person at 24010961
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 24010970
+parse error for line         <attribute name=<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name=<?xml version="1.0" encoding="UTF-8"?>
+ for person at 24097053
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 24097062
+finish 840000 objects of type person and name person
+finish 850000 objects of type person and name person
+finish 860000 objects of type person and name person
+finish 870000 objects of type person and name person
+parse error for line         <attribute name="chan<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="chan<?xml version="1.0" encoding="UTF-8"?>
+ for person at 24984895
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 24984904
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 24985136
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 24996853
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 25106188
+finish 880000 objects of type person and name person
+finish 890000 objects of type person and name person
+finish 900000 objects of type person and name person
+parse error for line         <attribute name="change<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="change<?xml version="1.0" encoding="UTF-8"?>
+ for person at 26007960
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 26007969
+finish 910000 objects of type person and name person
+parse error for line         <attribute name="<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="<?xml version="1.0" encoding="UTF-8"?>
+ for person at 26314923
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 26314932
+finish 920000 objects of type person and name person
+finish 930000 objects of type person and name person
+finish 940000 objects of type person and name person
+parse error for line         <attribute name="change<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="change<?xml version="1.0" encoding="UTF-8"?>
+ for person at 26974657
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 26974666
+parse error for line         <attribute name="changed" <?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="changed" <?xml version="1.0" encoding="UTF-8"?>
+ for person at 26974678
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 26974687
+parse error for line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+ for person at 26975405
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 26975414
+parse error for line         <attribute name="last-<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="last-<?xml version="1.0" encoding="UTF-8"?>
+ for person at 27100018
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 27100027
+finish 950000 objects of type person and name person
+finish 960000 objects of type person and name person
+finish 970000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 27875005
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 27997179
+finish 980000 objects of type person and name person
+finish 990000 objects of type person and name person
+parse error for line         <attribute name="source" va<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="source" va<?xml version="1.0" encoding="UTF-8"?>
+ for person at 28634872
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 28634881
+finish 1000000 objects of type person and name person
+parse error for line         <attribute name="cha<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="cha<?xml version="1.0" encoding="UTF-8"?>
+ for person at 28962593
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 28962602
+parse error for line         <attribute name="changed" value<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="changed" value<?xml version="1.0" encoding="UTF-8"?>
+ for person at 28963037
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 28963046
+parse error for line         <attribute name="last-modified"<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="last-modified"<?xml version="1.0" encoding="UTF-8"?>
+ for person at 28963114
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 28963123
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 28963202
+finish 1010000 objects of type person and name person
+finish 1020000 objects of type person and name person
+finish 1030000 objects of type person and name person
+finish 1040000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 29997131
+finish 1050000 objects of type person and name person
+finish 1060000 objects of type person and name person
+parse error for line         <attribute name="add<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="add<?xml version="1.0" encoding="UTF-8"?>
+ for person at 30652403
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 30652412
+finish 1070000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 30859380
+finish 1080000 objects of type person and name person
+finish 1090000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 31288923
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 31511192
+finish 1100000 objects of type person and name person
+parse error for line         <attribute name="address<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="address<?xml version="1.0" encoding="UTF-8"?>
+ for person at 31717517
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 31717526
+finish 1110000 objects of type person and name person
+parse error for line         <attribute name="e-mail" value=<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="e-mail" value=<?xml version="1.0" encoding="UTF-8"?>
+ for person at 31939057
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 31939066
+finish 1120000 objects of type person and name person
+parse error for line         <attribute nam<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute nam<?xml version="1.0" encoding="UTF-8"?>
+ for person at 32145589
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 32145598
+parse error for line         <attribute name="created" va<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="created" va<?xml version="1.0" encoding="UTF-8"?>
+ for person at 32367022
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 32367031
+finish 1130000 objects of type person and name person
+finish 1140000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 32743124
+finish 1150000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 33142712
+finish 1160000 objects of type person and name person
+finish 1170000 objects of type person and name person
+finish 1180000 objects of type person and name person
+finish 1190000 objects of type person and name person
+finish 1200000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 34710614
+finish 1210000 objects of type person and name person
+finish 1220000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 35109496
+finish 1230000 objects of type person and name person
+finish 1240000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 35716876
+parse error for line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute n<?xml version="1.0" encoding="UTF-8"?>
+ for person at 35785142
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 35785151
+finish 1250000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 36060544
+finish 1260000 objects of type person and name person
+parse error for line         <attribute name="c<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="c<?xml version="1.0" encoding="UTF-8"?>
+ for person at 36390791
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 36390800
+finish 1270000 objects of type person and name person
+parse error for line         <attribute name="created" valu<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="created" valu<?xml version="1.0" encoding="UTF-8"?>
+ for person at 36458801
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 36458810
+finish 1280000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 36734464
+finish 1290000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 37063907
+finish 1300000 objects of type person and name person
+parse error for line         <attribute<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute<?xml version="1.0" encoding="UTF-8"?>
+ for person at 37410385
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 37410394
+finish 1310000 objects of type person and name person
+parse error for line         <attribute name<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name<?xml version="1.0" encoding="UTF-8"?>
+ for person at 37737717
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 37737726
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 37805809
+finish 1320000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 38081517
+finish 1330000 objects of type person and name person
+finish 1340000 objects of type person and name person
+finish 1350000 objects of type person and name person
+finish 1360000 objects of type person and name person
+finish 1370000 objects of type person and name person
+finish 1380000 objects of type person and name person
+finish 1390000 objects of type person and name person
+finish 1400000 objects of type person and name person
+finish 1410000 objects of type person and name person
+finish 1420000 objects of type person and name person
+finish 1430000 objects of type person and name person
+finish 1440000 objects of type person and name person
+finish 1450000 objects of type person and name person
+finish 1460000 objects of type person and name person
+finish 1470000 objects of type person and name person
+finish 1480000 objects of type person and name person
+finish 1490000 objects of type person and name person
+finish 1500000 objects of type person and name person
+finish 1510000 objects of type person and name person
+parse error for line         <attribute <?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute <?xml version="1.0" encoding="UTF-8"?>
+ for person at 43286008
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 43286017
+finish 1520000 objects of type person and name person
+finish 1530000 objects of type person and name person
+finish 1540000 objects of type person and name person
+finish 1550000 objects of type person and name person
+finish 1560000 objects of type person and name person
+parse error for line         <attribute name="last-modified" v<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="last-modified" v<?xml version="1.0" encoding="UTF-8"?>
+ for person at 44917880
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 44917889
+finish 1570000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 45249146
+finish 1580000 objects of type person and name person
+finish 1590000 objects of type person and name person
+finish 1600000 objects of type person and name person
+finish 1610000 objects of type person and name person
+finish 1620000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 46508718
+finish 1630000 objects of type person and name person
+finish 1640000 objects of type person and name person
+finish 1650000 objects of type person and name person
+finish 1660000 objects of type person and name person
+finish 1670000 objects of type person and name person
+finish 1680000 objects of type person and name person
+finish 1690000 objects of type person and name person
+finish 1700000 objects of type person and name person
+finish 1710000 objects of type person and name person
+finish 1720000 objects of type person and name person
+finish 1730000 objects of type person and name person
+finish 1740000 objects of type person and name person
+finish 1750000 objects of type person and name person
+finish 1760000 objects of type person and name person
+finish 1770000 objects of type person and name person
+finish 1780000 objects of type person and name person
+finish 1790000 objects of type person and name person
+finish 1800000 objects of type person and name person
+finish 1810000 objects of type person and name person
+finish 1820000 objects of type person and name person
+finish 1830000 objects of type person and name person
+finish 1840000 objects of type person and name person
+parse error for line         <attribute name=<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name=<?xml version="1.0" encoding="UTF-8"?>
+ for person at 52912342
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 52912351
+finish 1850000 objects of type person and name person
+parse error for line         <attribute <?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute <?xml version="1.0" encoding="UTF-8"?>
+ for person at 53136763
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 53136772
+finish 1860000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 53362545
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 53588335
+finish 1870000 objects of type person and name person
+parse error for line         <attribute name="mnt-by" val<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="mnt-by" val<?xml version="1.0" encoding="UTF-8"?>
+ for person at 53813597
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 53813606
+finish 1880000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 54038935
+finish 1890000 objects of type person and name person
+finish 1900000 objects of type person and name person
+parse error for line         <attribute name="nic-hdl<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="nic-hdl<?xml version="1.0" encoding="UTF-8"?>
+ for person at 54481825
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 54481834
+finish 1910000 objects of type person and name person
+finish 1920000 objects of type person and name person
+finish 1930000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 55366253
+finish 1940000 objects of type person and name person
+finish 1950000 objects of type person and name person
+finish 1960000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 56274481
+finish 1970000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 56519751
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 56642689
+finish 1980000 objects of type person and name person
+parse error for line         <attribute name="source" v<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="source" v<?xml version="1.0" encoding="UTF-8"?>
+ for person at 57011045
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 57011054
+finish 1990000 objects of type person and name person
+parse error for line         <attribute name="s<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="s<?xml version="1.0" encoding="UTF-8"?>
+ for person at 57257395
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 57257404
+finish 2000000 objects of type person and name person
+parse error for line         <attribute name="last<?xml version="1.0" encoding="UTF-8"?>
+
+error when process new line         <attribute name="last<?xml version="1.0" encoding="UTF-8"?>
+ for person at 57380184
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 57380193
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 57503019
+finish 2010000 objects of type person and name person
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 57626222
+parse error for line     <attributes>
+
+error when process new line     <attributes>
+ for person at 57871787
+finish 2020000 objects of type person and name person
+finish 2030000 objects of type role and name person
+finish 2040000 objects of type role and name person
+finish 2050000 objects of type role and name person
+finish 2060000 objects of type role and name person
+finish 2070000 objects of type role and name person
+finish 2080000 objects of type role and name person
+finish 2090000 objects of type mntner and name person
+finish 2100000 objects of type mntner and name person
+finish 2110000 objects of type mntner and name person
+finish 2120000 objects of type mntner and name person
+finish 2130000 objects of type mntner and name person
+finish 2140000 objects of type mntner and name person
+create obj for name asn and type aut-num
+create obj for name org and type organisation
+finish 10000 objects of type organisation and name org
+finish 20000 objects of type organisation and name org
+finish 30000 objects of type organisation and name org
+finish 40000 objects of type organisation and name org
+finish 50000 objects of type organisation and name org
+finish 60000 objects of type organisation and name org
+finish 70000 objects of type organisation and name org
+finish 80000 objects of type organisation and name org
+finish 90000 objects of type organisation and name org
+finish 100000 objects of type organisation and name org
+finish 110000 objects of type organisation and name org
+finish 120000 objects of type organisation and name org
+finish person with 2144624 objects
+finish org with 126276 objects
+finish inetnum with 4431347 objects
+finish asn with 6223 objects
+time cost is 6369.15
+finish 2015233 lines and get 793 maps for file /data/seclab/BPH/Xianghang/bulkData/Scripts/format//temp/20160115/afrinic/afrinic.db
+retrieve 793 cidr asn mappings
+finish 10000 objects of type inetnum and name inetnum
+finish 20000 objects of type inetnum and name inetnum
+finish 30000 objects of type inetnum and name inetnum
+finish 40000 objects of type inetnum and name inetnum
+finish 50000 objects of type inetnum and name inetnum
+finish 60000 objects of type inetnum and name inetnum
+finish 70000 objects of type inetnum and name inetnum
+finish 80000 objects of type inetnum and name inetnum
+finish 90000 objects of type inetnum and name inetnum
+name org, type org, fileorganisation
+name person, type person/role, fileperson_role
+finish 10000 objects of type person/role and name person
+name person, type irt, fileirt
+finish org with 1938 objects
+finish person with 15618 objects
+time cost is 181.44
+finish 10000 objects of type inetnum and name inetnum
+finish 20000 objects of type inetnum and name inetnum
+finish 30000 objects of type inetnum and name inetnum
+finish 40000 objects of type inetnum and name inetnum
+finish 50000 objects of type inetnum and name inetnum
+finish 60000 objects of type inetnum and name inetnum
+finish 70000 objects of type inetnum and name inetnum
+finish 80000 objects of type inetnum and name inetnum
+finish 90000 objects of type inetnum and name inetnum
+finish 100000 objects of type inetnum and name inetnum
+finish 110000 objects of type inetnum and name inetnum
+finish 120000 objects of type inetnum and name inetnum
+finish 130000 objects of type inetnum and name inetnum
+finish 140000 objects of type inetnum and name inetnum
+finish 150000 objects of type inetnum and name inetnum
+finish 160000 objects of type inetnum and name inetnum
+finish 170000 objects of type inetnum and name inetnum
+finish 180000 objects of type inetnum and name inetnum
+finish 190000 objects of type inetnum and name inetnum
+finish 200000 objects of type inetnum and name inetnum
+finish 210000 objects of type inetnum and name inetnum
+finish 220000 objects of type inetnum and name inetnum
+finish 230000 objects of type inetnum and name inetnum
+finish 240000 objects of type inetnum and name inetnum
+finish 250000 objects of type inetnum and name inetnum
+finish 260000 objects of type inetnum and name inetnum
+finish 270000 objects of type inetnum and name inetnum
+finish 280000 objects of type inetnum and name inetnum
+finish 290000 objects of type inetnum and name inetnum
+finish 300000 objects of type inetnum and name inetnum
+finish 310000 objects of type inetnum and name inetnum
+finish 320000 objects of type inetnum and name inetnum
+finish 330000 objects of type inetnum and name inetnum
+finish 340000 objects of type inetnum and name inetnum
+finish 350000 objects of type inetnum and name inetnum
+file doesn't exist:/data/salrwais/BPH/Whois/API/LACNIC/Data/20160115/person
+finish person with 0 objects
+time cost is 59.15

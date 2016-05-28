@@ -18,6 +18,7 @@ fi
 date=$startDate
 while [ $date -le $endDate ]
 do
+  startSec=$(date +"%s")
   echo $date
   tempDir=$currDir/temp_formatRipe_$(date +"%Y%m%d-%H%M%S")
   mkdir -p $tempDir
@@ -52,10 +53,15 @@ do
   #  echo "bak old org: $resultDir/org_ripe"
   #  mv $resultDir/org_ripe $resultDir/org_ripe_bak
   #fi
+  if [ -e $resultDir/asn_ripe ];then
+	rm $resultDir/asn_ripe
+  fi
   $currDir/convertRipe2Uniform_test.py $sourceDir $resultDir $configFile  $tempDir
-  echo " $currDir/addAsn2InetnumForRipe.sh $date $date"
-  $currDir/addAsn2InetnumForRipe.sh $date $date
+  #echo " $currDir/addAsn2InetnumForRipe.sh $date $date"
+  #$currDir/addAsn2InetnumForRipe.sh $date $date
 
   rm -rf $tempDir
+  endSec=$(date +"%s")
+  echo "time cost is $(($endSec - $startSec))"
   date=$(date -d "$date +1day" +"%Y%m%d")
 done

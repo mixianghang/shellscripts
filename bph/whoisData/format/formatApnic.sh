@@ -34,6 +34,7 @@ do
   gzip -d $tempDir/apnic/split/*.gz
 #run unformat script
   $currDir/convertApnic2Uniform2.py $tempDir/apnic/split $resultDir $configFile
+  $currDir/addAsn2InetnumForOneRegistry.sh $date $date apnic
 
   rm -rf $tempDir
   date=$(date -d "$date +1day" +"%Y%m%d")

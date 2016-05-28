@@ -51,13 +51,13 @@ do
     continue
   fi
 
-  echo "$scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir lacnic"
-  $scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir lacnic
-  if [ ! $? -eq 0 ];then
-    echo "run addAsn2Inetnum.py failed for $date lacnic" 
-    date=$(date -d "$date +1day" +"%Y%m%d")
-    continue
-  fi
+  #echo "$scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir lacnic"
+  #$scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir lacnic
+  #if [ ! $? -eq 0 ];then
+  #  echo "run addAsn2Inetnum.py failed for $date lacnic" 
+  #  date=$(date -d "$date +1day" +"%Y%m%d")
+  #  continue
+  #fi
 
   echo "$scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir afrinic"
   $scriptDir/addAsn2Inetnum.py $formatDir $bgpDir/bpgTable $tempDir afrinic

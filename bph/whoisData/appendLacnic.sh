@@ -24,6 +24,7 @@ bulkDataDir="/data/salrwais/BPH/Whois/bulkWhois/LACNIC"
 keysDir="/data/salrwais/BPH/Whois/API/LACNIC/Keys"
 resultDataDir="/data/salrwais/BPH/Whois/API/LACNIC/Data"
 scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
+formatDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/format"
 
 #try to overwrite default configuration
 if [[ $# -ge 3 ]]; then
@@ -68,6 +69,8 @@ do
   mkdir -p $resultDataDir/$date
   cp -r $resultDataDir/latest/* $resultDataDir/$date 
   
+  echo "try to uncompress"
+  $scriptDir/uncompress.sh $yesterday $yesterday "LACNIC"
   echo "start to merge person data"
   echo "$scriptDir/mergeLacnic.py $keysDir $resultDataDir $yesterday $date"
   $scriptDir/mergeLacnic.py $keysDir $resultDataDir $yesterday $date
@@ -75,6 +78,12 @@ do
   #copy result from date dir to latest dir
   echo "copy to $resultDataDir/latest"
   cp -r $resultDataDir/$date/* $resultDataDir/latest
+
+  #format into uniform way
+  $formatDir/formatLacnic.sh $date $date
+
+  echo "compress $yesterday"
+  $scriptDir/compress.sh $yesterday $yesterday "LACNIC"
 
   yesterday=$date
   date=$(date -d "$date +1day" +"%Y%m%d")

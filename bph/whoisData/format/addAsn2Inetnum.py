@@ -96,7 +96,7 @@ def addAsn2Inetnum(formatDir, bgpFile, resultDir, registries):
   for registry in registries:
     inetnumFilePath = os.path.join(formatDir, "inetnum_{0}".format(registry))
     if not os.path.exists(inetnumFilePath):
-      print "inetnum file for type {0} doesn't exist: {1}".format(inetnumFilePath)
+      sys.stderr.write("inetnum file for type {0} doesn't exist".format(inetnumFilePath))
       continue
     resultFilePath = os.path.join(resultDir, "inetnum_{0}".format(registry))
     if os.path.exists(resultFilePath):

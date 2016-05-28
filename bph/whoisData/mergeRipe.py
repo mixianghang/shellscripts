@@ -19,6 +19,9 @@ def main():
   elif isPerson == 2:
     typeList = ["organisation"]
     print "merge data for only org"
+  elif isPerson == 3:
+    typeList = [sys.argv[6]]
+    print "merge data for {0}".format(sys.argv[6])
   else:
     typeList = ["inetnum", "inet6num", "organisation", "irt", "mntner", "role", "aut-num", "as-set", "as-block", "domain", "route-set"]
     print "merge data for types except for person"
@@ -58,7 +61,10 @@ def main():
       deleteKeyList = []
     excludeKeyList = appendKeyList + deleteKeyList
     print "Start type {0} with excludeList {1}".format(type, len(excludeKeyList))
-    maxLimit = 10000
+    excludeKeyMap = {}
+    for key in excludeKeyList:
+      excludeKeyMap[key] = 1
+    maxLimit = 100000
     currPK = None
     currObj = []
     lineNum = 0
@@ -85,7 +91,7 @@ def main():
           sys.stderr.write("end without primary key at line {0} and type {1}".format(lineNum, type))
           break
         else:
-          if currPK not in excludeKeyList:
+          if currPK not in excludeKeyMap:
             newDataFd.write("".join(currObj))
             added += 1
           else:

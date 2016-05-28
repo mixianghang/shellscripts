@@ -1,0 +1,17 @@
+20160527 20160527
+20160526 20160527
+start to generate a key list of changed objects
+/data/seclab/BPH/Xianghang/bulkData/Scripts//genChangedKeysForRipe.sh /data/salrwais/BPH/Whois/bulkWhois/RIPE 20160526 20160527 /data/salrwais/BPH/Whois/API/RIPE/Keys
+inetnum inetnum
+inet6num inet6num
+role nic-hdl
+organisation organisation
+irt irt
+mntner mntner
+aut-num aut-num
+as-set as-set
+as-block as-block
+domain domain
+route-set route-set
+start to retrieve objects for the key list
+/data/seclab/BPH/Xianghang/bulkData/Scripts//retrieveRipe.py /data/seclab/BPH/Xianghang/bulkData/Scripts//appendConfig.cfg 2>/data/seclab/BPH/Xianghang/bulkData/Scripts//log/logErrorForAppendRipe_20160527

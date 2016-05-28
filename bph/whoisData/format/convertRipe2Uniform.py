@@ -14,7 +14,7 @@ sys.setdefaultencoding('utf8')
 
 def main():
   #check and assign cl args to variables
-  if len(sys.argv) < 5:
+  if len(sys.argv) < 4:
     print "Usage: sourceDir resultDir configFile bulkDir"
     print len(sys.argv)
     sys.exit(0)
@@ -22,7 +22,7 @@ def main():
   sourceDir=sys.argv[1]
   resultDir=sys.argv[2]
   configFile=sys.argv[3]
-  bulkDir = sys.argv[4]
+  #bulkDir = sys.argv[4]
 
   #create cidrAsnMap
   cidrAsnMap = {}
