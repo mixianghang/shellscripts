@@ -33,7 +33,10 @@ yesterday=$(date -d "$date -1day" +"%Y%m%d")
 while [ $date -le $endDate ]
 do
   echo $yesterday $date $dataDir $keyDir $scriptDir
+  startSec=$(date +"%s")
   $scriptDir/mergeLacnic.py $keyDir $dataDir $yesterday $date
+  endSec=$(date +"%s")
+  echo "time cost is $(($endSec - $startSec))"
   yesterday=$date
   date=$(date -d "$date +1day" +"%Y%m%d")
 done 

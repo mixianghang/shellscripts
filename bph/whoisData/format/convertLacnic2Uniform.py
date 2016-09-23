@@ -94,8 +94,8 @@ def readFromApiData(sourceDir, resultDir, configFile):
     sourceFileFd = open(sourceFilePath, "r")
     kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
     startRe = re.compile("^}?{\n$", re.I)
-    endRe = re.compile("^}{?\n$", re.I)
-    onlyEndRe = re.compile("^}\n$", re.I)
+    endRe = re.compile("^}{?[\n]?$", re.I)
+    onlyEndRe = re.compile("^}[\n]?$", re.I)
     lineNum = 0
     currObj = 0
     print "name {0}, type {1}, file{2}".format(name, type, fileName)

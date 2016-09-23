@@ -7,7 +7,7 @@ from ConfigParser import SafeConfigParser
 from netaddr import *
 import time
 from pprint import pprint
-from lacnicUtil import *
+from afrinicUtil import *
 from uniformUtil import *
 
 reload(sys)  
@@ -15,29 +15,32 @@ sys.setdefaultencoding('utf8')
 
 def readFromBulk(sourceDir, resultDir,configFile):
   #read inetnum inetnum6 mnter aut-num from the same file
-  sourceFile1 = os.path.join(sourceDir, "lacnic.dp")
+  sourceFile1 = os.path.join(sourceDir, "afrinic.db")
   if not os.path.exists(sourceFile1):
-    print "lacnic source file doesn't exist {0}".format(sourceFile1)
+    print "afrinic source file doesn't exist {0}".format(sourceFile1)
     return -1
 
   sourceFileFd = open(sourceFile1, "r")
-  netResultFile = os.path.join(resultDir, "inetnum_lacnic")
-  asnResultFile = os.path.join(resultDir, "asn_lacnic")
-  orgResultFile = os.path.join(resultDir, "org_lacnic")
-  personResultFile = os.path.join(resultDir, "person_lacnic")
+  netResultFile = os.path.join(resultDir, "inetnum_afrinic")
+  asnResultFile = os.path.join(resultDir, "asn_afrinic")
+  orgResultFile = os.path.join(resultDir, "org_afrinic")
+  personResultFile = os.path.join(resultDir, "person_afrinic")
 
   #create cidrAsnMap
   cidrAsnMap = {}
-#  createCidrAsnMap(sourceFile1, cidrAsnMap)
-  #print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
+  #createCidrAsnMap(sourceFile1, cidrAsnMap)
+  print "retrieve {0} cidr asn mappings".format(len(cidrAsnMap))
 
   configParser = SafeConfigParser()
   configParser.read(configFile)
 #create converter
   inetnumConv = BaseConverter(netResultFile, configParser, "inetnum")
   asnConv = BaseConverter(asnResultFile, configParser, "asn")
+  mntnerConv = BaseConverter(personResultFile, configParser, "person")
+  orgConv = BaseConverter(orgResultFile, configParser, "org")
 
-  convDict = {"inetnum":inetnumConv, "inet6num":inetnumConv, "aut-num":asnConv}
+  inetnumConv.refreshCidrAsnMap(cidrAsnMap)
+  convDict = {"organisation":orgConv, "inetnum":inetnumConv, "inet6num":inetnumConv, "mntner":mntnerConv, "aut-num":asnConv}
 
   lineNum = 0
   startTime=time.time()
@@ -45,8 +48,8 @@ def readFromBulk(sourceDir, resultDir,configFile):
   type = ""
   startRe = re.compile("^[ \t\r\n]+$", re.I)
   kvRe = re.compile("([\w/-]+):[ \t]+(.*)", re.I)
-  endRe   = startRe
   commentRe = re.compile("^%.*", re.I)
+  endRe   = startRe
   for line in sourceFileFd:
     lineNum += 1
     if commentRe.match(line):
@@ -77,9 +80,12 @@ def readFromBulk(sourceDir, resultDir,configFile):
 def readFromApiData(sourceDir, resultDir, configFile):
   configParser = SafeConfigParser()
   configParser.read(configFile)
-  personResultFile = os.path.join(resultDir, "person_lacnic")
+  #orgResultFile = os.path.join(resultDir, "org_afrinic")
+  personResultFile = os.path.join(resultDir, "person_role_formatted_missing")
+  #orgConv = OrgConverter(orgResultFile, configParser, "org")
   personConv = PersonConverter(personResultFile, configParser, "person")
-  objList = [("person", "person", "person", personConv)]
+  #objList = [("org", "org", "organisation",orgConv),("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
+  objList = [("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
   #objList = [("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
   for obj in objList:
     name = obj[0]
@@ -87,15 +93,15 @@ def readFromApiData(sourceDir, resultDir, configFile):
     fileName = obj[2]
     convObj = obj[3]
     convObj.refreshType(type)
-    sourceFilePath = os.path.join(sourceDir, "{0}".format(fileName))
+    sourceFilePath = os.path.join(sourceDir, "{0}_missing".format(fileName))
     if not os.path.exists(sourceFilePath):
-      print "file doesn't exist:{0}".format(sourceFilePath)
+      print "path {0} doesn't exist".format(sourceFilePath)
       continue
     sourceFileFd = open(sourceFilePath, "r")
     kwRe = re.compile("([\w/-]+):[ \t]*(.*)", re.I)
     startRe = re.compile("^}?{\n$", re.I)
-    endRe = re.compile("^}{?[\n]?$", re.I)
-    onlyEndRe = re.compile("^}[\n]?$", re.I)
+    endRe = re.compile("^}{?\n$", re.I)
+    onlyEndRe = re.compile("^}\n$", re.I)
     lineNum = 0
     currObj = 0
     print "name {0}, type {1}, file{2}".format(name, type, fileName)
@@ -118,6 +124,7 @@ def readFromApiData(sourceDir, resultDir, configFile):
         else:
           currObj = 1
           convObj.newStart()
+  #orgConv.finishAndClean()
   personConv.finishAndClean()
 def main():
   #check and assign cl args to variables
@@ -126,21 +133,14 @@ def main():
     print len(sys.argv)
     sys.exit(0)
 
-  bulkDir = sys.argv[1]
-  apiDir  = sys.argv[2]
+  sourceDir= sys.argv[1]
+  sourceDir2 = sys.argv[2]
   resultDir= sys.argv[3]
   configFile= sys.argv[4]
 
   startTime = time.time()
-  if os.path.exists(bulkDir):
-    pass
-    #readFromBulk(bulkDir, resultDir, configFile)
-  else:
-    sys.stderr.write("skip read from bulk since bulk data doesn't exist:{0}".format(bulkDir))
-  if os.path.exists(apiDir):
-    readFromApiData(apiDir, resultDir, configFile)
-  else:
-    sys.stderr.write("skip read from api since bulk data doesn't exist:{0}".format(apiDir))
+  #readFromBulk(sourceDir, resultDir, configFile)
+  readFromApiData(sourceDir2, resultDir, configFile)
 
   endTime=time.time()
   print "time cost is {0:.2f}".format(endTime - startTime)

@@ -40,8 +40,13 @@ do
   #cp -r /data/salrwais/BPH/Whois/bulkWhois/RIPE/$date $tempDir/ripe
   #gzip -d $tempDir/ripe/*.gz
 #run unformat script
+  rm $resultDir/*_ripe
   $currDir/convertRipe2Uniform.py $sourceRipe $resultDir $configFile  $tempDir/ripe
   $currDir/addAsn2InetnumForOneRegistry.sh $date $date ripe
+  if [ $? -ne 0 ];then
+	echo "add asn to ripe inetnum failed for $date"
+	exit 1
+  fi
 
   yesterday=$(date -d "$date -1day" +"%Y%m%d")
   echo "compress $yesterday"

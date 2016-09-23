@@ -25,6 +25,7 @@ keysDir="/data/salrwais/BPH/Whois/API/LACNIC/Keys"
 resultDataDir="/data/salrwais/BPH/Whois/API/LACNIC/Data"
 scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 formatDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/format"
+validityDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/validity"
 
 #try to overwrite default configuration
 if [[ $# -ge 3 ]]; then
@@ -50,10 +51,9 @@ do
   echo $yesterday $date
   #generage key list
   #echo "start to generate a key list of objects"
-  #echo "$scriptDir/genChangedKeysForLacnic.sh $bulkDataDir  $keysDir $date"
   #$scriptDir/genChangedKeysForLacnic.sh $bulkDataDir  $yesterday $date $keysDir $scriptDir
 
-  ##run retrieve process
+  #run retrieve process
   #rm -rf  $resultDataDir/latest/*
   #echo "start to retrieve objects for the key list"
   #if [ ! -e $scriptDir/log ]
@@ -64,14 +64,16 @@ do
   #echo "$scriptDir/retrieveLacnic.py $scriptDir/appendLacnicConfig.cfg 2>$logError"
   #$scriptDir/retrieveLacnic.py $scriptDir/appendLacnicConfig.cfg 2>$logError
 
-  ##copy result to current date file
+  #copy result to current date file
   #echo "copy to $resultDataDir/$date"
   #mkdir -p $resultDataDir/$date
   #cp -r $resultDataDir/latest/* $resultDataDir/$date 
-  
-  echo "start to merge person data"
-  echo "$scriptDir/mergeLacnic.py $keysDir $resultDataDir $yesterday $date"
-  $scriptDir/mergeLacnic.py $keysDir $resultDataDir $yesterday $date
+  #
+  #echo "try to uncompress"
+  #$scriptDir/uncompress.sh $yesterday $yesterday "LACNIC"
+  #echo "start to merge person data"
+  #echo "$scriptDir/mergeLacnic.py $keysDir $resultDataDir $yesterday $date"
+  #$scriptDir/mergeLacnic.py $keysDir $resultDataDir $yesterday $date
 
   #copy result from date dir to latest dir
   #echo "copy to $resultDataDir/latest"
@@ -79,6 +81,15 @@ do
 
   #format into uniform way
   $formatDir/formatLacnic.sh $date $date
+
+  echo "compress $yesterday"
+  $scriptDir/compress.sh $yesterday $yesterday "LACNIC"
+
+  $validityDir/checkUniform.sh $date $date "lacnic"
+  if [ $? -ne 0 ];then
+	echo "check uniform for lacnic at $date failed "
+	exit 1
+  fi
 
   yesterday=$date
   date=$(date -d "$date +1day" +"%Y%m%d")

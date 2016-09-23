@@ -25,6 +25,7 @@ keysDir="/data/salrwais/BPH/Whois/API/LACNIC/Keys"
 resultDataDir="/data/salrwais/BPH/Whois/API/LACNIC/Data"
 scriptDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/"
 formatDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/format"
+validityDir="/data/seclab/BPH/Xianghang/bulkData/Scripts/validity"
 
 #try to overwrite default configuration
 if [[ $# -ge 3 ]]; then
@@ -84,6 +85,12 @@ do
 
   echo "compress $yesterday"
   $scriptDir/compress.sh $yesterday $yesterday "LACNIC"
+
+  $validityDir/checkUniform.sh $date $date "lacnic"
+  if [ $? -ne 0 ];then
+	echo "check uniform for lacnic at $date failed "
+	exit 1
+  fi
 
   yesterday=$date
   date=$(date -d "$date +1day" +"%Y%m%d")

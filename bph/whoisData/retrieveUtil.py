@@ -25,6 +25,7 @@ class RetrieveThread(threading.Thread):
   errorIndicate = 0
   errorCount = 0
   partErrorCount = 0
+  errorNumOf429 = 0
   def __init__(self, threadId, kwList, url, resultFile, session=None):
     threading.Thread.__init__(self)
     self.threadId = threadId
@@ -63,20 +64,28 @@ class RetrieveThread(threading.Thread):
       if code != 0:
         RetrieveThread.errorCount += 1
         RetrieveThread.partErrorCount += 1
-        error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.url, body, self.threadId))
+        if code == -1:
+          error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.url, body, self.threadId))
         # ripe 429 request limit
         if code == -2:
             RetrieveThread.requestCount -= 1
             RetrieveThread.partCount -= 1
             RetrieveThread.errorIndicate = 1
+            #error("thread{3}:request error for key {0}, requestUrl {1} with errorMsg {2}".format(kw, self.url, body, self.threadId))
             print "got 429 error code"
-            while True:
-                if RetrieveThread.errorIndicate != 0:
-                    time.sleep(30)
-                    continue
-                else:
-                    break
-            continue# continue to request for this key
+            if RetrieveThread.errorNumOf429 >= 100:
+              error("got so many 429 errors, we may be blocked again, bad luck!!")
+              sys.exit(1)
+            time.sleep(30)
+            RetrieveThread.errorNumOf429 += 1
+            continue
+            #while True:
+            #    if RetrieveThread.errorIndicate != 0:
+            #        time.sleep(30)
+            #        continue
+            #    else:
+            #        break
+            #continue# continue to request for this key
       else:
         resultFileFd.write(body)
         #convRes = convRipeLookupJson2Text(body)
@@ -170,6 +179,9 @@ def ripeLookupThroughRequests(requestUrl, key, session, format="json"):
     #print httpResponse.status_code
     if httpResponse.status_code == 429:
       response["code"] = -2
+      response["body"] = "return status codes that cannot be handled:{0}".format(httpResponse.status_code)
+    elif httpResponse.status_code == 404:
+      response["code"] = -3
       response["body"] = "return status codes that cannot be handled:{0}".format(httpResponse.status_code)
     elif httpResponse.status_code >= 400:
       response["code"] = -1

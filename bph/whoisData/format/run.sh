@@ -42,10 +42,13 @@ do
   if [ ! -e "/data/salrwais/BPH/Whois/bulkWhois/APNIC/$date" ];then
 	echo "/data/salrwais/BPH/Whois/bulkWhois/APNIC/$date doesn't exist"
   else
-	cp -r /data/salrwais/BPH/Whois/bulkWhois/APNIC/$date $tempDir/apnic
+	mkdir -p $tempDir/apnic
+	cp -r /data/salrwais/BPH/Whois/bulkWhois/APNIC/$date/* $tempDir/apnic
 	gzip -d $tempDir/apnic/split/*.gz
 #run unformat script
 	$currDir/convertApnic2Uniform2.py $tempDir/apnic/split $resultDir $configFile
+#select irt to org_apnic file
+	$currDir/convApnicIrt2Org.sh $date $date
   fi
 
 #for ripe
@@ -93,6 +96,12 @@ do
   yesterday=$(date -d "$date -1day" +"%Y%m%d")
   echo "compress $yesterday"
   $parentDir/compress.sh $yesterday $yesterday "RIPE AFRINIC"
+
+  $parentDir/validity/checkUniform.sh $date $date "apnic arin afrinic ripe"
+  if [ $? -ne 0 ];then
+	echo "check uniform for afrinic apnic arin and ripe at $date failed "
+	exit 1
+  fi
 
   date=$(date -d "$date +1day" +"%Y%m%d")
 done

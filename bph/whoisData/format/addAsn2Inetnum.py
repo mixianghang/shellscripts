@@ -57,6 +57,57 @@ def fortmatV6BGP(originFile, formattedFile):
   response = {"code":0}
   return response
 
+#used to format bgp file downloaded from http://bgp.potaroo.net/v6/as2.0/bgptable.txt
+def fortmatV4BGP(originFile, formattedFile):
+  prefixRe = re.compile("\*>?[ ]+([0-9a-f:]+/[0-9]+)[ \t]*", re.I)
+  pathRe   = re.compile("^[ \t]+([0-9][0-9 ]+[0-9])[ ]+", re.I)
+  sepPathRe = re.compile("[ \t]+", re.I)
+  valueSep = "|"
+  with open(formattedFile, "w") as formattedFd:
+    with open(originFile, "r") as originFd:
+      currObj = 0
+      currPrefix = None
+      mappedAsns = []
+      lineNum = 0
+      success = 0
+      failed  = 0
+      for line in originFd:
+        lineNum += 1
+        matchObj = prefixRe.match(line)
+        if matchObj:
+          if currObj == 1:
+            if currPrefix and len(mappedAsns) > 0:
+              formattedFd.write("{0}\t{1}\n".format(currPrefix, valueSep.join(mappedAsns)))
+              success += 1
+              if success % 1000 == 0:
+                print "finish format {0} bgpV6 records and failed {1}".format(success, failed) 
+            else:
+              print "parse error for {0} at line {1}".format(currPrefix, lineNum)
+              failed += 1
+          currObj = 1
+          currPrefix = matchObj.group(1) 
+          mappedAsns = []
+          continue
+        matchObj = pathRe.match(line)
+        if matchObj:
+          if currObj != 1:
+            print "parse error failed at lineNum {0}: {1}".format(lineNum, line)
+            currObj = 0
+            currPrefix = None
+            mappedAsns = []
+            continue
+          asnStr = matchObj.group(1)
+          asnStr = asnStr.strip(" \t\n\r")
+          asnList = sepPathRe.split(asnStr)
+          if len(asnList) > 0:
+            originAsn = asnList[-1]
+            if originAsn not in mappedAsns:
+              mappedAsns.append(originAsn)
+          continue
+        continue
+  response = {"code":0}
+  return response
+
     
 
 def addAsn2Inetnum(formatDir, bgpFile, resultDir, registries):

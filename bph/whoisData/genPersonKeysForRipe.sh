@@ -19,7 +19,7 @@ yesterday=$(date -d "$date -1day" +"%Y%m%d")
 objects=('inetnum' 'inet6num' 'role' 'organisation' 'irt' 'mntner' 'aut-num' 'as-set' 'as-block' 'domain' 'route-set')
 keys=('inetnum' 'inet6num' 'nic-hdl' 'organisation' 'irt' 'mntner' 'aut-num' 'as-set' 'as-block' 'domain' 'route-set')
 #copy source file and unzip .gz
-tempDir=$currDir/temp/genPersonKeysForRipe
+tempDir=$currDir/temp_$(date +"%Y%m%d_%H%M%S")/genPersonKeysForRipe
 rm -rf $tempDir
 mkdir -p $tempDir
 if [ -e $tempDir ]

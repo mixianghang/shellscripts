@@ -77,7 +77,7 @@ def readFromBulk(sourceDir, resultDir,configFile):
 def readFromApiData(sourceDir, resultDir, configFile):
   configParser = SafeConfigParser()
   configParser.read(configFile)
-  personResultFile = os.path.join(resultDir, "person_lacnic")
+  personResultFile = os.path.join(resultDir, "person_formatted_missing")
   personConv = PersonConverter(personResultFile, configParser, "person")
   objList = [("person", "person", "person", personConv)]
   #objList = [("person", "person/role", "person_role", personConv),("person", "irt", "irt", personConv)]
@@ -87,7 +87,7 @@ def readFromApiData(sourceDir, resultDir, configFile):
     fileName = obj[2]
     convObj = obj[3]
     convObj.refreshType(type)
-    sourceFilePath = os.path.join(sourceDir, "{0}".format(fileName))
+    sourceFilePath = os.path.join(sourceDir, "{0}_missing".format(fileName))
     if not os.path.exists(sourceFilePath):
       print "file doesn't exist:{0}".format(sourceFilePath)
       continue
@@ -132,11 +132,10 @@ def main():
   configFile= sys.argv[4]
 
   startTime = time.time()
-  if os.path.exists(bulkDir):
-    pass
-    #readFromBulk(bulkDir, resultDir, configFile)
-  else:
-    sys.stderr.write("skip read from bulk since bulk data doesn't exist:{0}".format(bulkDir))
+  #if os.path.exists(bulkDir):
+  #  readFromBulk(bulkDir, resultDir, configFile)
+  #else:
+  #  sys.stderr.write("skip read from bulk since bulk data doesn't exist:{0}".format(bulkDir))
   if os.path.exists(apiDir):
     readFromApiData(apiDir, resultDir, configFile)
   else:

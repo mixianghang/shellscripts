@@ -34,6 +34,8 @@ do
   gzip -d $tempDir/apnic/split/*.gz
 #run unformat script
   $currDir/convertApnic2Uniform2.py $tempDir/apnic/split $resultDir $configFile
+#select irt to org_apnic file
+	$currDir/convApnicIrt2Org.sh $date $date
   $currDir/addAsn2InetnumForOneRegistry.sh $date $date apnic
 
   rm -rf $tempDir

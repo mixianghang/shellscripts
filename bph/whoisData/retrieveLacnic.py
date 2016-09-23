@@ -81,14 +81,15 @@ for section in sections:
       body = lookupResponse['body']
       if code != 0:
           retryTimes += 1
-          print("request error for key {0}, requestUrl {1} with error msg {2}\n".format(kw, requestUrl, body))
+          print("request warning for key {0}, requestUrl {1} with failure {3} with error msg {2}\n".format(kw, requestUrl, body,retryTimes))
           if retryTimes >= 3:
               error("request error for key {0}, requestUrl {1} with error msg {2}\n".format(kw, requestUrl, body))
               failed += 1
               requestNum += 1
               index += 1
               retryTimes = 0
-          numPerMin += 1
+          time.sleep(timeDelay)
+          numPerMin = 0
           continue
       elif len(body) <= minLenAlarm:
           retryTimes += 1
@@ -105,6 +106,7 @@ for section in sections:
       else:
           print "recv len {0} with requestNum: {1} and failed: {2}".format(len(body), requestNum, failed)
           requestNum += 1
+          retryTimes = 0
           resultFileFd.write(body)
       if index % 100 ==0:
         resultFileFd.flush()
